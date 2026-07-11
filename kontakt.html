@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Familie Tischenreut</title>
+  <meta name="description" content="Nehmen Sie Kontakt mit Familie Tischenreut auf.">
+  <link rel="canonical" href="https://www.familie-tischenreut.de/kontakt.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Familie&nbsp;Tischenreut</a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:40px;">
+          <h1>Kontakt</h1>
+          <p class="lead">Schreiben Sie uns – wir freuen uns über Ihre Nachricht.</p>
+        </div>
+
+        <div class="note" style="max-width:560px;margin-inline:auto;">
+          <strong>Wichtig – Formular aktivieren:</strong> GitHub Pages kann selbst keine
+          E-Mails versenden. Damit das Formular funktioniert, registrieren Sie sich kostenlos
+          bei <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a>
+          oder <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>,
+          und tragen Sie Ihren Zugangs-Schlüssel unten im Formular ein (Stelle ist markiert).
+          Alternativ nutzen Sie einfach den E-Mail-Link darunter.
+        </div>
+
+        <!-- Formular via Web3Forms. access_key ersetzen! -->
+        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="HIER-IHREN-WEB3FORMS-SCHLUESSEL-EINTRAGEN">
+          <div>
+            <label for="name">Ihr Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Ihre E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Ihre Nachricht</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Nachricht senden</button>
+        </form>
+
+        <p class="text-center" style="margin-top:28px;">
+          Oder direkt per E-Mail:
+          <a href="mailto:info@familie-tischenreut.de">info@familie-tischenreut.de</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Familie Tischenreut ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
