@@ -3,64 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt – Familie Tischenreut</title>
-  <meta name="description" content="Nehmen Sie Kontakt mit Familie Tischenreut auf.">
+  <title>Kontakt – Systemfehler Familie</title>
+  <meta name="description" content="Kontakt zu Systemfehler Familie – Nachrichten, Fragen und Erfahrungsberichte.">
   <link rel="canonical" href="https://www.familie-tischenreut.de/kontakt.html">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">Familie&nbsp;Tischenreut</a>
-      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+      <a href="index.html" class="brand">System<span>fehler</span> Familie</a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Start</a></li>
+        <li><a href="meine-geschichte.html">Meine Geschichte</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="ueber-uns.html">Über uns</a></li>
         <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        <li><a href="spenden.html" class="nav-cta">Spenden</a></li>
       </ul>
     </div>
   </header>
 
   <main>
     <section class="section">
-      <div class="container">
-        <div class="text-center" style="margin-bottom:40px;">
-          <h1>Kontakt</h1>
-          <p class="lead">Schreiben Sie uns – wir freuen uns über Ihre Nachricht.</p>
+      <div class="container article">
+        <h1>Kontakt</h1>
+        <p class="lead">Fragen, Anregungen oder eine eigene Geschichte? Schreiben Sie mir.</p>
+
+        <div class="note">
+          <strong>Formular aktivieren:</strong> GitHub Pages kann selbst keine E-Mails senden.
+          Registrieren Sie sich kostenlos bei
+          <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a> und tragen
+          Sie Ihren Zugangs-Schlüssel unten ein (markierte Stelle). Alternativ nutzen Sie den
+          E-Mail-Link darunter.
         </div>
 
-        <div class="note" style="max-width:560px;margin-inline:auto;">
-          <strong>Wichtig – Formular aktivieren:</strong> GitHub Pages kann selbst keine
-          E-Mails versenden. Damit das Formular funktioniert, registrieren Sie sich kostenlos
-          bei <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a>
-          oder <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>,
-          und tragen Sie Ihren Zugangs-Schlüssel unten im Formular ein (Stelle ist markiert).
-          Alternativ nutzen Sie einfach den E-Mail-Link darunter.
-        </div>
-
-        <!-- Formular via Web3Forms. access_key ersetzen! -->
-        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" style="display:grid;gap:18px;max-width:560px;">
           <input type="hidden" name="access_key" value="HIER-IHREN-WEB3FORMS-SCHLUESSEL-EINTRAGEN">
           <div>
-            <label for="name">Ihr Name</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name" style="font-weight:600;display:block;margin-bottom:6px;">Ihr Name</label>
+            <input id="name" name="name" type="text" required
+                   style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
           </div>
           <div>
-            <label for="email">Ihre E-Mail</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email" style="font-weight:600;display:block;margin-bottom:6px;">Ihre E-Mail</label>
+            <input id="email" name="email" type="email" required
+                   style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
           </div>
           <div>
-            <label for="message">Ihre Nachricht</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="message" style="font-weight:600;display:block;margin-bottom:6px;">Ihre Nachricht</label>
+            <textarea id="message" name="message" rows="6" required
+                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;"></textarea>
           </div>
           <button type="submit" class="btn btn--primary">Nachricht senden</button>
         </form>
 
-        <p class="text-center" style="margin-top:28px;">
-          Oder direkt per E-Mail:
-          <a href="mailto:info@familie-tischenreut.de">info@familie-tischenreut.de</a>
+        <p style="margin-top:26px;">Oder per E-Mail:
+          <a href="mailto:kontakt@familie-tischenreut.de">kontakt@familie-tischenreut.de</a>
         </p>
       </div>
     </section>
@@ -68,11 +66,31 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom">
-        © <span id="year">2026</span> Familie Tischenreut ·
-        <a href="impressum.html">Impressum</a> ·
-        <a href="datenschutz.html">Datenschutz</a>
+      <div class="footer-grid">
+        <div>
+          <h4>Systemfehler Familie</h4>
+          <p>Aufklärung, Information und Solidarität für Eltern im Konflikt mit Jugendamt und Familiengericht.</p>
+        </div>
+        <div>
+          <h4>Seiten</h4>
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="meine-geschichte.html">Meine Geschichte</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="spenden.html">Spenden</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
       </div>
+      <p class="disclaimer">Dieser Blog dient der Information und Aufklärung und ersetzt keine individuelle Rechtsberatung.</p>
+      <div class="footer-bottom">© <span id="year">2026</span> Systemfehler Familie</div>
     </div>
   </footer>
   <script src="js/main.js"></script>
