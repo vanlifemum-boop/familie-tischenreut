@@ -297,3 +297,55 @@ h3 { font-size: 1.3rem; }
 .article-body figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; font-style: italic; text-align: center; }
 .foto-paar { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media (max-width: 620px) { .foto-paar { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   Themen als klickbare Kacheln
+   ========================================================= */
+a.thema { text-decoration: none; color: inherit; display: flex; flex-direction: column;
+          transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--primary); text-decoration: none; }
+.thema-mehr { margin-top: 12px; color: var(--accent); font-weight: 700; font-size: .92rem; }
+
+/* =========================================================
+   Beitrags-Karussell (horizontal wischbar + Pfeile)
+   ========================================================= */
+.bc { position: relative; }
+.bc-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 6px 4px 16px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.bc-card {
+  scroll-snap-align: start;
+  flex: 0 0 300px;
+  max-width: 88vw;
+}
+.bc-arrow {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 46px; height: 46px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  display: grid; place-items: center;
+  z-index: 4;
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+}
+.bc-arrow:hover { background: var(--primary); color: #fff; transform: translateY(-50%) scale(1.05); }
+.bc-arrow:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.bc-prev { left: -6px; }
+.bc-next { right: -6px; }
+@media (max-width: 720px) {
+  .bc-arrow { display: none; }         /* auf dem Tablet/Handy einfach wischen */
+  .bc-track { padding-inline: 2px; }
+}

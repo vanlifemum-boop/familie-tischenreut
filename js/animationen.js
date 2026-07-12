@@ -75,3 +75,18 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 })();
+
+/* ---------- 3) Beitrags-Karussell: Pfeile blättern ---------- */
+(function () {
+  var bc = document.getElementById("beitraege-karussell");
+  if (!bc) return;
+  var track = bc.querySelector(".bc-track");
+  var prev = bc.querySelector(".bc-prev");
+  var next = bc.querySelector(".bc-next");
+  function step() {
+    var card = track.querySelector(".bc-card");
+    return card ? card.getBoundingClientRect().width + 20 : 320;
+  }
+  if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+  if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+})();
