@@ -273,11 +273,9 @@ h3 { font-size: 1.3rem; }
   line-height: 1.75;
   margin: 0;
 }
-.scrolltext .st-word {
-  opacity: .16;
-  transition: opacity .35s ease, text-shadow .35s ease;
-}
-.scrolltext .st-word.lit { opacity: 1; }
+.scrolltext .st-word { transition: opacity .35s ease, text-shadow .35s ease; }
+.scrolltext.armed .st-word { opacity: .16; }
+.scrolltext.armed .st-word.lit { opacity: 1; }
 .scrolltext .st-word.hl { color: #e8a24b; }
 .scrolltext .st-word.hl.lit { text-shadow: 0 0 22px rgba(232,162,75,.35); }
 .scrolltext .st-sig {

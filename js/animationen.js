@@ -2,7 +2,30 @@
 // Läuft auf allen Seiten; respektiert "Bewegung reduzieren" im System.
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- 0) Scroll-Text vorbereiten (immer: Sternchen entfernen) ---------- */
+  var stSection = document.querySelector(".scrolltext");
+  var st = document.querySelector(".scrolltext p.st-text");
+  var stWords = [];
+  if (st) {
+    var raw = st.textContent.trim().split(/\s+/);
+    st.textContent = "";
+    stWords = raw.map(function (w) {
+      var span = document.createElement("span");
+      span.className = "st-word";
+      if (w.charAt(0) === "*" && w.charAt(w.length - 1) === "*" && w.length > 2) {
+        span.classList.add("hl");
+        w = w.slice(1, -1);
+      }
+      span.textContent = w;
+      st.appendChild(span);
+      st.appendChild(document.createTextNode(" "));
+      return span;
+    });
+  }
+
   if (reduce) return;
+  if (stSection) stSection.classList.add("armed");
 
   /* ---------- 1) Scroll-Reveal ---------- */
   var targets = document.querySelectorAll(
@@ -31,24 +54,8 @@
   }
 
   /* ---------- 2) Scroll-Text (Worte leuchten beim Scrollen auf) ---------- */
-  var st = document.querySelector(".scrolltext p.st-text");
   if (!st) return;
-
-  // Text in Wort-Spans zerlegen; *Wort* => hervorgehoben (orange)
-  var raw = st.textContent.trim().split(/\s+/);
-  st.textContent = "";
-  var words = raw.map(function (w) {
-    var span = document.createElement("span");
-    span.className = "st-word";
-    if (w.charAt(0) === "*" && w.charAt(w.length - 1) === "*" && w.length > 2) {
-      span.classList.add("hl");
-      w = w.slice(1, -1);
-    }
-    span.textContent = w;
-    st.appendChild(span);
-    st.appendChild(document.createTextNode(" "));
-    return span;
-  });
+  var words = stWords;
 
   function onScroll() {
     var rect = st.getBoundingClientRect();
