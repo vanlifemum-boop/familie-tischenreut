@@ -33,6 +33,36 @@
       titel: "Weihnachten",
       text: "Geschenke unterm Baum, gebastelter Schmuck – und plötzlich endet alles.",
       link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/ballons.jpg",
+      titel: "Feste feiern",
+      text: "Luftballons, Altstadt, Arm um Mama – Tage, die nach Feier schmecken.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/barfuss.jpg",
+      titel: "Barfuß-Sommer",
+      text: "Dreckige Füße, freches Grinsen, blauer Himmel – so klingt Freiheit.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/justitia.jpg",
+      titel: "Vor Justitia",
+      text: "Ein Foto vor der Göttin der Gerechtigkeit – heute wichtiger denn je.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/kajak.jpg",
+      titel: "Kajaktour",
+      text: "Zwei Paddel, ein Boot, ein See – Abenteuer machen wir gemeinsam.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/spiegel.jpg",
+      titel: "Quatsch machen",
+      text: "Nase trifft Nase – die kleinen albernen Momente sind die größten.",
+      link: "meine-geschichte.html"
     }
   ];
 
