@@ -5,63 +5,75 @@
 (function () {
   var MOMENTE = [
     {
-      img: "img/momente/aussichtsturm.jpg",
-      titel: "Unsere Aussicht",
-      text: "Oben auf dem Turm, der Blick über die Wälder – solche Tage gehörten uns.",
+      img: "img/momente/20161022_143934.jpg",
+      titel: "Von Anfang an ein Team",
+      text: "Mama und ihr Junge – von der ersten Stunde an unzertrennlich.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/leuchtturm.jpg",
-      titel: "Lachen am Leuchtturm",
-      text: "Ein Sommertag, ein Leuchtturm und ein Lachen, das ansteckt.",
+      img: "img/momente/IMG-20200411-WA0036.jpg",
+      titel: "Sanfte Freunde",
+      text: "Ein Reh aus der Hand füttern – Mut und Zartheit zugleich.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/fasching.jpg",
+      img: "img/momente/IMG-20210805-WA0016.jpg",
+      titel: "Paris zusammen",
+      text: "Vor dem Louvre: die Welt entdecken, Hand in Hand.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/20211002_121939.jpg",
+      titel: "Venedig",
+      text: "Kanäle, Brücken, große Augen – Reisen, die bleiben.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/20191222_133611.jpg",
+      titel: "Auf Kufen",
+      text: "Erste Schritte auf dem Eis – stolz wie ein Weltmeister.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/20181217_152202.jpg",
+      titel: "Traditionen",
+      text: "Als kleiner Nikolaus – Feste und Bräuche gehörten immer dazu.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/20250304_130308.jpg",
       titel: "Fasching zusammen",
-      text: "Verkleiden, quatschen, lachen – eine bunte Kindheit voller Feste.",
+      text: "Verkleiden, lachen, feiern – eine bunte Kindheit voller Feste.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/baerenumarmung.jpg",
+      img: "img/momente/20241017_112337.jpg",
       titel: "Große Umarmungen",
       text: "Ausflüge, bei denen selbst der größte Bär mit aufs Foto wollte.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/weihnachten.jpg",
-      titel: "Weihnachten",
-      text: "Geschenke unterm Baum, gebastelter Schmuck – und plötzlich endet alles.",
-      link: "meine-geschichte.html"
-    },
-    {
-      img: "img/momente/ballons.jpg",
-      titel: "Feste feiern",
-      text: "Luftballons, Altstadt, Arm um Mama – Tage, die nach Feier schmecken.",
-      link: "meine-geschichte.html"
-    },
-    {
-      img: "img/momente/barfuss.jpg",
+      img: "img/momente/received_1094940331442138.jpg",
       titel: "Barfuß-Sommer",
       text: "Dreckige Füße, freches Grinsen, blauer Himmel – so klingt Freiheit.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/justitia.jpg",
-      titel: "Vor Justitia",
-      text: "Ein Foto vor der Göttin der Gerechtigkeit – heute wichtiger denn je.",
+      img: "img/momente/20211224_123235.jpg",
+      titel: "Weihnachten",
+      text: "Geschenke unterm Baum, leuchtende Augen – und plötzlich endet alles.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/kajak.jpg",
-      titel: "Kajaktour",
-      text: "Zwei Paddel, ein Boot, ein See – Abenteuer machen wir gemeinsam.",
+      img: "img/momente/_MG_8204_1.jpg",
+      titel: "Mama & ich",
+      text: "Ein Porträt, das alles sagt: Wir gehören zusammen.",
       link: "meine-geschichte.html"
     },
     {
-      img: "img/momente/spiegel.jpg",
-      titel: "Quatsch machen",
-      text: "Nase trifft Nase – die kleinen albernen Momente sind die größten.",
+      img: "img/momente/Snapchat-685566802.jpg",
+      titel: "Ponyreiten",
+      text: "Kleine Abenteuer, große Erinnerungen – Förderung mit Herz.",
       link: "meine-geschichte.html"
     }
   ];
