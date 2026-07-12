@@ -21,6 +21,7 @@
         <li><a href="index.html" aria-current="page">Start</a></li>
         <li><a href="meine-geschichte.html">Meine Geschichte</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="spenden.html" class="nav-cta">Spenden</a></li>
       </ul>
@@ -51,6 +52,10 @@
           <p class="lead">Als das Jugendamt mein Kind mitnahm, war ich allein und uninformiert.
              Das soll anderen Eltern erspart bleiben. Hier teile ich meine Erfahrung, kläre über
              die rechtlichen Grundlagen auf und kämpfe öffentlich für den Schutz von Familien.</p>
+          <div class="btn-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px;">
+            <a href="blog.html" class="btn btn--primary">Zum Blog</a>
+            <a href="meine-geschichte.html" class="btn btn--ghost">Meine Geschichte</a>
+          </div>
         </div>
       </div>
     </section>
@@ -97,8 +102,31 @@
       </div>
     </section>
 
+    <!-- MOMENTE (Foto-Karussell) -->
+    <section class="section section--alt" id="momente">
+      <div class="container">
+        <div class="page-head">
+          <h2>Momente unserer Geschichte</h2>
+          <p class="lead">Eine schöne, bunte Kindheit – Ausflüge, Feste, Freunde, Förderung.
+             Bis alles grundlos endete. Diese Bilder zeigen, was auf dem Spiel steht.</p>
+        </div>
+        <div class="momente">
+          <div class="m-media" aria-hidden="false"><!-- Fotos werden per Skript eingesetzt --></div>
+          <div class="m-body">
+            <h3></h3>
+            <p class="m-text"></p>
+            <a class="m-link more" href="meine-geschichte.html">Die Geschichte dahinter →</a>
+            <div class="m-controls">
+              <button class="m-btn m-prev" aria-label="Vorheriger Moment">&#8592;</button>
+              <button class="m-btn m-next" aria-label="Nächster Moment">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- WICHTIGE BEITRÄGE -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="page-head">
           <h2>Wichtige Beiträge</h2>
@@ -155,6 +183,7 @@
             <li><a href="index.html">Start</a></li>
             <li><a href="meine-geschichte.html">Meine Geschichte</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="spenden.html">Spenden</a></li>
           </ul>
@@ -172,5 +201,6 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/momente.js"></script>
 </body>
 </html>
