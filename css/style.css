@@ -290,3 +290,10 @@ h3 { font-size: 1.3rem; }
   .hero .eyebrow, .hero h1, .hero p, .hero .btn-row { animation: none; }
   .scrolltext .st-word { opacity: 1; transition: none; }
 }
+
+/* Fotos in Beiträgen */
+.article-body figure { margin: 1.8em 0; }
+.article-body figure img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+.article-body figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; font-style: italic; text-align: center; }
+.foto-paar { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 620px) { .foto-paar { grid-template-columns: 1fr; } }
