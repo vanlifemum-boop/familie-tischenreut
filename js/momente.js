@@ -42,7 +42,7 @@
     },
     {
       img: "img/momente/20250304_130308.jpg",
-      titel: "Fasching zusammen",
+      titel: "Karneval zusammen",
       text: "Verkleiden, lachen, feiern – eine bunte Kindheit voller Feste.",
       link: "meine-geschichte.html"
     },
@@ -74,6 +74,18 @@
       img: "img/momente/Snapchat-685566802.jpg",
       titel: "Ponyreiten",
       text: "Kleine Abenteuer, große Erinnerungen – Förderung mit Herz.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/20220801_093559.jpg",
+      titel: "Vor Justitia",
+      text: "Wir beide vor der Göttin der Gerechtigkeit – heute wichtiger denn je.",
+      link: "meine-geschichte.html"
+    },
+    {
+      img: "img/momente/carj6bfpf_0006.jpg",
+      titel: "Grimassen-Meister",
+      text: "Fotobox, alberne Brillen, Tränen gelacht – so klingt unser Humor.",
       link: "meine-geschichte.html"
     }
   ];
