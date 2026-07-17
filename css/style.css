@@ -393,6 +393,12 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
 .guta-kommentar span { font-size: .82rem; color: var(--muted); }
 .guta-keine { color: var(--muted); font-style: italic; text-align: center; padding: 20px 0; }
 
+.guta-quelle {
+  margin: 16px 0 0; padding: 12px 16px; background: var(--bg);
+  border-radius: 10px; font-size: .88rem; color: var(--muted);
+}
+.guta-quelle a { color: var(--primary); font-weight: 600; }
+
 .guta-hinweis-box {
   background: var(--accent-soft, #f5ecdb);
   border-radius: var(--radius);

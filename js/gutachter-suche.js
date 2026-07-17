@@ -16,6 +16,14 @@
       return '<li class="guta-kommentar"><p>„' + esc(k.text) + '"</p><span>— ' + esc(k.von || 'anonym') + '</span></li>';
     }).join('');
 
+    var quelleZeile = '';
+    if (eintrag.quelle && /^https:\/\//.test(eintrag.quelle.url || '')) {
+      quelleZeile = '<p class="guta-quelle">Hinweis: Zu dieser Person liegen extern veröffentlichte ' +
+        'Erfahrungsberichte Dritter vor. Es handelt sich um persönliche Einzelmeinungen, nicht um ' +
+        'gerichtlich festgestellte Tatsachen. <a href="' + esc(eintrag.quelle.url) + '" target="_blank" rel="noopener nofollow">' +
+        esc(eintrag.quelle.label || 'Quelle ansehen') + ' ↗</a></p>';
+    }
+
     el.innerHTML =
       '<div class="guta-head">' +
         '<h3>' + esc(eintrag.name) + '</h3>' +
@@ -23,7 +31,8 @@
       '</div>' +
       (eintrag.fachrichtung ? '<div class="guta-fach">' + esc(eintrag.fachrichtung) + '</div>' : '') +
       kontaktZeile +
-      (kommentare ? '<ul class="guta-kommentare">' + kommentare + '</ul>' : '<p class="guta-keine">Noch keine Kommentare.</p>');
+      (kommentare ? '<ul class="guta-kommentare">' + kommentare + '</ul>' : (quelleZeile ? '' : '<p class="guta-keine">Noch keine Kommentare.</p>')) +
+      quelleZeile;
     return el;
   }
 

@@ -17,6 +17,11 @@
 // Jeder Kommentar sollte möglichst mit "Aus meiner Sicht…", "Ich empfand…"
 // oder "Mein Eindruck war…" beginnen. Bei Zweifeln: Formulierung vor der
 // Veröffentlichung anwaltlich prüfen lassen.
+//
+// EXTERNE QUELLEN (fremde Erfahrungsberichte, nicht die eigene Erfahrung):
+// Fremde Texte/Kommentare NICHT kopieren (Urheberrecht + Sie würden für
+// fremde Tatsachenbehauptungen mithaften). Stattdessen im Feld "quelle"
+// nur verlinken – der Leser entscheidet selbst, ob er dort weiterliest.
 // ============================================================
 
 var GUTACHTER = [
@@ -29,6 +34,17 @@ var GUTACHTER = [
     kommentare: [
       { text: "Aus meiner Sicht wurde im Gespräch wenig auf die Perspektive des Kindes eingegangen. Das ist mein persönlicher Eindruck aus einem Termin.", von: "Betroffene Mutter, 2026" }
     ]
+  },
+  {
+    name: "Brigitte Dittrich",
+    ort: "",
+    fachrichtung: "Familienpsychologisches Gutachten (Sorgerecht/Umgang)",
+    adresse: "",
+    kommentare: [],
+    quelle: {
+      url: "https://www.vaterlos.eu/brigitte-dittrich/",
+      label: "Erfahrungsberichte Betroffener auf vaterlos.eu"
+    }
   }
   // Weiteren Eintrag hinzufügen – diesen Block kopieren und ausfüllen:
   // ,{
