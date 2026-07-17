@@ -407,6 +407,27 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
   font-size: .95rem;
 }
 
+/* =========================================================
+   Urteilsübersicht
+   ========================================================= */
+.urteile-toc {
+  columns: 2; column-gap: 32px; list-style: none; margin: 0 0 40px; padding: 20px 24px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+}
+.urteile-toc li { break-inside: avoid; padding: 4px 0; }
+.urteile-toc a { color: var(--primary); font-weight: 600; }
+@media (max-width: 640px) { .urteile-toc { columns: 1; } }
+
+.table-wrap { overflow-x: auto; margin: 0 0 44px; -webkit-overflow-scrolling: touch; }
+table.urteile-tabelle { width: 100%; border-collapse: collapse; font-size: .93rem; min-width: 560px; }
+table.urteile-tabelle th {
+  text-align: left; padding: 10px 14px; background: var(--bg); color: var(--primary);
+  font-family: var(--serif); border-bottom: 2px solid var(--line); white-space: nowrap;
+}
+table.urteile-tabelle td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.urteile-tabelle td:first-child { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+table.urteile-tabelle tr:hover td { background: var(--bg); }
+
 .guta-formular {
   margin-top: 64px;
   padding: 36px 24px;
