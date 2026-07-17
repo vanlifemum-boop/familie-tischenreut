@@ -62,10 +62,63 @@
                placeholder="Nach Name, Ort oder Fachrichtung suchen …" aria-label="Anwälte durchsuchen">
         <div id="anwaelte-liste" class="guta-liste"></div>
 
+        <div class="guta-formular">
+          <h2 style="text-align:center;margin-bottom:10px;">Eigene Erfahrung einreichen</h2>
+          <p class="lead" style="text-align:center;max-width:640px;margin:0 auto 24px;">
+            Sie haben selbst Erfahrungen mit einem/einer Gutachter/in oder Anwalt/Anwältin
+            gemacht und möchten das hier teilen? Nutzen Sie das Formular. Jede Einreichung wird
+            vor Veröffentlichung von Hand geprüft und ggf. rechtlich sicher umformuliert – so
+            bleiben alle Beteiligten geschützt.
+          </p>
+          <form action="https://api.web3forms.com/submit" method="POST"
+                style="display:grid;gap:16px;max-width:560px;margin:0 auto;">
+            <input type="hidden" name="access_key" value="HIER-IHREN-WEB3FORMS-SCHLUESSEL-EINTRAGEN">
+            <input type="hidden" name="subject" value="Neuer Kommentar für Gutachter-Suche">
+            <div>
+              <label for="g-art" style="font-weight:600;display:block;margin-bottom:6px;">Worum geht es?</label>
+              <select id="g-art" name="Kategorie" required
+                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+                <option value="Gutachter/in">Gutachter/in</option>
+                <option value="Anwalt/Anwältin">Anwalt/Anwältin</option>
+              </select>
+            </div>
+            <div>
+              <label for="g-name" style="font-weight:600;display:block;margin-bottom:6px;">Name der Person</label>
+              <input id="g-name" name="Name der Person" type="text" required
+                     style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+            </div>
+            <div>
+              <label for="g-ort" style="font-weight:600;display:block;margin-bottom:6px;">Ort / Kanzlei- bzw. Praxissitz</label>
+              <input id="g-ort" name="Ort" type="text"
+                     style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+            </div>
+            <div>
+              <label for="g-text" style="font-weight:600;display:block;margin-bottom:6px;">Ihr Kommentar (bitte als eigene Wahrnehmung formulieren, z. B. „Aus meiner Sicht …")</label>
+              <textarea id="g-text" name="Kommentar" rows="6" required
+                        style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;"></textarea>
+            </div>
+            <div>
+              <label for="g-von" style="font-weight:600;display:block;margin-bottom:6px;">Wie sollen Sie genannt werden?</label>
+              <input id="g-von" name="Genannt als" type="text" placeholder="z. B. „Betroffene Mutter, 2026" oder „anonym"" required
+                     style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+            </div>
+            <div>
+              <label for="g-email" style="font-weight:600;display:block;margin-bottom:6px;">Ihre E-Mail (nicht öffentlich, nur für Rückfragen)</label>
+              <input id="g-email" name="email" type="email" required
+                     style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+            </div>
+            <button type="submit" class="btn btn--primary">Zur Prüfung einreichen</button>
+          </form>
+        </div>
+
         <div class="note" style="max-width:700px;margin-inline:auto;margin-top:48px;">
-          <strong>Hinweis für die Seitenbetreiberin:</strong> Neue Einträge tragen Sie in der
-          Datei <code>js/gutachter-daten.js</code> ein – dort ist genau beschrieben, wie ein
-          neuer Block aussieht und worauf Sie bei der Formulierung achten sollten.
+          <strong>Hinweis für die Seitenbetreiberin:</strong> Eingereichte Kommentare kommen per
+          E-Mail (Web3Forms) an — dafür oben den Zugangs-Schlüssel eintragen, genau wie auf der
+          Kontaktseite. Nach Prüfung tragen Sie freigegebene Kommentare in
+          <code>js/gutachter-daten.js</code> ein – dort ist genau beschrieben, wie ein neuer
+          Block aussieht und worauf Sie bei der Formulierung achten sollten. Kommentare
+          erscheinen bewusst nicht automatisch live, damit rechtlich riskante Formulierungen vor
+          der Veröffentlichung abgefangen werden können.
         </div>
       </div>
     </section>

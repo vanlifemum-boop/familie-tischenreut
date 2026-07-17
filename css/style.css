@@ -406,3 +406,11 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
   margin-bottom: 32px;
   font-size: .95rem;
 }
+
+.guta-formular {
+  margin-top: 64px;
+  padding: 36px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
