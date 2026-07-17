@@ -349,3 +349,54 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
   .bc-arrow { display: none; }         /* auf dem Tablet/Handy einfach wischen */
   .bc-track { padding-inline: 2px; }
 }
+
+/* =========================================================
+   Gutachter- & Anwalts-Verzeichnis
+   ========================================================= */
+.guta-suchfeld {
+  width: 100%;
+  max-width: 480px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 1rem;
+  margin: 0 auto 28px;
+  display: block;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.guta-suchfeld:focus { outline: 2px solid var(--primary); border-color: transparent; }
+
+.guta-liste { display: grid; gap: 20px; }
+.guta-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  box-shadow: var(--shadow);
+}
+.guta-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; }
+.guta-head h3 { margin: 0; font-family: var(--serif); color: var(--primary); }
+.guta-ort {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--accent); font-weight: 700;
+}
+.guta-fach { color: var(--muted); font-size: .95rem; margin-top: 4px; }
+.guta-adresse { color: var(--muted); font-size: .9rem; margin-top: 6px; }
+.guta-kommentare { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 12px; }
+.guta-kommentar {
+  background: var(--bg); border-radius: 10px; padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+}
+.guta-kommentar p { margin: 0 0 4px; font-style: italic; }
+.guta-kommentar span { font-size: .82rem; color: var(--muted); }
+.guta-keine { color: var(--muted); font-style: italic; text-align: center; padding: 20px 0; }
+
+.guta-hinweis-box {
+  background: var(--accent-soft, #f5ecdb);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  font-size: .95rem;
+}
