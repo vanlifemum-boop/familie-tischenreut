@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum – Systemfehler Familie</title>
-  <meta name="description" content="Impressum von Systemfehler Familie.">
-  <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://vanlifemum-boop.github.io/familie-tischenreut/impressum.html">
+  <title>Beratung buchen – Systemfehler Familie</title>
+  <meta name="description" content="Berater/innen mit eigener Erfahrung im Umgang mit Jugendamt und Familiengericht – Thema, Erfahrung und direkte Terminbuchung für ein Telefongespräch.">
+  <link rel="canonical" href="https://vanlifemum-boop.github.io/familie-tischenreut/berater.html">
   <link rel="stylesheet" href="css/style.css">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Impressum – Systemfehler Familie">
-  <meta property="og:description" content="Impressum von Systemfehler Familie.">
-  <meta property="og:url" content="https://vanlifemum-boop.github.io/familie-tischenreut/impressum.html">
+  <meta property="og:title" content="Beratung buchen – Systemfehler Familie">
+  <meta property="og:description" content="Berater/innen mit eigener Erfahrung – Thema, Erfahrung und direkte Terminbuchung.">
+  <meta property="og:url" content="https://vanlifemum-boop.github.io/familie-tischenreut/berater.html">
   <meta property="og:image" content="https://vanlifemum-boop.github.io/familie-tischenreut/img/momente/20220801_093559.jpg">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +28,7 @@
         <li><a href="hilfe-anlaufstellen.html">Hilfe &amp; Anlaufstellen</a></li>
         <li><a href="gutachter-suche.html">Gutachter-Suche</a></li>
         <li><a href="urteile.html">Urteile</a></li>
-        <li><a href="berater.html">Beratung</a></li>
+        <li><a href="berater.html" aria-current="page">Beratung</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="spenden.html" class="nav-cta">Spenden</a></li>
       </ul>
@@ -38,43 +37,36 @@
 
   <main>
     <section class="section">
-      <div class="container article">
-        <h1>Impressum</h1>
-
-        <div class="article-body">
-          <h2>Anbieterin / Diensteanbieter</h2>
-          <p>
-            Tussy Van<br>
-            ul. Kamionka 11<br>
-            PL-87-300 Brodnica<br>
-            Województwo kujawsko-pomorskie, Polen
-          </p>
-
-          <h2>Unternehmensangaben</h2>
-          <p>
-            NIP (Steuer-Identifikationsnummer): 6671793054<br>
-            REGON: 54269659400000
-          </p>
-
-          <h2>Kontakt</h2>
-          <p>E-Mail: <a href="mailto:tussyvan@gmail.com">tussyvan@gmail.com</a></p>
-
-          <h2>Inhaberin / verantwortlich für den Inhalt</h2>
-          <p>Tussy Van<br>Anschrift wie oben</p>
-
-          <h2>EU-Streitschlichtung</h2>
-          <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS)
-             bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
-             Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-             Verbraucherschlichtungsstelle teilzunehmen.</p>
-
-          <h2>Haftung für Inhalte</h2>
-          <p>Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt und geben persönliche
-             Erfahrungen sowie allgemeine Informationen wieder. Sie stellen keine Rechtsberatung
-             dar. Für die Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen.</p>
+      <div class="container">
+        <div class="page-head">
+          <h1>Beratung buchen</h1>
+          <p class="lead">Menschen mit eigener Erfahrung im Umgang mit Jugendamt und
+             Familiengericht – nach Thema durchsuchbar, mit direkter Terminbuchung für ein
+             Telefongespräch.</p>
         </div>
 
-        <p style="margin-top:28px;"><a href="index.html">← Zurück zur Startseite</a></p>
+        <div class="guta-hinweis-box">
+          <strong>Zur Einordnung:</strong> Die hier gelisteten Berater/innen geben ihre
+          <strong>persönliche Erfahrung</strong> weiter – das ist wertvoll, ersetzt aber keine
+          anwaltliche Beratung. Sofern hier keine zugelassenen Rechtsanwält/innen gelistet sind
+          (das steht jeweils beim Thema), findet keine Rechtsberatung im rechtlichen Sinne statt,
+          sondern Erfahrungsaustausch von Betroffenen für Betroffene. Für verbindliche rechtliche
+          Einschätzungen wenden Sie sich zusätzlich an eine Fachanwältin/einen Fachanwalt für
+          Familienrecht (siehe <a href="hilfe-anlaufstellen.html">Hilfe &amp; Anlaufstellen</a>
+          und <a href="gutachter-suche.html">Anwalts-Empfehlungen</a>).
+        </div>
+
+        <input type="search" id="berater-suchfeld" class="guta-suchfeld"
+               placeholder="Nach Name, Ort oder Thema suchen …" aria-label="Berater/innen durchsuchen">
+        <div id="berater-liste" class="guta-liste"></div>
+
+        <div class="note" style="max-width:700px;margin-inline:auto;margin-top:48px;">
+          <strong>Hinweis für die Seitenbetreiberin:</strong> Neue Einträge tragen Sie in der
+          Datei <code>js/berater-daten.js</code> ein – dort ist genau beschrieben, wie ein neuer
+          Block aussieht, worauf Sie beim RDG achten sollten und wie Sie kostenlos einen
+          Kalender-Link (Calendly oder cal.com) erzeugen. Ohne Kalender-Link zeigt die Karte
+          automatisch „Kalender folgt in Kürze" statt eines Buchungs-Buttons.
+        </div>
       </div>
     </section>
   </main>
@@ -115,5 +107,7 @@
   </footer>
   <script src="js/main.js"></script>
   <script src="js/animationen.js"></script>
+  <script src="js/berater-daten.js"></script>
+  <script src="js/berater-suche.js"></script>
 </body>
 </html>

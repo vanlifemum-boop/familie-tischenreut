@@ -443,3 +443,12 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
+
+/* =========================================================
+   Berater-Verzeichnis
+   ========================================================= */
+.berater-card { display: flex; flex-direction: column; }
+.berater-thema { font-weight: 600; color: var(--ink); }
+.berater-erfahrung { color: var(--muted); margin: 10px 0 0; }
+.berater-buchen-zeile { margin-top: 18px; }
+.berater-buchen { display: inline-block; }
