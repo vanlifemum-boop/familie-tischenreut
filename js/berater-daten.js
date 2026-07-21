@@ -17,15 +17,29 @@
 //   SICHERER: "Erfahrungsaustausch: eigenes Sorgerechtsverfahren,
 //              wie ich vorgegangen bin"
 //
-// WICHTIG ZUM KALENDER-LINK:
-// Die Seite hat kein eigenes Buchungssystem. Jede/r Berater/in braucht
-// einen kostenlosen externen Kalender-Link, z. B. bei
-//   https://calendly.com  (empfohlen, sehr einfach einzurichten)
-//   https://cal.com       (Alternative, ebenfalls kostenlos)
-// Dort einmal registrieren, verfügbare Zeiten eintragen, den
-// persönlichen Buchungslink kopieren und unten bei "kalenderLink"
-// einfügen. Ohne kalenderLink zeigt die Karte automatisch den Hinweis
+// WICHTIG ZUM KALENDER-LINK (ZENTRAL, BEZAHLTE TERMINE):
+// Die Zahlungen laufen zentral über Sie – nicht über einzelne
+// Berater/innen. Dafür EIN Konto bei einem Buchungstool mit
+// eingebauter Bezahlfunktion anlegen, z. B.:
+//   https://tidycal.com   (empfohlen: einmalige Zahlung, dauerhaft nutzbar,
+//                          Stripe-Zahlung beim Buchen eingebaut)
+//   https://simplybook.me (Alternative, kostenloser Einstieg möglich)
+//   https://calendly.com / https://acuityscheduling.com (Alternative, Abo nötig)
+// In diesem EINEN Konto legen Sie pro Berater/in bzw. Thema einen
+// eigenen Buchungstyp mit eigenem Preis an. Den jeweiligen
+// Unterseiten-Link kopieren und unten bei "kalenderLink" eintragen.
+// Ohne kalenderLink zeigt die Karte automatisch den Hinweis
 // "Kalender folgt in Kürze" statt eines Buchungs-Buttons.
+// Das Tool ist später jederzeit tauschbar – es ist nur ein externer
+// Link, keine Code-Integration.
+//
+// Achtung: Zentrale, bezahlte Terminbuchung wirft vermutlich Fragen zu
+// Gewerbeanmeldung, Rechnungspflicht und Steuer auf – das bitte separat
+// (z. B. mit Steuerberatung) klären, bevor der erste bezahlte Termin
+// live geht.
+//
+// FELD "preis" (optional): kurzer Text wie "45 € / 30 Min." – wird auf
+// der Karte neben dem Thema angezeigt. Ohne Angabe bleibt es leer.
 // ============================================================
 
 var BERATER = [
@@ -35,6 +49,7 @@ var BERATER = [
     ort: "Musterstadt",
     thema: "Erfahrungsaustausch: Inobhutnahme & erste Schritte",
     erfahrung: "Eigene Inobhutnahme 2024 durchlebt, seither im Austausch mit anderen betroffenen Eltern. Kein Ersatz für anwaltliche Beratung.",
+    preis: "",
     kalenderLink: ""
   }
   // Weiteren Eintrag hinzufügen – diesen Block kopieren und ausfüllen:
@@ -43,6 +58,7 @@ var BERATER = [
   //   ort: "",
   //   thema: "",
   //   erfahrung: "",
-  //   kalenderLink: "https://calendly.com/ihr-name"
+  //   preis: "45 € / 30 Min.",
+  //   kalenderLink: "https://tidycal.com/ihr-konto/thema-x"
   // }
 ];

@@ -23,7 +23,8 @@
         '<h3>' + esc(eintrag.name) + '</h3>' +
         '<span class="guta-ort">' + esc(eintrag.ort || '') + '</span>' +
       '</div>' +
-      (eintrag.thema ? '<div class="guta-fach berater-thema">' + esc(eintrag.thema) + '</div>' : '') +
+      (eintrag.thema ? '<div class="guta-fach berater-thema">' + esc(eintrag.thema) +
+        (eintrag.preis ? ' <span class="berater-preis">· ' + esc(eintrag.preis) + '</span>' : '') + '</div>' : '') +
       (eintrag.erfahrung ? '<p class="berater-erfahrung">' + esc(eintrag.erfahrung) + '</p>' : '') +
       '<div class="berater-buchen-zeile">' + buchen + '</div>';
     return el;

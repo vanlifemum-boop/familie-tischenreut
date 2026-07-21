@@ -449,6 +449,7 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
    ========================================================= */
 .berater-card { display: flex; flex-direction: column; }
 .berater-thema { font-weight: 600; color: var(--ink); }
+.berater-preis { font-weight: 700; color: var(--accent); }
 .berater-erfahrung { color: var(--muted); margin: 10px 0 0; }
 .berater-buchen-zeile { margin-top: 18px; }
 .berater-buchen { display: inline-block; }
