@@ -453,3 +453,18 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
 .berater-erfahrung { color: var(--muted); margin: 10px 0 0; }
 .berater-buchen-zeile { margin-top: 18px; }
 .berater-buchen { display: inline-block; }
+
+/* =========================================================
+   Musterbriefe / Downloads
+   ========================================================= */
+.downloads-liste { display: grid; gap: 20px; max-width: 780px; margin-inline: auto; }
+.downloads-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 26px; box-shadow: var(--shadow);
+}
+.downloads-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 16px; }
+.downloads-head h3 { margin: 0; font-family: var(--serif); color: var(--primary); }
+.downloads-preis { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 4px 12px; border-radius: 999px; }
+.downloads-preis--frei { background: var(--accent-soft, #f5ecdb); color: var(--accent); }
+.downloads-preis--bezahlt { background: var(--bg); color: var(--primary); }
+.downloads-text { color: var(--muted); margin: 10px 0 18px; }
