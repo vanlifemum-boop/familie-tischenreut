@@ -96,9 +96,10 @@ h3 { font-size: 1.3rem; }
 /* ---------- Hero ---------- */
 .hero { position: relative; color: #eaf0f7; padding: clamp(70px,11vw,140px) 22px;
         background:
-          linear-gradient(180deg, rgba(20,32,46,.72), rgba(20,32,46,.86)),
+          linear-gradient(180deg, rgba(20,32,46,.18) 0%, rgba(20,32,46,.32) 55%, rgba(20,32,46,.62) 100%),
           var(--hero-image, linear-gradient(180deg, #1f3a5f 0%, #142943 100%));
         background-size: cover; background-position: center; }
+.hero .eyebrow, .hero h1, .hero p { text-shadow: 0 2px 10px rgba(0,0,0,.55); }
 /* Sobald ein eigenes Titelbild vorhanden ist, im <section class="hero"> so setzen:
    style="--hero-image:url('img/titelbild.jpg')" */
 .hero-inner { max-width: var(--max); margin-inline: auto; }
