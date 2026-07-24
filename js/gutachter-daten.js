@@ -30,6 +30,17 @@
 // keine Bewertung. Eigene, geprüfte Erfahrungsberichte können über das
 // Formular auf der Seite ergänzt und dann hier im Feld "kommentare"
 // eingetragen werden.
+//
+// STERNE-BEWERTUNG (optional pro Kommentar):
+// Ein Kommentar kann zusätzlich ein Feld "sterne" (Zahl 1–5) haben. Aus
+// allen Sternen eines Eintrags berechnet die Seite automatisch den
+// Durchschnitt und zeigt ihn oben auf der Karte an. Beispiel:
+//   kommentare: [
+//     { text: "Aus meiner Sicht sehr einfühlsam …", von: "Betroffene Mutter, 2026", sterne: 4 }
+//   ]
+// WICHTIG: Nur echte, geprüfte Einreichungen eintragen – niemals selbst
+// erfundene Bewertungen zu real existierenden Personen (Fake-Bewertungen
+// sind rechtswidrig).
 // ============================================================
 
 var GUTACHTER = [

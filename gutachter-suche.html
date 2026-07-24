@@ -124,18 +124,18 @@
                placeholder="Nach Name, Ort oder Fachrichtung suchen …" aria-label="Anwälte durchsuchen">
         <div id="anwaelte-liste" class="guta-liste"></div>
 
-        <div class="guta-formular">
-          <h2 style="text-align:center;margin-bottom:10px;">Eigene Erfahrung einreichen</h2>
+        <div class="guta-formular" id="guta-formular">
+          <h2 style="text-align:center;margin-bottom:10px;">Bewerten &amp; Erfahrung einreichen</h2>
           <p class="lead" style="text-align:center;max-width:640px;margin:0 auto 24px;">
             Sie haben selbst Erfahrungen mit einem/einer Gutachter/in oder Anwalt/Anwältin
-            gemacht und möchten das hier teilen? Nutzen Sie das Formular. Jede Einreichung wird
-            vor Veröffentlichung von Hand geprüft und ggf. rechtlich sicher umformuliert – so
-            bleiben alle Beteiligten geschützt.
+            gemacht? Geben Sie eine Bewertung (Sterne) ab und schildern Sie Ihren Eindruck. Jede
+            Einreichung wird vor Veröffentlichung von Hand geprüft und ggf. rechtlich sicher
+            umformuliert – so bleiben alle Beteiligten geschützt.
           </p>
           <form action="https://api.web3forms.com/submit" method="POST"
                 style="display:grid;gap:16px;max-width:560px;margin:0 auto;">
             <input type="hidden" name="access_key" value="HIER-IHREN-WEB3FORMS-SCHLUESSEL-EINTRAGEN">
-            <input type="hidden" name="subject" value="Neuer Kommentar für Gutachter-Suche">
+            <input type="hidden" name="subject" value="Neue Bewertung für Gutachter-Suche">
             <div>
               <label for="g-art" style="font-weight:600;display:block;margin-bottom:6px;">Worum geht es?</label>
               <select id="g-art" name="Kategorie" required
@@ -148,6 +148,18 @@
               <label for="g-name" style="font-weight:600;display:block;margin-bottom:6px;">Name der Person</label>
               <input id="g-name" name="Name der Person" type="text" required
                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+            </div>
+            <div>
+              <label for="g-sterne" style="font-weight:600;display:block;margin-bottom:6px;">Ihre Bewertung</label>
+              <select id="g-sterne" name="Bewertung (Sterne)"
+                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
+                <option value="">Keine Sternebewertung</option>
+                <option value="5">★★★★★ – sehr gut (5)</option>
+                <option value="4">★★★★☆ – gut (4)</option>
+                <option value="3">★★★☆☆ – geht so (3)</option>
+                <option value="2">★★☆☆☆ – schlecht (2)</option>
+                <option value="1">★☆☆☆☆ – sehr schlecht (1)</option>
+              </select>
             </div>
             <div>
               <label for="g-ort" style="font-weight:600;display:block;margin-bottom:6px;">Ort / Kanzlei- bzw. Praxissitz</label>
@@ -174,13 +186,15 @@
         </div>
 
         <div class="note" style="max-width:700px;margin-inline:auto;margin-top:48px;">
-          <strong>Hinweis für die Seitenbetreiberin:</strong> Eingereichte Kommentare kommen per
-          E-Mail (Web3Forms) an — dafür oben den Zugangs-Schlüssel eintragen, genau wie auf der
-          Kontaktseite. Nach Prüfung tragen Sie freigegebene Kommentare in
-          <code>js/gutachter-daten.js</code> ein – dort ist genau beschrieben, wie ein neuer
-          Block aussieht und worauf Sie bei der Formulierung achten sollten. Kommentare
-          erscheinen bewusst nicht automatisch live, damit rechtlich riskante Formulierungen vor
-          der Veröffentlichung abgefangen werden können.
+          <strong>Hinweis für die Seitenbetreiberin:</strong> Eingereichte Bewertungen und
+          Kommentare kommen per E-Mail (Web3Forms) an — dafür oben den Zugangs-Schlüssel
+          eintragen, genau wie auf der Kontaktseite. Nach Prüfung tragen Sie freigegebene
+          Kommentare in <code>js/gutachter-daten.js</code> ein; eine Sternebewertung ergänzen Sie
+          im jeweiligen Kommentar mit <code>sterne: 4</code> (Wert 1–5). Aus den Sternen aller
+          Kommentare berechnet die Seite automatisch den Durchschnitt. Bewertungen erscheinen
+          bewusst <strong>nicht automatisch live</strong>, damit rechtlich riskante Formulierungen
+          vor der Veröffentlichung abgefangen werden können – diese Vorab-Prüfung ist bei einem
+          Bewertungsportal für namentlich genannte Personen rechtlich sogar geboten.
         </div>
       </div>
     </section>
