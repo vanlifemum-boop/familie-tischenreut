@@ -31,7 +31,7 @@
       '</div>' +
       (eintrag.fachrichtung ? '<div class="guta-fach">' + esc(eintrag.fachrichtung) + '</div>' : '') +
       kontaktZeile +
-      (kommentare ? '<ul class="guta-kommentare">' + kommentare + '</ul>' : (quelleZeile ? '' : '<p class="guta-keine">Noch keine Kommentare.</p>')) +
+      (kommentare ? '<ul class="guta-kommentare">' + kommentare + '</ul>' : '') +
       quelleZeile;
     return el;
   }

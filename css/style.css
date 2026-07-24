@@ -34,6 +34,7 @@ body {
   background: var(--bg);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip; /* Sicherheitsnetz gegen horizontalen Überlauf (bricht sticky nicht) */
 }
 img { max-width: 100%; display: block; }
 a { color: var(--primary); text-decoration: none; }
@@ -72,25 +73,26 @@ h3 { font-size: 1.3rem; }
 /* ---------- Header / Nav ---------- */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94);
                backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-.nav { display: flex; align-items: center; justify-content: space-between; padding-block: 15px; }
-.brand { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--ink); letter-spacing: -.01em; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding-block: 15px; max-width: 1500px; gap: 16px; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--ink); letter-spacing: -.01em; white-space: nowrap; }
 .brand span { color: var(--accent); }
 .brand:hover { text-decoration: none; color: var(--ink); }
-.nav-links { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; align-items: center; }
-.nav-links a { color: var(--text); font-weight: 500; padding: 6px 2px; border-bottom: 2px solid transparent; }
+.nav-links { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; align-items: center; }
+.nav-links a { color: var(--text); font-weight: 500; padding: 6px 2px; border-bottom: 2px solid transparent; white-space: nowrap; font-size: .96rem; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--primary); border-bottom-color: var(--accent); text-decoration: none; }
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.7rem; color: var(--primary); cursor: pointer; line-height: 1; }
 .nav-links a.nav-cta { background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 9px 18px; font-weight: 700; }
 .nav-links a.nav-cta:hover { background: #925c0f; color: #fff; border: 0; text-decoration: none; }
 
-@media (max-width: 720px) {
+@media (max-width: 1560px) {
   .nav-toggle { display: block; }
   .nav-links { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0;
                background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
-               max-height: 0; overflow: hidden; transition: max-height .3s ease; }
-  .nav-links.open { max-height: 340px; }
+               max-height: 0; overflow-y: auto; transition: max-height .3s ease; }
+  .nav-links.open { max-height: min(80vh, 720px); }
   .nav-links li { width: 100%; }
-  .nav-links a { display: block; padding: 15px 22px; border-bottom: 1px solid var(--line); }
+  .nav-links a { display: block; padding: 15px 22px; border-bottom: 1px solid var(--line); font-size: 1rem; }
+  .nav-links a.nav-cta { border-radius: 0; }
 }
 
 /* ---------- Hero ---------- */
