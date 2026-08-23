@@ -412,7 +412,7 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
 
 /* Sterne-Bewertung */
 .guta-sterne { margin: 10px 0 2px; letter-spacing: 2px; font-size: 1.05rem; line-height: 1; }
-.guta-sterne .st-full { color: var(--accent); }
+.guta-sterne .st-full { color: var(--primary); }
 .guta-sterne .st-empty { color: var(--line); }
 .guta-sterne-zahl { margin-left: 8px; letter-spacing: normal; font-size: .82rem; color: var(--muted); }
 .guta-sterne--klein { font-size: .9rem; margin: 0 0 4px; }
@@ -527,8 +527,8 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   font-size: .72rem;
   font-weight: 700;
   letter-spacing: .04em;
-  color: var(--accent);
-  background: var(--accent-soft);
+  color: var(--muted);
+  background: var(--bg);
   border-radius: 999px;
   padding: 3px 10px;
 }
@@ -541,8 +541,8 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   color: var(--ink);
 }
 .muster-box {
-  background: var(--accent-soft);
-  border-left: 4px solid var(--accent);
+  background: var(--bg);
+  border-left: 4px solid var(--line);
   border-radius: var(--radius);
   padding: 18px 22px;
   margin: 32px 0 8px;
@@ -554,7 +554,7 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .06em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 4px;
 }
 .article-body blockquote {
@@ -590,7 +590,7 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   font-size: 1.04rem; line-height: 1.3; color: var(--ink);
 }
 .ms-norm { margin: 0 0 10px; font-size: .88rem; }
-.ms-norm a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.ms-norm a { color: var(--primary); text-decoration: underline; font-weight: 600; }
 .ms-norm a:hover { text-decoration: underline; }
 .ms-text { color: var(--muted); font-size: .93rem; margin: 0; }
 
@@ -633,7 +633,7 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
 }
 .bw-sterne label:hover,
 .bw-sterne label:hover ~ label,
-.bw-sterne input:checked ~ label { color: var(--accent); }
+.bw-sterne input:checked ~ label { color: var(--primary); }
 .bw-sterne label:hover { transform: scale(1.12); }
 .bw-sterne input:focus-visible + label {
   outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px;
@@ -646,13 +646,13 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
 /* ---------- 20-Fragen-Katalog ---------- */
 .bw-gruppe {
   font-weight: 700; font-size: .84rem; text-transform: uppercase;
-  letter-spacing: .06em; color: var(--accent);
+  letter-spacing: .06em; color: var(--muted);
   margin: 24px 0 10px; padding-bottom: 6px;
   border-bottom: 1px solid var(--line);
 }
 .bw-gruppe:first-of-type { margin-top: 8px; }
 .bw-nr {
   display: inline-block; min-width: 1.6em;
-  font-weight: 700; color: var(--accent);
+  font-weight: 700; color: var(--muted);
 }
 .bw-frage legend { display: block; }
