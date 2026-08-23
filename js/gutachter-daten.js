@@ -41,6 +41,12 @@
 // WICHTIG: Nur echte, geprüfte Einreichungen eintragen – niemals selbst
 // erfundene Bewertungen zu real existierenden Personen (Fake-Bewertungen
 // sind rechtswidrig).
+// HERKUNFT DER KONTAKTDATEN:
+// Zusammengetragen aus dem oeffentlich zugaenglichen Verzeichnis vaterlos.eu
+// (Kategorie "Sachverstaendige"). Uebernommen wurden ausschliesslich sachliche
+// Kontaktdaten. Nutzerkommentare, Bewertungen und redaktionelle Hinweise der
+// Quelle wurden bewusst NICHT uebernommen. Das Feld "profil" verweist auf den
+// dortigen Eintrag; es wird aktuell nicht angezeigt.
 // ============================================================
 
 var GUTACHTER = [
@@ -49,6 +55,7 @@ var GUTACHTER = [
     ort: "Gießen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Südanlage 12, 35390 Gießen · Tel.: 0641 25090299 · E-Mail: info@leopold-linke.de",
+    profil: "https://www.vaterlos.eu/bettina-leopold-linke/",
     kommentare: []
   },
   {
@@ -56,6 +63,7 @@ var GUTACHTER = [
     ort: "Ludwigshafen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "St. Marien- und St. Annastiftskrankenhaus, Kinder- und Jugendpsychiatrie und Psychotherapie · Karolina-Burger-Straße 51, 67065 Ludwigshafen · Telefon: 0621-57020 · Fax: 0621-55012266 · E-Mail: jochen.gehrmann@st-annastiftskrankenhaus.de",
+    profil: "https://www.vaterlos.eu/dr-med-jochen-gehrmann-2/",
     kommentare: []
   },
   {
@@ -63,6 +71,7 @@ var GUTACHTER = [
     ort: "Hamburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Blumenau 44, 22089 Hamburg · Mobil: 01742918863 · E-Mail: mail@am-paartherapie-hamburg.de",
+    profil: "https://www.vaterlos.eu/alena-mess/",
     kommentare: []
   },
   {
@@ -70,6 +79,7 @@ var GUTACHTER = [
     ort: "Hamburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Ferdinandstraße 6, 20099 Hamburg · Telefon: 040/4133018810 · Internet: https://forensik-hamburg.de/",
+    profil: "https://www.vaterlos.eu/dr-med-arthur-ballin/",
     kommentare: []
   },
   {
@@ -77,6 +87,7 @@ var GUTACHTER = [
     ort: "Hannover und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Postfach 690218, 30611 Hannover",
+    profil: "https://www.vaterlos.eu/kristina-wessels/",
     kommentare: []
   },
   {
@@ -84,6 +95,7 @@ var GUTACHTER = [
     ort: "Leipzig und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Weißenfelser Straße 28 A, 04299 Leipzig · Telefon: 0341 8639770",
+    profil: "https://www.vaterlos.eu/rico-bresler/",
     kommentare: []
   },
   {
@@ -91,6 +103,7 @@ var GUTACHTER = [
     ort: "Bremen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Fehrfeld 53, 28203 Bremen · Tel.: 042169661044 · Mobil: 01724261845 · E-Mail: mail@afkindeswohl.de",
+    profil: "https://www.vaterlos.eu/isabell-koch/",
     kommentare: []
   },
   {
@@ -98,6 +111,7 @@ var GUTACHTER = [
     ort: "Krumbach und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Ligusterweg 48, 86381 Krumbach · Mobil: 0157 876 8440 · E-Mail: Hu.de.ri68@gmail.com",
+    profil: "https://www.vaterlos.eu/annette-richter/",
     kommentare: []
   },
   {
@@ -105,6 +119,7 @@ var GUTACHTER = [
     ort: "Darmstadt und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Römerstraße 63 a, 64291 Darmstadt",
+    profil: "https://www.vaterlos.eu/anna-monem/",
     kommentare: []
   },
   {
@@ -112,6 +127,7 @@ var GUTACHTER = [
     ort: "Nordstrand und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Osterkoogstraße 18, 25845 Nordstrand · Tel.: 04842 282 99 77 · Fax: 04842 282 99 81 · E-Mail: peltzer@sachverstaendige-familienrecht.de",
+    profil: "https://www.vaterlos.eu/sylke-peltzer/",
     kommentare: []
   },
   {
@@ -119,6 +135,7 @@ var GUTACHTER = [
     ort: "Berlin und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Grimmstraße 7a, 10967 Berlin · Tel.: 030-69 51 57 54 · Mobil: 0173-18 36 86 3 · E-Mail: franziska.hoffmann@googlemail.com",
+    profil: "https://www.vaterlos.eu/franziska-hoffmann/",
     kommentare: []
   },
   {
@@ -126,6 +143,7 @@ var GUTACHTER = [
     ort: "Göttingen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Karl-Grüneklee-Str. 22, 37077 Göttingen · Tel.: 05551/38102706 · Fax: 05551/988903",
+    profil: "https://www.vaterlos.eu/sabina-cuber/",
     kommentare: []
   },
   {
@@ -133,6 +151,7 @@ var GUTACHTER = [
     ort: "Rheine",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "",
+    profil: "https://www.vaterlos.eu/sabine-busch-murray/",
     kommentare: []
   },
   {
@@ -140,6 +159,7 @@ var GUTACHTER = [
     ort: "Darmstadt und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Osannstraße 37, 64285 Darmstadt-Bessungen · Tel.: 06151 6292459",
+    profil: "https://www.vaterlos.eu/hannah-bachmann/",
     kommentare: []
   },
   {
@@ -147,6 +167,7 @@ var GUTACHTER = [
     ort: "Berlin und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "10555 Berlin · Telefon: 030 39 80 89 88",
+    profil: "https://www.vaterlos.eu/ulrich-waschke-peter/",
     kommentare: []
   },
   {
@@ -154,6 +175,7 @@ var GUTACHTER = [
     ort: "Buxtehude und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Breite Str. 20, 21614 Buxtehude · Tel.: 01515 7865713",
+    profil: "https://www.vaterlos.eu/ina-vietze/",
     kommentare: []
   },
   {
@@ -161,6 +183,7 @@ var GUTACHTER = [
     ort: "Weimar und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Graben 47, 99423 Weimar · Tel.: 03643 / 501929 · Fax: 03643 / 8084055 · E-Mail: anna@engelstaedter.de · Web: www.anna-engelstaedter.de",
+    profil: "https://www.vaterlos.eu/dr-anna-engelstaedter/",
     kommentare: []
   },
   {
@@ -168,6 +191,7 @@ var GUTACHTER = [
     ort: "Velbert und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Poststr. 114, 42549 Velbert · Tel.: 02051-313295 · Fax: 02051-62028",
+    profil: "https://www.vaterlos.eu/dr-annette-valentin/",
     kommentare: []
   },
   {
@@ -175,6 +199,7 @@ var GUTACHTER = [
     ort: "Salzgitter und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Berliner Str. 11, 38226 Salzgitter · Tel.: 05341 841 618 · Fax: 05341 841622 · E-Mail: dr.andrea.bosse@freenet.de",
+    profil: "https://www.vaterlos.eu/dr-med-andrea-bosse/",
     kommentare: []
   },
   {
@@ -182,6 +207,7 @@ var GUTACHTER = [
     ort: "Landau in der Pfalz und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Marktstr. 35, 76829 Landau in der Pfalz",
+    profil: "https://www.vaterlos.eu/nina-breiner/",
     kommentare: []
   },
   {
@@ -196,6 +222,7 @@ var GUTACHTER = [
     ort: "Freiburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Lettenweg 12, 79111 Freiburg · Telefon: 0177-1766713, E-Mail: caro.quenzer@web.de",
+    profil: "https://www.vaterlos.eu/dr-carolin-quenzer/",
     kommentare: []
   },
   {
@@ -203,6 +230,7 @@ var GUTACHTER = [
     ort: "Landau und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Ostring 33, 76829 Landau · Telefon: 06341-930002",
+    profil: "https://www.vaterlos.eu/irmtraud-roux/",
     kommentare: []
   },
   {
@@ -210,6 +238,7 @@ var GUTACHTER = [
     ort: "Reutlingen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Gartenstr. 18, 72764 Reutlingen · Telefon: 07121-2846231, Fax: 07121-2846233, E-Mail: b.hammerand@web.de, Internet: www.hammerand-gutachten.de",
+    profil: "https://www.vaterlos.eu/baerbel-hammerand/",
     kommentare: []
   },
   {
@@ -217,6 +246,7 @@ var GUTACHTER = [
     ort: "Haigerloch und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Hodlerstr. 2, 72401 Haigerloch · Telefon: 07474-916815, E-Mail: nadine.reiband@gmx.de",
+    profil: "https://www.vaterlos.eu/nadine-reiband/",
     kommentare: []
   },
   {
@@ -224,6 +254,7 @@ var GUTACHTER = [
     ort: "Stuttgart und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Wörishofenerstr. 54, 70372 Stuttgart · Telefon: 0711-9457525, E-Mail: junkermoch@arcor.de",
+    profil: "https://www.vaterlos.eu/manuela-junker-moch/",
     kommentare: []
   },
   {
@@ -231,6 +262,7 @@ var GUTACHTER = [
     ort: "Hannover und Umgebung (zuvor Heidelberg)",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Hildesheimerstraße 265-267, 30519 Hannover · Tel.: 0511 45930622, Fax: 0511 76160921, E-Mail: info@rechtspsychologie-hannover.de, Internet: www.rechtspsychologie-hannover.de",
+    profil: "https://www.vaterlos.eu/alexandra-ehmke/",
     kommentare: []
   },
   {
@@ -238,6 +270,7 @@ var GUTACHTER = [
     ort: "Saarbrücken und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, Schumannstr. 34, 66111 Saarbrücken · Tel.: 0681-373646, Fax: 0681-373680, E-Mail: milly.stanislawski@t-online.de",
+    profil: "https://www.vaterlos.eu/a-milly-stanislawski/",
     kommentare: []
   },
   {
@@ -245,6 +278,7 @@ var GUTACHTER = [
     ort: "Dieburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, 64801 Dieburg · E-Mail: carina.fuhrer@googlemail.com",
+    profil: "https://www.vaterlos.eu/carina-fuhrer/",
     kommentare: []
   },
   {
@@ -252,6 +286,7 @@ var GUTACHTER = [
     ort: "Königstein und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Stresemannstr. 17, 61462 Königstein · Telefon 06174-299630, mobil: 0176-72587153, Fax: 06174-299635, E-Mail: bloss@gwg.info",
+    profil: "https://www.vaterlos.eu/sabine-bloss/",
     kommentare: []
   },
   {
@@ -259,6 +294,7 @@ var GUTACHTER = [
     ort: "Lippstadt und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Lange Str. 57, 59555 Lippstadt · Telefon 02941-720047, Fax: 02941-2027374, E-Mail: praxis@richard-kopa.de",
+    profil: "https://www.vaterlos.eu/anne-dorothee-richard-kopa/",
     kommentare: []
   },
   {
@@ -266,6 +302,7 @@ var GUTACHTER = [
     ort: "Bad Nauheim und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Frankfurter Straße 34, 61231 Bad Nauheim · Telefon 06032-3075518, Fax: 06032-3075519, E-Mail: kleppe@pfrp.de",
+    profil: "https://www.vaterlos.eu/monika-maria-kleppe/",
     kommentare: []
   },
   {
@@ -273,6 +310,7 @@ var GUTACHTER = [
     ort: "Hagen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Goebenstr. 52, 58097 Hagen · Telefon 02331-86133, Fax: 02331-843624, E-Mail: helga.feyerabend@t-online.de",
+    profil: "https://www.vaterlos.eu/helga-feyerabend/",
     kommentare: []
   },
   {
@@ -280,6 +318,7 @@ var GUTACHTER = [
     ort: "Ransbach-Baumbach und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Kannenbäckerstr. 4, 56235 Ransbach-Baumbach · Telefon 02623-3813, Fax: 02623-3895, E-Mail: schneider-wolber@cwolber.de",
+    profil: "https://www.vaterlos.eu/karin-schneider-wolber/",
     kommentare: []
   },
   {
@@ -287,6 +326,7 @@ var GUTACHTER = [
     ort: "Trier und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Bonifatiusstraße 38, 54296 Trier · Telefon 0651-6998642, mobil: 0177-6714297, E-Mail: komodromos-scharff@email.de",
+    profil: "https://www.vaterlos.eu/christina-komodromos-scharff/",
     kommentare: []
   },
   {
@@ -294,6 +334,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, Praxis für psychologische Gutachtenerstellung und -beratung (PGB), Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/claudia-walter-regensburg/",
     kommentare: []
   },
   {
@@ -301,6 +342,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/dr-petra-august-frenzel/",
     kommentare: []
   },
   {
@@ -308,6 +350,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/dr-marianne-schwabe-hoellein/",
     kommentare: []
   },
   {
@@ -315,6 +358,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/tanja-brehm/",
     kommentare: []
   },
   {
@@ -322,6 +366,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/sylvia-schena/",
     kommentare: []
   },
   {
@@ -329,6 +374,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/sarah-v-jan-guenther/",
     kommentare: []
   },
   {
@@ -336,6 +382,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/eva-hausbeck/",
     kommentare: []
   },
   {
@@ -343,6 +390,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/susanne-ammer/",
     kommentare: []
   },
   {
@@ -350,6 +398,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/ulla-v-kovatsits/",
     kommentare: []
   },
   {
@@ -357,6 +406,7 @@ var GUTACHTER = [
     ort: "Regensburg und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon 0941-55103, Fax 0941-55103, Internet: www.pgb-praxis.de",
+    profil: "https://www.vaterlos.eu/brigitte-dittrich/",
     kommentare: []
   },
   {
@@ -364,6 +414,7 @@ var GUTACHTER = [
     ort: "Bonn und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Dipl.-Psychologin, Praxis für Rechtspsychologie Bonn, Truchseßstr. 34, 53177 Bonn · Tel. 0228-6290992, Fax: 0228-6290991, E-Mail: info@rechtspsychologie-bonn.de, Internet: www.rechtspsychologie-bonn.de",
+    profil: "https://www.vaterlos.eu/susanne-frahm/",
     kommentare: []
   },
   {
@@ -371,6 +422,7 @@ var GUTACHTER = [
     ort: "Bonn und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Dipl.-Psychologin, Praxis für Rechtspsychologie Bonn, Truchseßstr. 34, 53177 Bonn · Tel. 0228-6290992, Fax: 0228-6290991, E-Mail: info@rechtspsychologie-bonn.de",
+    profil: "https://www.vaterlos.eu/daniela-larue/",
     kommentare: []
   },
   {
@@ -378,6 +430,7 @@ var GUTACHTER = [
     ort: "Bonn und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Dipl.-Psychologin, Praxis für Rechtspsychologie Bonn, Truchseßstr. 34, 53177 Bonn · Tel. 0228-6290992, Fax: 0228-6290991, E-Mail: info@rechtspsychologie-bonn.de",
+    profil: "https://www.vaterlos.eu/judith-gatzen/",
     kommentare: []
   },
   {
@@ -385,6 +438,7 @@ var GUTACHTER = [
     ort: "Bonn und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Dipl.-Psychologin, Praxis für Rechtspsychologie Bonn, Truchseßstr. 34, 53177 Bonn · Tel. 0228-6290992, Fax: 0228-6290991, E-Mail: info@rechtspsychologie-bonn.de",
+    profil: "https://www.vaterlos.eu/uta-nordsiek/",
     kommentare: []
   },
   {
@@ -392,6 +446,7 @@ var GUTACHTER = [
     ort: "Bonn und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologe, Fachpsychologe für Rechtspsychologie · Praxis für Rechtspsychologie Bonn, Truchseßstr. 34, 53177 Bonn — Tel. 0228-6290992, Fax: 0228-6290991 · Zweitadresse: Kölnstraße 159, 53111 Bonn — Tel.: 0228/9251687, Fax: 0228/9251688, Mobil: 0163/6815970, E-Mail: junghans@praxis-rechtspsychologie.info",
+    profil: "https://www.vaterlos.eu/grischa-junghans/",
     kommentare: []
   },
   {
@@ -399,6 +454,7 @@ var GUTACHTER = [
     ort: "Aachen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Dipl.-Psychologin, Lothringerstr. 53, 52070 Aachen · Tel. 0241-99632090, Fax: 0241-96069986, E-Mail: k_eggers@web.de",
+    profil: "https://www.vaterlos.eu/kerstin-eggers/",
     kommentare: []
   },
   {
@@ -406,6 +462,7 @@ var GUTACHTER = [
     ort: "Würselen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Niederbardenberger Str. 2, 52146 Würselen · Tel. 02405-421528, E-Mail: p.terlinden-arzt@web.de",
+    profil: "https://www.vaterlos.eu/dr-patricia-terlinden/",
     kommentare: []
   },
   {
@@ -413,6 +470,7 @@ var GUTACHTER = [
     ort: "Köln und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, Universität zu Köln · Robert-Koch-Str. 10, 50931 Köln · Tel. 0221-4786109, Fax: 02234-432049, E-Mail: maya.krischer@uk-koeln.de",
+    profil: "https://www.vaterlos.eu/dr-rer-nat-maya-krischer/",
     kommentare: []
   },
   {
@@ -420,6 +478,7 @@ var GUTACHTER = [
     ort: "Köln und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Bahnstr. 3, 50858 Köln · Tel. 02234-432050, Fax: 02234-432049, E-Mail: g.klein@klein-sv.de, Internet: www.klein-sv.de",
+    profil: "https://www.vaterlos.eu/gisela-klein/",
     kommentare: []
   },
   {
@@ -427,6 +486,7 @@ var GUTACHTER = [
     ort: "Köln und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Hochstadenstr. 15, 50674 Köln · E-Mail: grossmann@gwg.info",
+    profil: "https://www.vaterlos.eu/sarah-jane-grossmann/",
     kommentare: []
   },
   {
@@ -434,6 +494,7 @@ var GUTACHTER = [
     ort: "Köln und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Hochstadenstr. 15, 50674 Köln · Tel. 0176-20187982, E-Mail: gossmann@gwg.info",
+    profil: "https://www.vaterlos.eu/diana-maria-gossmann/",
     kommentare: []
   },
   {
@@ -441,6 +502,7 @@ var GUTACHTER = [
     ort: "Köln und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Theodor-Heuss-Ring 26, 50668 Köln · Tel. 0221-17076602, Fax 0221-17076603, E-Mail: mail@ellenbuerger.de",
+    profil: "https://www.vaterlos.eu/renate-ellenbuerger/",
     kommentare: []
   },
   {
@@ -448,6 +510,7 @@ var GUTACHTER = [
     ort: "Osnabrück und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Herderstr. 21, 49078 Osnabrück · Tel.: 0541-4096550, Fax: 0541-4096551",
+    profil: "https://www.vaterlos.eu/magdalena-storm-wahlich/",
     kommentare: []
   },
   {
@@ -455,6 +518,7 @@ var GUTACHTER = [
     ort: "Coesfeld und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Edith-Stein-Weg 17, 48653 Coesfeld · Tel.: 02541-801311, Fax: 02541-801312, E-Mail: antje@klueber-net.de",
+    profil: "https://www.vaterlos.eu/dr-antje-klueber/",
     kommentare: []
   },
   {
@@ -462,6 +526,7 @@ var GUTACHTER = [
     ort: "Münster und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Höftestr. 48 a, 48167 Münster · Tel.: 0251-3224795, E-Mail: jeroschewski@t-online.de",
+    profil: "https://www.vaterlos.eu/renate-jeroschewski/",
     kommentare: []
   },
   {
@@ -469,6 +534,7 @@ var GUTACHTER = [
     ort: "Münster und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Wolbecker Str. 70, 48155 Münster · Tel.: 0251-132440, E-Mail: dipl.-psych.heikelange@t-online.de",
+    profil: "https://www.vaterlos.eu/heike-lange/",
     kommentare: []
   },
   {
@@ -476,6 +542,7 @@ var GUTACHTER = [
     ort: "Münster und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin · Adresse 1: Brüderstr. 25, 48145 Münster — Tel.: 0251-5301992, Fax: 0251-5301993 · Adresse 2: Am Kolk 5.25, 48167 Münster — Tel.: 02506-3006162, Fax: 02506-3803",
+    profil: "https://www.vaterlos.eu/brigitta-eick/",
     kommentare: []
   },
   {
@@ -483,6 +550,7 @@ var GUTACHTER = [
     ort: "Marl und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Münsterlandstr. 8, 45770 Marl · Telefon 02365-37582",
+    profil: "https://www.vaterlos.eu/dorothea-pieperbeck/",
     kommentare: []
   },
   {
@@ -490,6 +558,7 @@ var GUTACHTER = [
     ort: "Essen und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Goldfinkstr. 18, 45134 Essen · Telefon 0201/8439706, Telefax 0201/8439707, E-Mail: dorothee_hepp@gmx.de",
+    profil: "https://www.vaterlos.eu/dorothee-hepp/",
     kommentare: []
   },
   {
@@ -497,6 +566,7 @@ var GUTACHTER = [
     ort: "Dortmund und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Muddepenningweg 26, 44229 Dortmund · Tel.: 0231/598520, E-Mail: anschas@t-online.de",
+    profil: "https://www.vaterlos.eu/annja-schade/",
     kommentare: []
   },
   {
@@ -2142,6 +2212,3044 @@ var GUTACHTER = [
     ort: "Simmern und Umgebung",
     fachrichtung: "Sachverständige/r im Familienrecht",
     adresse: "Diplom-Psychologin, Postfach 0171, 55461 Simmern · Tel.: 0176-80853185, Fax: 06763-5589444, E-Mail: B.Wehren@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Achim Spricks",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Alessandra Imperiale-Menn",
+    ort: "Bielefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "33698 Bielefeld · Mobil: 01525-1729614",
+    kommentare: []
+  },
+  {
+    name: "Alexandra Bechstein",
+    ort: "Mannheim-Heidelberg-Ludwigshafen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rheinaustraße 22, 68163 Mannheim · Tel.: 0621-1787821",
+    kommentare: []
+  },
+  {
+    name: "Alicja Rogalinska-Bobnis",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: rogalinska@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Alina Angenendt",
+    ort: "Essen, Kleve und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Mittelweg 47a, 47533 Kleve; Postfach 110108, 45331 Essen · Telefon: 0201-61442886, Mobil: 01578-8978095, Fax: 03222-9316420, E-Mail: info@parola-frp.de",
+    kommentare: []
+  },
+  {
+    name: "Alina Schiffer",
+    ort: "Neuss und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Erftstr. 56, 41460 Neuss · Telefon: 02131-499475, Fax: 02131-384858",
+    kommentare: []
+  },
+  {
+    name: "Andrea Eltahir",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: eltahir@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Andrea Weigelt",
+    ort: "Baunatal und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schlehenweg 1, 34225 Baunatal · Tel.: 0561-94994599",
+    kommentare: []
+  },
+  {
+    name: "Andreas Jakubek",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologie Marx, Georgstr. 46, 30159 Hannover · Telefon: 0511 590 46 70, Mobil: 0179-393 10 20, E-Mail: a.jakubek@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Andreas Klottig",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl. Psychologe, Angelikastraße 4, 01099 Dresden · Telefon: 01511-1315202, E-Mail: Klottig@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Andreas Kupka",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Gutachterpraxis Weinrank, Hans-Henny-Jahnn-Weg 53, 22085 Hamburg · Telefon: 040-43254844, Fax: 040-43254855, E-Mail: weinrank@psychologin-hamburg.de",
+    kommentare: []
+  },
+  {
+    name: "Andreas Ludwig",
+    ort: "Weimar und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Andreas Mathis",
+    ort: "Krefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Andreas Thiele (Dr.)",
+    ort: "Frankfurt am Main und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Angelika Leonhard",
+    ort: "Weinheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Elserstraße 9, 69469 Weinheim · Tel.: 06201-256969, Mobil: 0179-8960774, E-Mail: angelikaleonhard@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Anika Bruchhäuser",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologisches Sachverständigenbüro Düsseldorf, Oststrasse 122, 40210 Düsseldorf · Telefon: 0211-39027466, Fax: 0211-39027469, E-Mail: jana.witte@psb-duesseldorf.de",
+    kommentare: []
+  },
+  {
+    name: "Anja Hüsing",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schillerstr. 31, 48155 Münster · Tel.: 0163-6270442, E-Mail: jager@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Anja Winter",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09, E-Mail: winter@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Anke Bieber",
+    ort: "Mannheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "L13 7, 68161 Mannheim · Tel.: 0621 33934416",
+    kommentare: []
+  },
+  {
+    name: "Anna Kühl",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Anna Leimkühler",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Anna Neuburg",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Anna Vetter",
+    ort: "Elmshorn und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Klinik für Kinder- und Jugendpsychiatrie Elmshorn, Agnes-Karll-Allee 2, 25337 Elmshorn · Telefon: 04121-798-0, Fax: 04121-798-327",
+    kommentare: []
+  },
+  {
+    name: "Anna-Lisa Henrich",
+    ort: "Andernach und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Breitestraße 78, 56626 Andernach · Tel.: 0170-7057970",
+    kommentare: []
+  },
+  {
+    name: "Annette Berner",
+    ort: "Heidelberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "69117 Heidelberg",
+    kommentare: []
+  },
+  {
+    name: "Annette Liebs",
+    ort: "Heidelberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, Römerstraße 135, 69126 Heidelberg (alte Anschrift: Karlsruher Str. 11, 69126 Heidelberg) · Telefon: 06221-6734664, Fax: 06221-6733785",
+    kommentare: []
+  },
+  {
+    name: "Annette Ueberschär",
+    ort: "Wildeshausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Westerstr. 34, 27793 Wildeshausen · Tel.: 04431 7483043",
+    kommentare: []
+  },
+  {
+    name: "Annika Januszewski",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Lerchenstr. 28a, 22767 Hamburg · Telefon: 03818087-267, 03838087110",
+    kommentare: []
+  },
+  {
+    name: "Arno Dierks",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Asita Mahabadi",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Astrid Niederberger",
+    ort: "Wittlich und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Unterm Afferberg 15, 54516 Wittlich · Tel.: 06571-9007050, Fax: 06571-9006812, E-Mail: niederberger@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Aysan Ashoee",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Bahar Saradjuk",
+    ort: "Bielefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "33602 Bielefeld · Tel.: 0176 56505377, E-Mail: bsaradjuk@gmail.com",
+    kommentare: []
+  },
+  {
+    name: "Barbara Köhne",
+    ort: "Garmisch-Partenkirchen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Münchner Str. 45, 82467 Garmisch-Partenkirchen · Tel.: 08821-55453",
+    kommentare: []
+  },
+  {
+    name: "Barbara Wusowski",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fährstraße 73, 21107 Hamburg · Tel.: 040 228170121, Fax: 040 228170122",
+    kommentare: []
+  },
+  {
+    name: "Beate Labs",
+    ort: "Greifswald und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Steinbecker Str. 10, 17489 Greifswald · Telefon: 03834-4527637, Fax: 03834-4527638",
+    kommentare: []
+  },
+  {
+    name: "Bettina Winter",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schrenkstr. 7, 80339 München · Tel.: 0151-22997019, E-Mail: bettina_winter@gmx.net",
+    kommentare: []
+  },
+  {
+    name: "Birte Holtmann",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Brigitte Höinghaus-Gordon",
+    ort: "Lübbecke und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Postfach 1331, 32293 Lübbecke · Mobil: 0152-53783754, E-Mail: dp.hoeinghaus-gordon@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Carina Mang",
+    ort: "München, Passau und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282",
+    kommentare: []
+  },
+  {
+    name: "Carmen Iclozan",
+    ort: "Üchtelhausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "97532 Üchtelhausen · Mobil: 0151-46541314, E-Mail: carmen.iclozan@yahoo.com",
+    kommentare: []
+  },
+  {
+    name: "Carmen Kubatzsch",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Polenzstr. 3, 01277 Dresden · Telefon: 0173-2775411",
+    kommentare: []
+  },
+  {
+    name: "Carola Heck-Volz",
+    ort: "Nürnberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Laufamholzstraße 448, 90482 Nürnberg · Tel.: +49 911 5988816, E-Mail: ch@carola-heck-gmbh.de",
+    kommentare: []
+  },
+  {
+    name: "Carola Hoffmann",
+    ort: "Saarbrücken und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Mainzer Straße 169, 66121 Saarbrücken · Tel.: 068194588963, E-Mail: info@die-psychologischepraxis.de",
+    kommentare: []
+  },
+  {
+    name: "Carola Kalisch",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Zabel-Krüger-Damm 183, 13469 Berlin · Tel.: 030-40502423, Fax: 032229815165, Mobil: 0176 43006291, E-Mail: cakalisch@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Carola Ptak",
+    ort: "Lingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Meppener Straße 13, 49808 Lingen · Mobil: 0173-4609649, E-Mail: cptak@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Carola Storm-Knirsch",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Wilhelmshöher Straße 24, 12161 Berlin-Friedenau · Tel.: 030-8513788, Fax: 030-8520772, Mobil: 0151-27036969, E-Mail: carola@storm-knirsch.de",
+    kommentare: []
+  },
+  {
+    name: "Caroline Virchow",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Christa Emmert-Blickenberger",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: emmert@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Christian Hampel",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein, Stresemannstraße 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Christian Michelberger",
+    ort: "Würzburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Theaterstraße 23, 97070 Würzburg · Mobil: 0175 1559913",
+    kommentare: []
+  },
+  {
+    name: "Christian Schmirl",
+    ort: "Regensburg, München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Christiane Aurich",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "12203 Berlin · Tel.: 0176-61358426, Fax: 030-66641770, E-Mail: caurich0@gmail.com",
+    kommentare: []
+  },
+  {
+    name: "Christiane Brach",
+    ort: "Kassel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Friedrich-Ebert-Str. 14, 34117 Kassel · Telefon: 0561-7397477",
+    kommentare: []
+  },
+  {
+    name: "Christiane Tolkmitt-Fröhlich",
+    ort: "Kassel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Friedrich-Ebert-Str. 14, 34117 Kassel · Telefon: 0175-8397093",
+    kommentare: []
+  },
+  {
+    name: "Christina Herr",
+    ort: "Wetzlar und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Nauborner Straße 8, 35578 Wetzlar · Tel.: 06441 3090714, E-Mail: c.herr@familiensachverstaendige.de",
+    kommentare: []
+  },
+  {
+    name: "Christina Perings",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Christina Rödel",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: roedel@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Christine Reisinger-Langer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: reisinger@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Christine Versbach",
+    ort: "Würzburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "97082 Würzburg · Mobil: 0170-1122565, E-Mail: versbach@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Christine Wagner",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: wagner@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Cihan Akbaba",
+    ort: "Bielefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Petristraße 29, 33609 Bielefeld · Telefon: 0521 98906876, Mobil: 0170 4876427, E-Mail: cihan.akban@yahoo.de",
+    kommentare: []
+  },
+  {
+    name: "Clara Becks-Rodriguez",
+    ort: "Meschede und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Am Gaswerk 8, 59872 Meschede",
+    kommentare: []
+  },
+  {
+    name: "Claudia Eckart-Günzel",
+    ort: "Nürnberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Nürnberg, Orffstr. 15, 90439 Nürnberg · Tel.: 0911 93998076, Fax: 0911 96844589",
+    kommentare: []
+  },
+  {
+    name: "Claudia Höfer-Daleske",
+    ort: "Rheda-Wiedenbrück und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Nickelstraße 21, 33378 Rheda-Wiedenbrück · Tel.: 05242-5505048",
+    kommentare: []
+  },
+  {
+    name: "Claudia Tonollo",
+    ort: "Lüchow und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schützenstraße 2, 29439 Lüchow · Tel.: 0176-99220696, E-Mail: kontakt@tonollo.net",
+    kommentare: []
+  },
+  {
+    name: "Corinna Hildebrand",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Baruther Str. 8, 10961 Berlin-Kreuzberg · Telefon: 030-69505036",
+    kommentare: []
+  },
+  {
+    name: "Corinna Marx-Liesk",
+    ort: "Seevetal, Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Ulenbarg 9, 21220 Seevetal · Telefon: 0421-533875, Fax: 0421-5970384, E-Mail: big-bremen@online.de",
+    kommentare: []
+  },
+  {
+    name: "Cornelia Barde",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon: 0941-55103, Fax: 0941-55103",
+    kommentare: []
+  },
+  {
+    name: "Cornelia Hartung",
+    ort: "Leipzig, Jena und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Psychotherapeutin · Büro Leipzig: Kurt-Eisner-Str. 42, 04275 Leipzig; Büro Jena: Johannisstr. 11, 07743 Jena · Tel.: 0175-7063552, Fax: 03641-426921",
+    kommentare: []
+  },
+  {
+    name: "Cornelius Heine",
+    ort: "Frankfurt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologe M. Sc., Rechtspsychologischer Sachverständiger, Postfach 700435, 60554 Frankfurt/M. · Telefon: 0176 6140 4138",
+    kommentare: []
+  },
+  {
+    name: "Daniel Hahn",
+    ort: "Greifenberg (Landkreis Landsberg, Oberbayern) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Daniel Lajn",
+    ort: "Singen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Singen, Julius-Bührer-Str. 4, 78224 Singen · Tel.: 07531 8040268, Mobil: 0152 24879966",
+    kommentare: []
+  },
+  {
+    name: "Daniela Thume",
+    ort: "Augsburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Augsburg, Heilig-Kreuz-Str. 24a, 86152 Augsburg · Tel.: 0821 3494373",
+    kommentare: []
+  },
+  {
+    name: "Denis Breuer",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Kühlwetterstr. 53, 40239 Düsseldorf · Tel.: 0211 975366430",
+    kommentare: []
+  },
+  {
+    name: "Detlev Pfender",
+    ort: "Göttingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Facharzt für Psychiatrie und Psychotherapie, Nikolausberger Weg 69, 37073 Göttingen · Telefon: 0511-79088 16",
+    kommentare: []
+  },
+  {
+    name: "Dieter Oswald",
+    ort: "(Region laut Website nicht näher spezifiziert)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dirk Kriegeskorte",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fregestraße 9, 12159 Berlin · Telefon: 030 8526349",
+    kommentare: []
+  },
+  {
+    name: "Dominic Hennig",
+    ort: "Karlsruhe und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Karlsruhe, Weißdornweg 65a, 76149 Karlsruhe · Tel.: 0721 8801955",
+    kommentare: []
+  },
+  {
+    name: "Doris Mittag-Rösser",
+    ort: "Eppelheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Leipziger Str. 50, 69214 Eppelheim · Telefon: 06221 766740",
+    kommentare: []
+  },
+  {
+    name: "Dorothee Grüntges",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Dr. Alana Krix",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Dr. Andrea Bressel",
+    ort: "Potsdam und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schulpsychologin, Steinstraße 104/106, 14480 Potsdam · Telefon: 0331-8663968, E-Mail: andrea.bressel@schulaemter.brandenburg.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. André Jacob",
+    ort: "(Region laut Website nicht näher spezifiziert)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Anita Schächter",
+    ort: "Heitersheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schwarzenbergstr. 9, 79423 Heitersheim · Tel.: 07634-551141, E-Mail: a.schaechter@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Anka Scholz",
+    ort: "Bad Sachsa und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Brandstraße 67, 37441 Bad Sachsa · Tel.: 05523-999342, E-Mail: anka.scholz@web.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Bernt Stober",
+    ort: "Heidelberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "69115 Heidelberg",
+    kommentare: []
+  },
+  {
+    name: "Dr. Brigitta Wind",
+    ort: "Backnang und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Gaildorfer Straße 13, 71522 Backnang · Telefon: 07191-9307055, E-Mail: kanzlei@drwind-familienrecht.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Caroline Spielhagen",
+    ort: "Bayreuth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Bamberg, Nürnberger Str. 108K, 96050 Bamberg · Tel.: 0951-252 953 080",
+    kommentare: []
+  },
+  {
+    name: "Dr. Carsten Zoll",
+    ort: "Bamberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Institut, Geschwister-Scholl-Ring 16, 96047 Bamberg · Telefon: 0951 22 20 07 22, E-Mail: zoll@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Christian Kellinger",
+    ort: "Bielefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Bielefeld, Carl-Severing-Str. 128 a, 33649 Bielefeld · Tel.: 0521 54368826",
+    kommentare: []
+  },
+  {
+    name: "Dr. Christiane Hornstein",
+    ort: "Wiesloch und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Heidelbergerstraße 1a, 69168 Wiesloch · Tel.: 06222 550, Fax: 06222 552484",
+    kommentare: []
+  },
+  {
+    name: "Dr. Corinna Makowski",
+    ort: "Berlin/Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Alfredstr. 9, 22087 Hamburg",
+    kommentare: []
+  },
+  {
+    name: "Dr. Cornelia Ulrich",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: ulrich@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Dr. Franklin A. Oberlaender",
+    ort: "Berlin und Hannover",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologischer Gutachter · Anschrift 1: Klausenerplatz 19A, 14059 Berlin; Anschrift 2: Am Schafbrinke 58, 30519 Hannover · Telefon: 030-32589 40, Mobil: 0177-4446453, E-Mail: franklinoberlaender@yahoo.com",
+    kommentare: []
+  },
+  {
+    name: "Dr. Dr. Wolfgang Vehrs",
+    ort: "Bayreuth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Eginhard Walter",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologe, Fidicinstr. 19, 10965 Berlin",
+    kommentare: []
+  },
+  {
+    name: "Dr. Eike Jander Hetzel",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein, Stresemannstraße 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Dr. Elke Rapp",
+    ort: "Rastatt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Kaiserstraße 54/1, 76437 Rastatt · Tel.: 07222-788599, Internet: www.praxis-dr-elke-rapp.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Hanns Jürgen Kunert",
+    ort: "Aachen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Kapuzinergraben 19, 52062 Aachen",
+    kommentare: []
+  },
+  {
+    name: "Dr. Heinz Kindler",
+    ort: "Regensburg, München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Helen Castellanos",
+    ort: "Laufen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Praxis, Tittmoninger Str. 4, 83410 Laufen · Telefon: 08682-955011",
+    kommentare: []
+  },
+  {
+    name: "Dr. Helmut Schulz",
+    ort: "Hessen (u. a. beauftragt vom Familiengericht Weilburg, Landkreis Limburg)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Ildiko Sarosi",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: sarosi@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Ingolf Piezka",
+    ort: "Brandenburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Facharzt für Psychiatrie, Anton-Saefkow-Allee 2, 14772 Brandenburg",
+    kommentare: []
+  },
+  {
+    name: "Dr. Jennifer Feider",
+    ort: "Essen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin für Rechtspsychologie (BDP/DGP's), GWG Essen, Rüttenscheider Str. 319, 45131 Essen · Tel.: 0201/45843258, Fax: 0201/45843952, E-Mail: feider@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Josef Rohmann",
+    ort: "Tübingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Judith Flender",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologische Praxis Dortmund, Alter Mühlenweg 19-21, 44139 Dortmund · Tel.: 0231 22201601, Fax: 0231 22201602, E-Mail: info@rechtspsychologische-praxis-dortmund.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Jörg Fichtner",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Pestalozzistr. 46, 80469 München · Tel.: 089-95411558, Fax: 089-95411804, E-Mail: gutachten@joerg-fichtner.de, Internet: www.joerg-fichtner.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Katharina Behrend",
+    ort: "Lemgo und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Sauerstraße 10, 32657 Lemgo · Tel.: 0177 677 9758, Mobil: 05261 9342 59, E-Mail: katharina.behrend@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Katharina Müller-Schmitz",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Dr. Katja Klehm",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "RechtsPsychologisches Zentrum Bochum, Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Kismet Seiser",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Manuela Schwarz",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Polenzstr. 3, 01277 Dresden · Telefon: 0173-2775411",
+    kommentare: []
+  },
+  {
+    name: "Dr. Marianne Klein",
+    ort: "Winnenden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Klinikum Schloß Winnenden, Schloßstraße 50, 71364 Winnenden · Tel.: 07195-9002102",
+    kommentare: []
+  },
+  {
+    name: "Dr. Martina Strauß",
+    ort: "Stuttgart und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, Klinik für Kinder- und Jugendpsychiatrie und Psychotherapie, Klinikum Stuttgart, Prießnitzweg 24, 70374 Stuttgart",
+    kommentare: []
+  },
+  {
+    name: "Dr. Mateja Zenner",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Mechthild Beeke",
+    ort: "Bamberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompädagogin (Univ.), Diplom-Sozialpädagogin (FH), Generalsgasse 15, 96047 Bamberg · Telefon: 0179-7951026",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Andreas Aurich",
+    ort: "Magdeburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Axel Wagner",
+    ort: "Greifenberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Facharzt für Psychiatrie und Psychotherapie",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Christiane Hetzel",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Stresemannstr. 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Doris Krusche",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Fabian Blobel",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Grindelallee 91, 20146 Hamburg · Tel.: 0176 74862088, E-Mail: mail@afkindeswohl.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Horst Lorenzen",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Jürgen Junglas",
+    ort: "Sankt Augustin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Manfred Oles",
+    ort: "Neuss und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Martin Albrecht",
+    ort: "Viersen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Mona Mähler",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: maehler@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Olaf Weiffenbach",
+    ort: "Bad Homburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Louisenstraße 22, 61348 Bad Homburg vor der Höhe · Telefon: 06172-681239, E-Mail: praxis@dr-weiffenbach.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Rota Wietfeld",
+    ort: "Witten und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Zentrum für Begutachtung, Annenstraße 172, 58453 Witten · Tel.: 02302-1796220, Fax: 02302-1796221, E-Mail: gutachten@praxis-wietfeld.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. Siegfried Schanda",
+    ort: "Erlangen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Facharzt für Kinder-/Jugendpsychiatrie, Meisenweg 3, 91056 Erlangen · Telefon: 09131-9138410",
+    kommentare: []
+  },
+  {
+    name: "Dr. med. univ. Wolfgang Potthoff",
+    ort: "Kassel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Karthäuserstr. 25, 34117 Kassel · Tel.: 056114482, Mobil: 0170-3844046, Fax: 0561-7398532, E-Mail: dr.potthoff@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Michael Jehs",
+    ort: "Kiel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Elisabethstr. 41, 24143 Kiel",
+    kommentare: []
+  },
+  {
+    name: "Dr. Michael Karle",
+    ort: "Tübingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Monika Weber",
+    ort: "Landkreis Bad Tölz-Wolfratshausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Waldhauserstr. 1d, 82547 Beuerberg · Tel.: 08179-925407, Fax: 08179-925855, E-Mail: praxis@monikaweber.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Muna Nabhan",
+    ort: "Bad Soden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Alleestraße 6, 65812 Bad Soden am Taunus · Tel.: 0171-5230801",
+    kommentare: []
+  },
+  {
+    name: "Dr. Nicola Hahn",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Dr. Nicole Nerb",
+    ort: "Freiburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Lindenbergstr. 12, 79199 Kirchzarten · Telefon: 07661-9689966, Mobil: 0174-1715703",
+    kommentare: []
+  },
+  {
+    name: "Dr. Nikola Zieren",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Belfortstr. 7, 81667 München · Mobil: 0163 74 35 359, E-Mail: nikola.zieren@SVring.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Nora Nonnenmacher",
+    ort: "Mannheim-Heidelberg-Ludwigshafen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rheinaustraße 22, 68163 Mannheim · Tel.: 0621-1787821",
+    kommentare: []
+  },
+  {
+    name: "Dr. Peter Melchers",
+    ort: "Gummersbach und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Akbar Mahmoudi",
+    ort: "Mühlheim, Essen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Dipl.-Psych. Marianne Rauwald",
+    ort: "Frankfurt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Waidmannstraße 25, 60596 Frankfurt am Main · Tel.: 069-46990053",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Heide Hohenstein",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Pädagogin, Sentruper Höhe 00, 48149 Münster · Telefon: 0251-93294621",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Paul Schaffner",
+    ort: "Mainz und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Zentrum für interdisziplinäre Forensik, Universität Mainz, Abteilung Sozialpsychologie, Taubertsberg I / Binger Str. 14-16, 55099 Mainz",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Sebastian Bartoschek",
+    ort: "Kleve und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Steffen Dauer",
+    ort: "Halle und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. phil. Walburga Temminghoff",
+    ort: "Wuppertal und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Friedrich-Ebert-Straße 17, 42103 Wuppertal · Telefon: 0202-2655065, Fax: 0202-2655066",
+    kommentare: []
+  },
+  {
+    name: "Dr. Prisca Jager",
+    ort: "Köln und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hochstadenstr. 15, 50674 Köln · Tel.: 0151-11654221, E-Mail: jager@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Ralf Becker",
+    ort: "Wittlich und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Wittlich, Unterm Afferberg 15, 54516 Wittlich · Tel.: 06571 9007050, Mobil: 0151 57111225",
+    kommentare: []
+  },
+  {
+    name: "Dr. rer. nat. Christian Dietz",
+    ort: "(Region laut Website nicht näher spezifiziert)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Robert Scharfenort",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Hamburg, Bergiusstr. 3, 22765 Hamburg · Tel.: 0176 34141679",
+    kommentare: []
+  },
+  {
+    name: "Dr. Sandra Scheuer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: scheuer@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Dr. Sarah Schäfer",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Sonja Bernard",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon: 0941-55103, Fax: 0941-55103",
+    kommentare: []
+  },
+  {
+    name: "Dr. Stella Stehle",
+    ort: "Augsburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Augsburg, Heilig-Kreuz-Str. 24a, 86152 Augsburg · Tel.: 0821 3494373",
+    kommentare: []
+  },
+  {
+    name: "Dr. Susanne Kilian",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychodiagnostische Beratungspraxis, Wandsbeker Königstr. 11, 22041 Hamburg · Telefon: 040-6515043",
+    kommentare: []
+  },
+  {
+    name: "Dr. Susanne Weissenberger",
+    ort: "Aschaffenburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Institut, Würzburger Str. 150, 63739 Aschaffenburg · Tel.: 06021-371994, Fax: 06021-371995",
+    kommentare: []
+  },
+  {
+    name: "Dr. Susannne Schütt",
+    ort: "Rostock und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Warnowallee 23-24, 18107 Rostock · Tel.: 038203953112, Fax: 038203954311, Mobil: 015901495713, E-Mail: info@susanne-schuett.de",
+    kommentare: []
+  },
+  {
+    name: "Dr. Tanja Dannappel",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Familienpsychologische Praxis Dannappel, Grabenstr. 12, 44787 Bochum · Telefon: 0234-53060505, Fax: 0234-53060506",
+    kommentare: []
+  },
+  {
+    name: "Dr. Thomas Bachmann",
+    ort: "Lübeck und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Ulrike Apostel",
+    ort: "Königswinter und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Psychotherapeutin, Dollendorfer Str. 84, 53639 Königswinter · Telefon: 02244-871183",
+    kommentare: []
+  },
+  {
+    name: "Dr. Uwe Ruhl",
+    ort: "Göttingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Dr. Vera Mayer",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Begutachtungsstelle, Neumarkt 9-19, 04109 Leipzig · Telefon: 0341-9735900",
+    kommentare: []
+  },
+  {
+    name: "Dr. Yulia Golub",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Universitätsklinikum Carl Gustav Carus, Fetscherstraße 74, 01307 Dresden",
+    kommentare: []
+  },
+  {
+    name: "Dr.med. Michaela Pixner",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: pixner@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Eberhard Kempf",
+    ort: "Hachenburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Lerchenweg 6, 57627 Hachenburg · Telefon: 02662-940330, Fax: 02662/50327, E-Mail: praxis-fuer-mediation@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Eckhard Meyer",
+    ort: "Jena und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Jena, Johannisstr. 11, 07743 Jena · Tel.: 0170 1096158",
+    kommentare: []
+  },
+  {
+    name: "Eduard Käseberg",
+    ort: "Herne und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Vinckenstrasse 60, 44623 Herne · Telefon: 0171-2868791, E-Mail: e.kaeseberg@outlook.de",
+    kommentare: []
+  },
+  {
+    name: "Elisabeth Feil",
+    ort: "Linkenheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Kaiserstraße 48, 76351 Linkenheim · Tel.: 07247 9808940, Fax: 07247 9808173, E-Mail: info@praxis-lisa-feil.de",
+    kommentare: []
+  },
+  {
+    name: "Elisabeth Milhahn",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: milhahn@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Elke Flumm",
+    ort: "Stuttgart und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Psychologin, Olgahospital Stuttgart",
+    kommentare: []
+  },
+  {
+    name: "Elke Getke",
+    ort: "Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Gilsingstr. 5, 44789 Bochum · Tel.: 0421 5261621, E-Mail: e.getke@web.de",
+    kommentare: []
+  },
+  {
+    name: "Elke Martina Schalk",
+    ort: "Goldenstedt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Gasatrupperstraße 9, 49924 Goldenstedt",
+    kommentare: []
+  },
+  {
+    name: "Elke Meiners",
+    ort: "Wilhelmshaven und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Goerdelerstr. 7, 26386 Wilhelmshaven · Tel.: 0511 590 46 70, Fax: 04421 972 47 40, E-Mail: e.meiners@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Elke Schmittendorf",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologische Praxis Dortmund, Alter Mühlenweg 19-21, 44139 Dortmund · Tel.: 0231 22201601, Fax: 0231 22201602, E-Mail: info@rechtspsychologische-praxis-dortmund.de",
+    kommentare: []
+  },
+  {
+    name: "Elke Schön",
+    ort: "Worms und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Celtestraße 31, 67549 Worms · Mobil: 01525-3981328, E-Mail: elke@schoen-psychologie.de",
+    kommentare: []
+  },
+  {
+    name: "Emily Bacon",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Enno Heyken",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Esther Bockwyt",
+    ort: "Recklinghausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Paulusanger 8, 45657 Recklinghausen · Tel.: 02361-9054108, E-Mail: kontakt@die-gutachterinnen.de",
+    kommentare: []
+  },
+  {
+    name: "Eva Althammer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: althammer@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Eva Kammerer",
+    ort: "Bayreuth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Bayreuth, Gontardstrasse 8, 95445 Bayreuth · Tel.: 0921 33912584, Fax: 0921 33912585, Mobil: 0170 4136077, E-Mail: kammerer45@aol.com",
+    kommentare: []
+  },
+  {
+    name: "Eva Wallaschek",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Benrather Schlossallee 53, 40597 Düsseldorf · Tel.: 0211-82804677, E-Mail: info@pfp-duesseldorf.de",
+    kommentare: []
+  },
+  {
+    name: "Familienpsychologische Praxis Dannappel (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Grabenstr. 12, 44787 Bochum. Zugehörige Gutachterinnen: Dr. Tanja Dannappel, Sonja Schildbach, Teresa Lehnert.",
+    kommentare: []
+  },
+  {
+    name: "Felix Jankl",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 08331-702437, Fax: 08331-702335, E-Mail: jankl@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Fenn Felstehausen",
+    ort: "Kassel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Praxis, Friedrich-Ebert-Str. 141, 34119 Kassel · Telefon: 05605 927336, Telefax: 05605 927336, E-Mail: kontakt@fenn-felstehausen.de",
+    kommentare: []
+  },
+  {
+    name: "Frank Christian Lossau",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: lossau@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Frank Uhlemann",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Frank Wittenhagen",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: wittenhagen@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "G. Agathe Thierfelder",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Postfach 501469, 22714 Hamburg · Tel.: 040-89063675, Mobil: 0151-20164977",
+    kommentare: []
+  },
+  {
+    name: "Gabrielle Weidenfeller",
+    ort: "Augsburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Augsburg, Heilig-Kreuz-Str. 24a, 86152 Augsburg · Tel.: 0821 3494373",
+    kommentare: []
+  },
+  {
+    name: "Gemeinschaftspraxis für Rechtspsychologie und Verhaltenstherapie (GRV) (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. · Hauptstraße 55b, 86926 Greifenberg, Tel. 08192-998305, E-Mail: info@rechtspsychologie-bayerm.de · Zugehörige Gutachterinnen u. a.: Marion Zikeli, Martina Robl, Karin Wagner",
+    kommentare: []
+  },
+  {
+    name: "Georg Königstein",
+    ort: "Frankfurt am Main und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Gerlinde Bartsch",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Psychotherapeutin, Kurt-Eisner-Str. 42, 04275 Leipzig · Telefon: 03445-231976",
+    kommentare: []
+  },
+  {
+    name: "Gerlinde Bernsdorff",
+    ort: "Berlin-Wannsee und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "(Anschrift laut Website derzeit nicht bekannt; Profil zusätzlich auf Xing)",
+    kommentare: []
+  },
+  {
+    name: "Gerlinde Smolka",
+    ort: "Ansbach und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Feuchtwanger Straße 38, 91522 Ansbach · Tel.: 098146530",
+    kommentare: []
+  },
+  {
+    name: "Gesa Reiff-Heldt",
+    ort: "Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Erfurter Str. 49, 28215 Bremen · Telefon: 0421-2219970",
+    kommentare: []
+  },
+  {
+    name: "Gesine Götting",
+    ort: "Hannover und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Jacobsstraße 16, 30449 Hannover · Tel.: 0511-85002050",
+    kommentare: []
+  },
+  {
+    name: "Gisela Radant",
+    ort: "Güstrow und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Bützower Straße 14, 18273 Güstrow · Tel.: 0152 52772318, Fax: 03843-686734, E-Mail: info@gisela-radant.de",
+    kommentare: []
+  },
+  {
+    name: "Gudrun Adler",
+    ort: "Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "28203 Bremen · Tel.: 0421-79426880, Mobil: 0151-22875401",
+    kommentare: []
+  },
+  {
+    name: "GWG (Gesellschaft für wissenschaftliche Gerichtspsychologie) (Institut, mehrere Standorte)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Bundesweites Netzwerk/Institut mit zahlreichen Standorten (u. a. Düsseldorf, München, Bamberg, Bayreuth, Nürnberg, Karlsruhe, Singen, Wittlich, Neuss, Aschaffenburg), das gerichtspsychologische Gutachten für Familiengerichte erstellt. Zugehörige Gutachterinnen/Gutachter u. a. (Auszug): Dr. Katharina Müller-Schmitz, Anna Leimkühler, Birte Holtmann, Dorothee Grüntges, Jana Esders, Aysan Ashoee, Laura Miron, Dr. Nicola Hahn, Inci Genc (alle Standort Düsseldorf, Karkortstr. 15).",
+    kommentare: []
+  },
+  {
+    name: "GWG Königstein / Dr. Sybille Kurz-Kümmerle (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Stresemannstr. 17, D-61462 Königstein, Tel. 06174-299630. Zugehörige Gutachterinnen u. a.: Dr. Sybille Kurz-Kümmerle, Hannah Merz, Maren Lagies, Lena Deller-Wessels, Jana Brokfeld, Meike Kiefer Marins, Dr. med. Doris Krusche, Dr. Alana Krix, Marina Gottschalk, Neda Zeller, Caroline Virchow, Silke Urso, Kira Nick, Sabrina Langweiler.",
+    kommentare: []
+  },
+  {
+    name: "Günter M. Drechsel",
+    ort: "Kempten und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Kempten, Sandstraße 5, 87439 Kempten · Tel.: 0831 23765",
+    kommentare: []
+  },
+  {
+    name: "Hannah Cosler",
+    ort: "Aachen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Oppenhoffallee 143, 52066 Aachen · Mobil: 0177-6026939, Fax: 0241-57108806, E-Mail: cosler@praxis-rechtspsychologie.info",
+    kommentare: []
+  },
+  {
+    name: "Hannah Merz",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Hans A. Althaus",
+    ort: "Ahlen-Dolberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Hans Herrmann Bierbrauer",
+    ort: "Attendorn (Kreis Olpe, Sauerland) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Hans Klünemann",
+    ort: "Wenzenbach bei Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Am Schloß 2, 93173 Wenzenbach · Telefon: 09407 9586830",
+    kommentare: []
+  },
+  {
+    name: "Harald Frick",
+    ort: "Frankfurt am Main und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Hartmut Böhm",
+    ort: "Osnabrück und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Heidrun Mess",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rotherstraße 1, 10245 Berlin · Tel.: 030-67465354",
+    kommentare: []
+  },
+  {
+    name: "Heike Hans",
+    ort: "Namborn und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Allerburg 24, 66640 Namborn · Mobil: 0151-11501918, E-Mail: mail@heike-hans.de",
+    kommentare: []
+  },
+  {
+    name: "Heike Holm",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin für Rechtspsychologie, Institut für Gericht und Familie Service GbR, Stephanstr. 25, 10559 Berlin · Telefon: 030-390 63 190, Telefax: 030-390 63 199, E-Mail: info@igf-berlin.de",
+    kommentare: []
+  },
+  {
+    name: "Heiko Nijak",
+    ort: "Schermbeck (Kreis Wesel) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Helen Velsen",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Hendrikje Voller",
+    ort: "Nürnberg-Fürth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Nürnberg-Fürth, Mozartstr. 29, 90762 Fürth · Tel.: 0911 78052955, Fax: 0911 3093012",
+    kommentare: []
+  },
+  {
+    name: "Hilke Hofmann",
+    ort: "Norden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Systemische Supervisorin (SG) und Coach, Am Hafen 9, 26506 Norden · Telefon: 04931-9300450",
+    kommentare: []
+  },
+  {
+    name: "Holger Partikel",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "10559 Berlin · Telefon: 030/39877242, E-Mail: h.partikel@biloa.de",
+    kommentare: []
+  },
+  {
+    name: "Hubertus Bönisch",
+    ort: "Aurich (Ostfriesland) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Ina Zwingmann",
+    ort: "Greifswald, Rostock und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Werftstr. 5, 18057 Rostock · Telefon: 03818087-267, 03838087110",
+    kommentare: []
+  },
+  {
+    name: "Inci Genc",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Ines Porst-Bernau",
+    ort: "Nürnberg-Fürth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Nürnberg-Fürth, Mozartstr. 29, 90762 Fürth · Tel.: 09431-75169, Fax: 0911 3093012",
+    kommentare: []
+  },
+  {
+    name: "Ines Reiners",
+    ort: "Wennigsen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Familienrechtspsychologisches Institut, Neue Str. 21A, 30974 Wennigsen · Tel.: 0176 55951771, E-Mail: i.reiners@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Institut für Rechtspsychologie Hamburg (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Friesenweg 2, 22763 Hamburg, Tel. 040-88129488. Zugehörige Gutachterin u. a.: Dr. phil. Christina Lamertz.",
+    kommentare: []
+  },
+  {
+    name: "Interdisziplinäres Fachteam Saarland (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter sowie weiterer Professionen, die u. a. Gutachten für Familiengerichte erstellen. Leitung: Nicola Hörster-Fuchs. Sitz: Tritschlerstraße 11, 66606 St. Wendel, Tel. 06851-9122181, E-Mail: info@ift-saarland.de",
+    kommentare: []
+  },
+  {
+    name: "Ioannis Nodarakis",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: Nodarakis@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Irene Danker",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fabrikstraße 4, 04178 Leipzig · Tel.: 0163 928 4812, E-Mail: danker@psych-sv.com",
+    kommentare: []
+  },
+  {
+    name: "Irmgard Bräutigam",
+    ort: "Nürnberg-Fürth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Nürnberg-Fürth, Mozartstr. 29, 90762 Fürth · Tel.: 0911 78052955, Fax: 0911 3093012",
+    kommentare: []
+  },
+  {
+    name: "Isabel Fernández de Castillejo",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Paul-Grunder-Straße 61, 04107 Leipzig · Tel.: 0341-99393627, Fax: 0341 99393628, Mobil: 0177-8344556, E-Mail: fernandez@transandlaw.com",
+    kommentare: []
+  },
+  {
+    name: "Isabell Möckel",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Mag. rer. nat. (Univ. Wien), GWG, Rablstraße 45, 81669 München · Telefon: 089-4481282",
+    kommentare: []
+  },
+  {
+    name: "Ivona Matas",
+    ort: "Köln und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Peter-von-Fliesteden-Str. 39, 50933 Köln · Tel.: 0221 2941062, E-Mail: matas@psycho-log.de",
+    kommentare: []
+  },
+  {
+    name: "Izabela Megerle",
+    ort: "Aue-Schwarzenberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Johannisstraße 77, 08294 Lößnitz · Tel.: 0171 279 3540",
+    kommentare: []
+  },
+  {
+    name: "Jana Brokfeld",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Jana Esders",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Jana Viehoff",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Jana Witte",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologisches Sachverständigenbüro Düsseldorf, Oststrasse 122, 40210 Düsseldorf · Telefon: 0211-39027466, Fax: 0211-39027469, E-Mail: jana.witte@psb-duesseldorf.de",
+    kommentare: []
+  },
+  {
+    name: "Jennifer Berghaus",
+    ort: "Frankfurt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fleischergasse 7, 60487 Frankfurt · Mobil: 0176-29385649, E-Mail: info@familienkonsens.de",
+    kommentare: []
+  },
+  {
+    name: "Jennifer Rustige",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Jenny Jägeler",
+    ort: "Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Erfurter Str. 49, 28215 Bremen · Telefon: 0421-2219970",
+    kommentare: []
+  },
+  {
+    name: "Jenny K. Toussaint",
+    ort: "Schleiden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Johannes Völler",
+    ort: "Marsberg (NRW) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Jonathan Foldl",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein, Stresemannstraße 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Julia Archut",
+    ort: "Winterhausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, Praxisgemeinschaft Familienrecht Winterhausen, Schulhof 1, 97286 Winterhausen · Tel: 09333-6479837, Mobil: 0175-6166423, E-Mail: archut@praxisgemeinschaft-familienrecht.de",
+    kommentare: []
+  },
+  {
+    name: "Julia Kisser",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09, E-Mail: kisser@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Julia Sohr",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Frankenstraße 15, 10781 Berlin-Schöneberg · Tel.: 030-6005 2083, Mobil: 0176-32470305",
+    kommentare: []
+  },
+  {
+    name: "Jutta Bünemann",
+    ort: "Trier und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Bergstr. 21, 54295 Trier · Tel.: 0651-93789808, E-Mail: j.buenemann@mail.de",
+    kommentare: []
+  },
+  {
+    name: "Jutta Hülsken",
+    ort: "Remscheid und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Am Blaffertsberg 17-19, 42899 Remscheid · Tel.: 0208-4434816, E-Mail: info@pp-praxisgemeinschaft.de",
+    kommentare: []
+  },
+  {
+    name: "Jörg Ewering",
+    ort: "Weimar und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Karl-Heinz Weber",
+    ort: "Wuppertal und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Karolin Seifarth-Korten",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Katarzyna Bażańska",
+    ort: "Bonn und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Kölnstraße 159, 53111 Bonn · Tel.: 0228-94778642, Fax: 0228-94778641, Mobil: 0151-53576981, E-Mail: bazanska@praxis-rechtspsychologie.info",
+    kommentare: []
+  },
+  {
+    name: "Katharina Bayer",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Alboinstr. 26, 12103 Berlin · Telefon: 030-30111450",
+    kommentare: []
+  },
+  {
+    name: "Katharina Daake",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: daake@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Katharina Zerres",
+    ort: "Tübingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Philosophenweg 1, 72076 Tübingen · Tel.: 0163-7641904",
+    kommentare: []
+  },
+  {
+    name: "Kathrin Eickmeier",
+    ort: "Duisburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Praxis für Rechtspsychologie, Hansastr. 1-3, 47058 Duisburg · Tel.: 0176-24925158, E-Mail: eickmeier@praxis-rechtspsychologie.info",
+    kommentare: []
+  },
+  {
+    name: "Kathrin Rietschel",
+    ort: "Andernach und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Breitestraße 78, 56626 Andernach · Tel.: 02632-5055657, Fax: 02632-5058111",
+    kommentare: []
+  },
+  {
+    name: "Kathrin Weitzel",
+    ort: "Dortmund und Umgebung (NRW)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Postfach 104321, 44043 Dortmund · Tel.: 0177-6866127, Fax: 0231-98194895, E-Mail: info@kathrin-weitzel.de",
+    kommentare: []
+  },
+  {
+    name: "Katja Buch-Bartos",
+    ort: "Remscheid und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Knusthöhe 16a, 42897 Remscheid · Tel.: 02191 4227854",
+    kommentare: []
+  },
+  {
+    name: "Katja Burggräfe",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, Eschershauser Weg 17a, 14163 Berlin",
+    kommentare: []
+  },
+  {
+    name: "Katja Burschik",
+    ort: "Karlsruhe und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Durlacher Allee 45, 76131 Karlsruhe · Tel.: 0721-1567767, Mobil: 0176-62115537, E-Mail: kontakt@loebeg.de",
+    kommentare: []
+  },
+  {
+    name: "Katja Traue",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Institut Gericht & Familie Service GbR, Stephanstr. 25, 10559 Berlin",
+    kommentare: []
+  },
+  {
+    name: "Katrin Eysenbach",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: eysenbach@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Katrin Gossow",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Heinrich-Budde-Str. 22, 04157 Leipzig · Tel.: 0341-58065476, E-Mail: katrin.gossow@googlemail.com",
+    kommentare: []
+  },
+  {
+    name: "Katrin Lambrette",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Psych., Buchenstraße 8, 01097 Dresden · Telefon: 0351-89510970",
+    kommentare: []
+  },
+  {
+    name: "Katrin Sonnberger",
+    ort: "Meiningen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Meiningen, Charlottenstr. 1, 98617 Meiningen · Tel.: 03693-4440484, Mobil: 0176-74683443",
+    kommentare: []
+  },
+  {
+    name: "Kemal Temizyürek",
+    ort: "Hiddenhausen (bei Bielefeld) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Kenan Avci",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: avci@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Kerstin Mühlburger",
+    ort: "Heidelberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hauptstraße 79, 69117 Heidelberg · Tel.: 06221 3760614, Mobil: 0176 30371088, Fax: 06221 3574932, E-Mail: info@rechtspsychologie-muehlburger.de",
+    kommentare: []
+  },
+  {
+    name: "Kerstin Sieglstetter",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: siglstetter@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Kinga Zimmermann",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologisches Sachverständigenbüro Düsseldorf, Oststrasse 122, 40210 Düsseldorf · Telefon: 0211-39027466, Fax: 0211-39027469, E-Mail: kinga.zimmermann@psb-duesseldorf.de",
+    kommentare: []
+  },
+  {
+    name: "Kira Nick",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Kirsti Hille-Gaul",
+    ort: "Würzburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl. Psych., Schulhof 1, 97286 Winterhausen · Telefon: 09333-6479839, Mobil: 0176-32023430",
+    kommentare: []
+  },
+  {
+    name: "Klaus Ritter",
+    ort: "Kassel (deutschlandweit tätig)",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologe. Laut Selbstauskunft der Quelle seit 1991 als Gutachter für Familiengerichte tätig, u.a. für Gerichte in Berlin, Bremen, Hamburg, Hessen, Niedersachsen, Nordrhein-Westfalen, Sachsen, Sachsen-Anhalt und Thüringen; nach eigenen Angaben (Stand 2014) über 950 familiengerichtliche Gutachten erstellt.",
+    kommentare: []
+  },
+  {
+    name: "Kristine von Hacht",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fährstraße 73, 21107 Hamburg · Tel.: 040 228170127, Fax: 040 228170122",
+    kommentare: []
+  },
+  {
+    name: "Larissa Pohlmann",
+    ort: "Duisburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Postfach 710133, 47187 Duisburg · Mobil: 015906135058, Fax: 02066-4014991, E-Mail: pohlmann@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Larissa Schöppner",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09",
+    kommentare: []
+  },
+  {
+    name: "Lars Thomsen",
+    ort: "Kiel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Psych., Rechtspsychologische Praxis GbR, Holstenstraße 52, 24103 Kiel · Telefon: 0431-26090909, E-Mail: info@thomsen-godt.de",
+    kommentare: []
+  },
+  {
+    name: "Laura Miron",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Karkortstr. 15, 40210 Düsseldorf · Telefon: 0211-17938254, Fax: 0211-17938264",
+    kommentare: []
+  },
+  {
+    name: "Lauri-Johannes Marx",
+    ort: "Preetz und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologie Marx, Lange Brückstr. 8, 24211 Preetz · Telefon: 04342 302 85 40, Mobil: 0179-393 10 20, Fax: 04342 2009998, E-Mail: l.marx@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Lea Vogt",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Lena Deller-Wessels",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Lennart Peters",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Lenore Spieß",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Institut für Gericht und Familie Service GbR, Stephanstr. 25, 10559 Berlin · Telefon: 030-390 63 190, Telefax: 030-390 63 199, E-Mail: info@igf-berlin.de",
+    kommentare: []
+  },
+  {
+    name: "Lisa Schulz",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Brackeler Hellweg 86, 44309 Dortmund · Telefon: 0231-7761224, Mobil: 0173-5100743, Fax: 0231-2823462",
+    kommentare: []
+  },
+  {
+    name: "Lothar Fellinger",
+    ort: "Kassel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Kölnische Straße 69, 34117 Kassel · Telefon: 0561 92004352, Mobil: 0561 92004354, E-Mail: praxis.fellinger@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Luisa Lentfer",
+    ort: "Kiel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Holstenstrasse 52-54, 24103 Kiel · Tel.: 0431 908 859 44, E-Mail: plathner@rechtspsychologie-kiel.de",
+    kommentare: []
+  },
+  {
+    name: "Lutz Greve",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Lutz Wallisch",
+    ort: "Nürnberg, Fürth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Fürth, Moststr. 29, 90762 Fürth · Tel.: 0911 78052955",
+    kommentare: []
+  },
+  {
+    name: "Manuela Engels",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: engels@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Manuela Schindler",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: schindler@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Mara Bender",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "RechtsPsychologisches Zentrum Bochum, Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Marc Deibert",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Düsseldorf, Harkortstr. 15, 40210 Düsseldorf · Tel.: 0211 17938254",
+    kommentare: []
+  },
+  {
+    name: "Maren Lagies",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Maren Petermann-Paus",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fährstraße 73, 21107 Hamburg · Tel.: 040 228170123, Fax: 040 228170122",
+    kommentare: []
+  },
+  {
+    name: "Maria Hillung",
+    ort: "Haßbergen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Elserstraße 9, 49205 Haßbergen · Mobil: 0176-81178136, E-Mail: maria.hillung@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Marianne Nolde",
+    ort: "Borken und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Marina Gottschalk",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Marina Hedtmann",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Marina Richter",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologische Praxis Dortmund, Alter Mühlenweg 19-21, 44139 Dortmund · Tel.: 0231 22201601, Fax: 0231 22201602, E-Mail: info@rechtspsychologische-praxis-dortmund.de",
+    kommentare: []
+  },
+  {
+    name: "Marion Badberg-Jasper",
+    ort: "Itzehoe und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "25524 Itzehoe",
+    kommentare: []
+  },
+  {
+    name: "Marion Gräf",
+    ort: "Groß-Gerau und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Neustraße 24, 64521 Groß-Gerau · Telefon: 0176 64005312 und 06152 58531, E-Mail: Marion.Graef@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Marlen Zeisberger",
+    ort: "Hessisch Oldendorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Sommerweg 3, 31840 Hessisch Oldendorf · Mobil: 0173-9162390",
+    kommentare: []
+  },
+  {
+    name: "Marlene Mörwald",
+    ort: "Illertissen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Franz-Ranz-Straße 3, 89257 Illertissen · E-Mail: info@psychologische-praxis-illertissen.de",
+    kommentare: []
+  },
+  {
+    name: "Martin Krause",
+    ort: "Halle (Westfalen) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Jahnstr. 39, 33790 Halle (Westf.) · Telefon: 05201-4305",
+    kommentare: []
+  },
+  {
+    name: "Martin Lewand",
+    ort: "Würzburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Martin Rump",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Martina Ehlers-Tomancova",
+    ort: "Jena und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Johannisstr. 11, 07743 Jena · Telefon: 0151-23529742",
+    kommentare: []
+  },
+  {
+    name: "Martina Handels",
+    ort: "Sankt Augustin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Bussardstraße 50, 53757 Sankt Augustin · Mobil: 0178-9836307, E-Mail: Handels.Martina@unitybox.de",
+    kommentare: []
+  },
+  {
+    name: "Martina Herdieckerhoff",
+    ort: "Mannheim-Heidelberg-Ludwigshafen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rheinaustraße 22, 68163 Mannheim · Tel.: 0621-1787821",
+    kommentare: []
+  },
+  {
+    name: "Matthias Kupfer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089-38164861 / 089 4481282, Fax: 089-44718018, E-Mail: kupfer@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Meike Kiefer Marins",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Melanie Ehrhardt",
+    ort: "Crivitz und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Eichholzstraße 30, 19089 Crivitz · Tel.: 0341 58065474, Mobil: 0172-4376493, E-Mail: Melanie.ehrhardt@ehligo.de",
+    kommentare: []
+  },
+  {
+    name: "Michael A. Waha",
+    ort: "Mannheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "68165 Mannheim · E-Mail: mail@michaelwaha.de",
+    kommentare: []
+  },
+  {
+    name: "Michael Hinn",
+    ort: "Hammelburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Obererthalerstr. 2, 97762 Hammelburg · Tel.: 09732-7875875, Fax: 09732-7875876, E-Mail: michael.hinn@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Michaela Hachenberg",
+    ort: "Margetshöchheim und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Psychologin, Erlabrunner Str. 17, 97276 Margetshöchheim · Mobil: 0176-24873421, E-Mail: Michaela.Hachenberg@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Michaela Micke",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "RechtsPsychologisches Zentrum Bochum, Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Michaela Wiek",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon: 0941-55103, Fax: 0941-55103, Internet: www.pgb-praxis.de",
+    kommentare: []
+  },
+  {
+    name: "Mike Lehmann",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Monika Hewing",
+    ort: "Rheine und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Lingener Straße 11, 48431 Rheine",
+    kommentare: []
+  },
+  {
+    name: "Nancy Borchert",
+    ort: "Naumburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Albrecht-Dürer-Straße 6, 06618 Naumburg · Tel.: 03445-7819262, Mobil: 0162-9242831, Fax: 03445-7819263, E-Mail: borchert@gutachten-naumburg.de",
+    kommentare: []
+  },
+  {
+    name: "Natalia Wehrmann",
+    ort: "Remscheid und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Am Blaffertsberg 17-19, 42899 Remscheid · Tel.: 0208-4434816, E-Mail: info@pp-praxisgemeinschaft.de",
+    kommentare: []
+  },
+  {
+    name: "Neda Zeller",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Nickolas Marx",
+    ort: "Hannover und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologie Marx, Georgstr. 46, 30159 Hannover · Telefon: 0511 5904670, E-Mail: m.marx@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Nico Salvo",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: salvo@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Nicole Aspacher",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: aspacher@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Nicole Heuerding",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Institut Gericht & Familie Service GbR, Stephanstr. 25, 10559 Berlin",
+    kommentare: []
+  },
+  {
+    name: "Nicole Lindner",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Heinrich-Budde-Str. 22, 04157 Leipzig · Tel.: 0341-58065475, E-Mail: lindner.ehligo@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Nicole Matheis",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologische Praxis Dortmund, Alter Mühlenweg 19-21, 44139 Dortmund · Tel.: 0231 22201601, Fax: 0231 22201602, E-Mail: info@rechtspsychologische-praxis-dortmund.de",
+    kommentare: []
+  },
+  {
+    name: "Ole Kölbel",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein, Stresemannstraße 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Oliver Wendenkampf",
+    ort: "Magdeburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Niemöller Privatweg 12, 39112 Magdeburg · Telefon: 0391-59842842, Fax: 032121048788, E-Mail: anwalt-des-kindes@gmx.de",
+    kommentare: []
+  },
+  {
+    name: "Olivia Rosebrock",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Psychologin, Stresemannstr. 17, 61462 Königstein · Telefon: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Ortrud Rösing",
+    ort: "Bad Neustadt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Waldsiedlung 32b, 97616 Bad Neustadt · Tel.: 09771-6354777, Fax: 09771-6354778, E-Mail: praxis-o.roesing@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Patricia Gundermann",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: gundermann@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Petra Eichler",
+    ort: "Görlitz und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dr.-Friedrich-Straße 11, 02826 Görlitz · Tel.: 03581-8769550, Fax: 03581-8769551, E-Mail: mail@eichler-supervision.de",
+    kommentare: []
+  },
+  {
+    name: "Petra Modery",
+    ort: "Köln und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hauptstr. 134, 51143 Köln · Tel: 02203-8065444, Mobil: 0176-42428511, Fax: 02203-8065333, E-Mail: modery@familiengutachten.nrw",
+    kommentare: []
+  },
+  {
+    name: "Petra Reisinger",
+    ort: "Dresden und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Münchner Platz 1, 01187 Dresden · Tel.: 0351/4794896, E-Mail: petra.reisinger@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Philipp Engelberg",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl. Psychologe, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · E-Mail: engelberg@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Pia Ernst",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologische Psychotherapeutin, Sendlinger Str. 23, 80331 München · Telefon: 08131-66650 41",
+    kommentare: []
+  },
+  {
+    name: "Pia Klitzke-Wüst",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Winterfeldstr. 8, 44141 Dortmund · Telefon: 0174-3330525, Fax: 0231-5587135",
+    kommentare: []
+  },
+  {
+    name: "Praxis für Gerichtspsychologie Würzburg (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Oberer Mainkai 1, 97070 Würzburg, Tel. 0931-40444333. Zugehörige Gutachterinnen u. a.: Meike Kleylein-Gerlich, Dr. Martina Steinmetz-Zubovic.",
+    kommentare: []
+  },
+  {
+    name: "Praxis für psychologische Gutachtenerstellung und Beratung (PGB) Regensburg/München (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Partnerschaft gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Seit 01.01.2015 gemeinsam geführt von den drei Gesellschafterinnen Dr. Marianne Schwabe-Höllein, Susanne Ammer und Dr. Petra August-Frenzel; zusätzlich freiberufliche Mitarbeiter als Sachverständige tätig (u. a. Sarah v. Jan-Günther, Eva Hausbeck, Ulla v. Kovatsits, Brigitte Dittrich, Tanja Brehm, Sylvia Schena, Janin Zimmermann). · Hemauerstr. 6, 93047 Regensburg, Tel. 0941-55103",
+    kommentare: []
+  },
+  {
+    name: "Praxis für Rechtspsychologie Bonn (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Truchseßstr. 34, 53177 Bonn, Tel. 0228-6290992. Zugehörige Gutachterinnen u. a.: Susanne Frahm, Daniela Larue, Judith Gatzen, Uta Nordsiek, Grischa Junghans.",
+    kommentare: []
+  },
+  {
+    name: "Praxisgemeinschaft Familienpsychologie München (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u.a. Gutachten für Familiengerichte erstellen. Sitz: Zentnerstraße 17, 80798 München, Telefon: 089-202457480, Fax: 089-202457489, E-Mail: info@praxisgemeinschaft-familienpsychologie.de · Zugehörige Gutachterinnen/Gutachter u.a.: Katharina Gerke, Christiane Hertkorn, Stefan Holzer, Ute Krankenhagen, Gabriele Martin, Carola Partale, Dr. Ricarda Böhme, Dr. Peter A. Menzel, Dr. med. Ruth Saueracker.",
+    kommentare: []
+  },
+  {
+    name: "Praxisgemeinschaft Familienrecht Winterhausen (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Partnerschaft gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Wird gemeinsam geführt von den drei Gesellschafterinnen Julia Archut, Kirsti Hille-Gaul und Viktoria Stollberger. Sitz: Schulhof 1, 97286 Winterhausen.",
+    kommentare: []
+  },
+  {
+    name: "Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR) (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Berliner Allee 45, 40212 Düsseldorf, Tel. 0221-367 793 96, Internet: www.pgr.ag. Zugehörige Gutachterinnen/Gutachter: Anja Winter, Julia Kisser, Larissa Schöppner, Verena Schulze-Greulich, Sarah Wackrow, Silvana Kirschbaum, Philipp Engelberg, Sven Fath, Nina Zembold, Renate Winzen-Lazarek.",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Dr. Amir Arbab-Zadeh",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Dr. Lioba Baving",
+    ort: "Kiel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "24105 Kiel · Tel.: 0431 500-98301, E-Mail: Lioba.Baving@uksh.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Fritz Mattejat",
+    ort: "Marburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Gottfried Spangler",
+    ort: "Erlangen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Nägelsbachstr. 49a, 91052 Erlangen · Telefon: 09131 8520901, Fax: 09131 8520902, E-Mail: gottfried.spangler@fau.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Heese",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Ostbayerische Hochschule, Seybothstr. 2, 93053 Regensburg · Tel.: 0176-47695723, E-Mail: karl.heese@oth-regensburg.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Helge Thiemann",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "RechtsPsychologisches Zentrum Bochum, Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Johannes Bach",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, In der Rottum 5, 88477 Schwendl · Tel.: 08331-702437, Fax: 08331-702335, E-Mail: bach@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. med. Christoph Bielitz",
+    ort: "Leipzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Privatpraxis für Psychologische Medizin, Richterstraße 15a, 04155 Leipzig · Tel.: 0341 35888435, Fax: 0341 42018823, E-Mail: info@b5-privatpraxis.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. med. Horst Berzewski",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Mehringdamm 43, 10961 Berlin · Telefon: 030-69387 60",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. med. Roland Schleiffer",
+    ort: "Bonn und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Arzt, Kinder- & Jugendpsychiater, Hubertusallee 58, 53125 Bonn · Telefon: 0228-255612",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Michael Günter",
+    ort: "Stuttgart",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Norbert Nedopil",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. phil. Manfred Kappeler",
+    ort: "Berlin",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. phil. Niels C. Habermann",
+    ort: "Heidelberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Reinmar du Bois",
+    ort: "Stuttgart und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Facharzt für Kinder- und Jugendpsychiatrie und Psychotherapie, Gutachtenstelle Stuttgart GmbH, Schöttlestraße 34c, 70597 Stuttgart · Telefon: 0711-90720720, Fax: 0711-90720724, E-Mail: sekretariat@gutachtenstelle-stuttgart.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Robert Feinbier",
+    ort: "Aiterhofen (Kreis Straubing), Bayern",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologe, Klinische Psychologie, Lindenstr. 12, 94330 Aiterhofen · Tel.: 09421-913076, Fax: 09421-5008160, E-Mail: feinbier@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Prof. Dr. Uwe Jopt",
+    ort: "Bielefeld und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Prof. Matthias Petzold",
+    ort: "Köln und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Psychodiagnostische Beratungspraxis Hamburg (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Wandsbeker Königstr. 11, 22041 Hamburg. Zugehörige Gutachterinnen u. a.: Susanne Schachler, Melanie Röhrbein, Heidi Köpsel, Kati Köhler, Birgit Jurczik, Christine Chan, Frederike Stromski, Andrea Simmer.",
+    kommentare: []
+  },
+  {
+    name: "Psychologisches Sachverständigenbüro Düsseldorf (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. Sitz: Oststrasse 122, 40210 Düsseldorf, Tel. 0211-39027466. Zugehörige Gutachterinnen: Anika Bruchhäuser, Jana Witte, Kinga Zimmermann.",
+    kommentare: []
+  },
+  {
+    name: "Rafaela Erben",
+    ort: "Witten und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Praxis für Gerichtspsychologie, Bleichestraße 11, 58452 Witten · Telefon: 02302-390863, E-Mail: praxis@erben-praxis.de",
+    kommentare: []
+  },
+  {
+    name: "Ralf Schnicke",
+    ort: "Neuss und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Neuss, Erftstr. 56, 41460 Neuss · Tel.: 02131 499475, Fax: 02131 384858, E-Mail: schnicke@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Ramona Berning",
+    ort: "Hamm und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hammer Str. 146, 59075 Hamm · Mobil: 0176-80662251",
+    kommentare: []
+  },
+  {
+    name: "Raymond Madest",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, In der Rottum 5, 88477 Schwendl · Tel.: 08331-702437, Fax: 08331-702335, E-Mail: raymond.madest@klinikum-memmingen.de",
+    kommentare: []
+  },
+  {
+    name: "RechtsPsychologisches Sachverständigenbüro Bonn (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen (verwandt mit der \"Praxis für Rechtspsychologie Bonn\").",
+    kommentare: []
+  },
+  {
+    name: "RechtsPsychologisches Zentrum Bochum (Institut)",
+    ort: "",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "**Was die Praxis macht:** Zusammenschluss gerichtspsychologisch tätiger Gutachterinnen und Gutachter, die u. a. Gutachten für Familiengerichte erstellen. · Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Regina Schröder",
+    ort: "Kiel und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Friedrichsorter Str. 30a, 24159 Kiel · Telefon: 0431-3052761, Telefax: 0431-3052762",
+    kommentare: []
+  },
+  {
+    name: "Rene Eichentopf",
+    ort: "Erfurt und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Akademie für Bildung und Bewegung GbR, Juri-Gagarin-Ring 116, 99084 Erfurt · Telefon: 0177-4999331, E-Mail: info@akademie-erfurt.com",
+    kommentare: []
+  },
+  {
+    name: "René Sévère",
+    ort: "Hagen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rehstrasse 29, 58089 Hagen · Telefon: 0231/99955240, E-Mail: buero@pg-tandem.de",
+    kommentare: []
+  },
+  {
+    name: "Roman Faas",
+    ort: "Merzig und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologischer Psychotherapeut, Trierer Straße 148, 66663 Merzig · Telefon: 06861-7050",
+    kommentare: []
+  },
+  {
+    name: "Ronja Wiesenmüller",
+    ort: "Rosdorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Postfach 71, 37122 Rosdorf",
+    kommentare: []
+  },
+  {
+    name: "Roswitha Graßmann",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Ruth Zander",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "RechtsPsychologisches Zentrum Bochum, Steinring 45, 44789 Bochum · Tel.: 0234-30750060, Fax: 0234-30750069, E-Mail: rpz-bochum@online.de",
+    kommentare: []
+  },
+  {
+    name: "Sabine Marx",
+    ort: "Hannover und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Georgstr. 46, 30159 Hannover · Tel.: 0511 459 309 88, E-Mail: s.marx@rechtspsychologie-marx.de",
+    kommentare: []
+  },
+  {
+    name: "Sabrina Christl",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Psychologin, PGB, Hemauerstr. 6, 93047 Regensburg · Telefon: 0941-55103, Fax: 0941-55103",
+    kommentare: []
+  },
+  {
+    name: "Sabrina Langweiler",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Sarah Wackrow",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09, E-Mail: kisser@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Selin Avci",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: avci@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Siegfried Schönleben",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Sigrid Friedrich",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Sigrid Shaigan",
+    ort: "Haltern am See und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Silke Urso",
+    ort: "Königstein und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Königstein / Dr. Sybille Kurz-Kümmerle, Stresemannstr. 17, D-61462 Königstein · Tel.: 06174-299630, Fax: 06174-299635",
+    kommentare: []
+  },
+  {
+    name: "Silvana Kirschbaum",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09, E-Mail: kirschbaum@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Simone Gallwitz",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Simone Käfer",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "14050 Berlin · Tel.: 030-53796674, E-Mail: simone.kaefer@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Sofia-Carolina Richter",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: richter@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Sonja Schildbach",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Familienpsychologische Praxis Dannappel, Grabenstr. 12, 44787 Bochum · Telefon: 0234-53060508, Fax: 0234-53060506",
+    kommentare: []
+  },
+  {
+    name: "Sophie Helgert",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: helgert@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Stefan Holzer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologe, Praxisgemeinschaft Familienpsychologie München, Zentnerstraße 17, D-80798 München · Telefon: 089-202457480, Fax: 089-202457489, E-Mail: stefan.holzer@praxisgemeinschaft-familienpsychologie.de",
+    kommentare: []
+  },
+  {
+    name: "Stefanie Hollnaicher",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: hollnaicher@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Stefanie Horn",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Steffi Schorcht",
+    ort: "Kromsdorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Am neuen Anger 33, 99441 Kromsdorf · Tel.: 0152 29210484, Fax: 03643 8774904, E-Mail: steffi.schorscht@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Steffi Schorcht (Weimar)",
+    ort: "Weimar und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Paul-Schneider-Str. 17, 99423 Weimar · Mobil: 0152 29 21 0484, E-Mail: steffi.schorcht@t-online.de",
+    kommentare: []
+  },
+  {
+    name: "Stella Fischer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: fischer@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Susanne Blumberg",
+    ort: "Goch und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Motzfeldstr. 111, 47574 Goch",
+    kommentare: []
+  },
+  {
+    name: "Susanne Haamann",
+    ort: "Aschaffenburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Frohsinnstr. 24, 63739 Aschaffenburg · Tel.: 06021-8628632, Mobil: 0176-26538705, Fax: 03212-4226266, E-Mail: kontakt@susanne-haamann-praxis.de",
+    kommentare: []
+  },
+  {
+    name: "Susanne Ployer",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: ployer@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Sven Fath",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl. Psychologe, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 01511-1315202, E-Mail: fath@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Svetlana Radman",
+    ort: "Büdingen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Brunostraße 12, 63654 Büdingen · Tel.: 060425480909, E-Mail: info@praxis-radman.de",
+    kommentare: []
+  },
+  {
+    name: "Sylvia Ramsauer",
+    ort: "Münster und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Rechtspsychologisches Forum Münster, Hötteweg 8, 49143 Münster · Telefon: 0251 284 67 87, E-Mail: info@psychologie-forum-muenster.de",
+    kommentare: []
+  },
+  {
+    name: "Tamara Speiseder",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: speiseder@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Teresa Lehnert",
+    ort: "Bochum und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Familienpsychologische Praxis Dannappel, Grabenstr. 12, 44787 Bochum · Telefon: 0234-53060509, Fax: 0234-53060506",
+    kommentare: []
+  },
+  {
+    name: "Theodor Christa",
+    ort: "Kempten und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Thomas Kurze-Zerbe",
+    ort: "Mainz, Koblenz, Bitburg, Andernach und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplom-Sozialpädagoge",
+    kommentare: []
+  },
+  {
+    name: "Thomas Stelz",
+    ort: "Aue und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Schneeberger Straße 47, 08280 Aue · Tel.: 03771-3407779, Fax: 03771-259184, E-Mail: info@mediation-rhetorik.de",
+    kommentare: []
+  },
+  {
+    name: "Thorsten Rechel",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Wittestraße 30, 13509 Berlin · Telefon: 030-55573643, Fax: 030-23982849, E-Mail: t.rechel@posteo.de",
+    kommentare: []
+  },
+  {
+    name: "Tilmann Warnke",
+    ort: "Bremen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologe, Fehrfeld 53, 28203 Bremen · Tel.: 0421-69661044, E-Mail: mail@afkindeswohl.de",
+    kommentare: []
+  },
+  {
+    name: "Tom Gerum",
+    ort: "Regensburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Regensburg, Nonnenplatz 5, 93047 Regensburg · Tel.: 0176 62448635",
+    kommentare: []
+  },
+  {
+    name: "Udo Hewing",
+    ort: "Rheine und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hermannstr. 3, 48431 Rheine",
+    kommentare: []
+  },
+  {
+    name: "Udo Schüppel",
+    ort: "Aue-Schwarzenberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Johannisstraße 77, 08294 Lößnitz · Telefon: +49 171 279 3540, Fax: +49 3212 662 7788, E-Mail: udo.schueppel@svfg.net",
+    kommentare: []
+  },
+  {
+    name: "Ulla Hacker",
+    ort: "Nürnberg-Fürth und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG Nürnberg-Fürth, Mozartstr. 29, 90762 Fürth · Tel.: 0911 78052955, Fax: 0911 3093012",
+    kommentare: []
+  },
+  {
+    name: "Ulrike Weinhold",
+    ort: "Sankt Augustin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Ursula Münch",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: muench@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Ute Jäger",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Bachbauernstr. 2, 81241 München · Telefon: 089-15982250",
+    kommentare: []
+  },
+  {
+    name: "Uwe Döhnisch-Seidel",
+    ort: "Kleve und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Uwe Madeira",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Uwe Völkening",
+    ort: "Düren und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Uwe Wetter",
+    ort: "Euskirchen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Vera Funke",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: funke@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Verena Schulze-Greulich",
+    ort: "Düsseldorf und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Fachpsychologin, Praxisgemeinschaft Rechtspsychologie Düsseldorf (PGR), Berliner Allee 45, 40212 Düsseldorf · Telefon: 0221-367 793 96, Telefax: 0211-3677 94 09, E-Mail: wackrow@pgr.ag",
+    kommentare: []
+  },
+  {
+    name: "Veronika Siebers",
+    ort: "Marsberg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Dipl.-Soz.Päd., Kinder- und Jugendlichenpsychotherapeutin, Am Sonnenhang 16, 34431 Marsberg · Tel.: 016095981122, E-Mail: veronika.siebers@web.de",
+    kommentare: []
+  },
+  {
+    name: "Viktoria Sedner",
+    ort: "Dresden und Leipzig",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Straße des 17. Juni 25, Haus 102c, 01257 Dresden; Karl-Tauchnitz-Straße 35, 04107 Leipzig · Tel.: 0351 21168585, Mobil: 0177-6860933, E-Mail: dp_sedner@icloud.com / buero@sedner.com, Web: www.sedner.com",
+    kommentare: []
+  },
+  {
+    name: "Viktoria Stollberger",
+    ort: "Winterhausen und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Diplompsychologin, Praxisgemeinschaft Familienrecht Winterhausen, Schulhof 1, 97286 Winterhausen · Tel: 09333-6479838, Mobil: 0160-8085539, E-Mail: stollberger@praxisgemeinschaft-familienrecht.de",
+    kommentare: []
+  },
+  {
+    name: "Viola Weinrank",
+    ort: "Hamburg und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Hans-Henny-Jahnn-Weg 53, 22085 Hamburg · Telefon: 040-43254844, Fax: 040-43254855, E-Mail: weinrank@psychologin-hamburg.de",
+    kommentare: []
+  },
+  {
+    name: "Wiebke Wagner",
+    ort: "Berlin und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Wilfried Petri",
+    ort: "Neunkirchen (Saarland) und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
+    kommentare: []
+  },
+  {
+    name: "Winfried Pollmann",
+    ort: "München und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "GWG München, Rablstr. 45, 81669 München · Tel.: 089 4481282, Fax: 089 44718018, E-Mail: pollmann@gwg.info",
+    kommentare: []
+  },
+  {
+    name: "Wolfgang Bott",
+    ort: "Lübeck und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "Sachverständiger für Familienrecht, Wickedestr. 12, 23554 Lübeck · Telefon: 0451-20954209, Mobil: 0179-39310 20, E-Mail: info@wolfgangbott.de",
+    kommentare: []
+  },
+  {
+    name: "Wolfgang Siegel",
+    ort: "Dortmund und Umgebung",
+    fachrichtung: "Sachverständige/r im Familienrecht",
+    adresse: "",
     kommentare: []
   }
 ];
