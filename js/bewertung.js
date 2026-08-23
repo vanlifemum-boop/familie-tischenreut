@@ -12,16 +12,29 @@
    Hinweiskasten in gutachter-suche.html.
    ============================================================ */
 (function () {
-  var EMPFAENGER = 'tussyvan@gmail.com';
+  var EMPFAENGER = 'systemfehlerfamilie@gmail.com';
 
   var FRAGEN = [
-    ['st-aufklaerung',  'Aufklärung'],
-    ['st-zuhoeren',     'Zuhören'],
-    ['st-kind',         'Umgang mit dem Kind'],
-    ['st-unterlagen',   'Unterlagen berücksichtigt'],
-    ['st-ausgewogen',   'Ausgewogenheit'],
-    ['st-nachvollzieh', 'Nachvollziehbarkeit'],
-    ['st-gesamt',       'Gesamteindruck']
+    ['st-transparenz',    '1. Arbeitsweise transparent erklärt'],
+    ['st-datenschutz',    '2. Information über Datenverarbeitung'],
+    ['st-welchedaten',    '3. Nachvollziehbar, welche Daten verwendet wurden'],
+    ['st-herkunft',       '4. Herkunft der Informationen nachvollziehbar'],
+    ['st-sorgfalt',       '5. Sorgfalt mit vertraulichen Informationen'],
+    ['st-rechte',         '6. Rechte als betroffene Person berücksichtigt'],
+    ['st-dritte',         '7. Grundlage für Auskünfte bei Dritten'],
+    ['st-zweck',          '8. Zweck der benötigten Informationen erklärt'],
+    ['st-auftrag',        '9. Einhaltung des gerichtlichen Auftrags'],
+    ['st-feststellungen', '10. Einzelne Feststellungen begründet'],
+    ['st-trennung',       '11. Trennung Tatsachen / Angaben Dritter / Bewertung'],
+    ['st-widerspruch',    '12. Widersprüchliche Angaben berücksichtigt'],
+    ['st-fair',           '13. Fairer und respektvoller Umgang'],
+    ['st-sichtweise',     '14. Gelegenheit, eigene Sichtweise einzubringen'],
+    ['st-kommunikation',  '15. Kommunikation während der Begutachtung'],
+    ['st-einwaende',      '16. Fehler und Einwände geprüft'],
+    ['st-herleitung',     '17. Fachliche Herleitung der Schlussfolgerungen'],
+    ['st-belege',         '18. Schlussfolgerungen belegt'],
+    ['st-neutral',        '19. Neutralität und Ausgewogenheit'],
+    ['st-gesamt',         '20. Gutachten insgesamt nachvollziehbar']
   ];
 
   var formular = document.getElementById('bewertung-formular');
@@ -54,16 +67,21 @@
     zeilen.push('');
     zeilen.push('STERNE-BEWERTUNG');
 
-    var summe = 0, anzahl = 0;
+    var summe = 0, anzahl = 0, offen = [];
     FRAGEN.forEach(function (f) {
       var n = wert(f[0]);
       if (n) { summe += n; anzahl++; zeilen.push('  ' + f[1] + ': ' + sterneText(n)); }
-      else   { zeilen.push('  ' + f[1] + ': keine Angabe'); }
+      else   { offen.push(f[1].split('.')[0]); }
     });
+    if (!anzahl) { zeilen.push('  (keine Frage bewertet)'); }
+    if (offen.length) {
+      zeilen.push('  Nicht beantwortet: Frage ' + offen.join(', '));
+    }
     if (anzahl) {
       zeilen.push('  ----');
-      zeilen.push('  Durchschnitt: ' + (summe / anzahl).toFixed(1).replace('.', ',') +
-                  ' von 5 (aus ' + anzahl + ' Angaben)');
+      zeilen.push('  Rechnerischer Mittelwert (ungewichtet): ' +
+                  (summe / anzahl).toFixed(1).replace('.', ',') +
+                  ' von 5, aus ' + anzahl + ' von 20 beantworteten Fragen');
     }
 
     zeilen.push('');
@@ -81,10 +99,21 @@
               '?subject=' + encodeURIComponent(betreff) +
               '&body=' + encodeURIComponent(zeilen.join('\n'));
 
-    if (url.length > 1900) {
-      url = 'mailto:' + EMPFAENGER + '?subject=' + encodeURIComponent(betreff);
-      alert('Ihr Kommentar ist sehr lang. Das E-Mail-Programm öffnet sich jetzt – bitte fügen ' +
-            'Sie den Text von Hand ein (Sie können ihn vorher im Formular kopieren).');
+    if (url.length > 7000) {
+      // Sehr lange Kommentare sprengen manche E-Mail-Programme: Text in die
+      // Zwischenablage legen und ohne Rumpftext oeffnen.
+      var kurz = 'mailto:' + EMPFAENGER + '?subject=' + encodeURIComponent(betreff);
+      var einfuegen = function () {
+        alert('Ihr Kommentar ist sehr lang. Die vollständige Bewertung liegt jetzt in der ' +
+              'Zwischenablage – bitte im E-Mail-Programm mit Strg+V bzw. Cmd+V einfügen.');
+        window.location.href = kurz;
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(zeilen.join('\n')).then(einfuegen, einfuegen);
+      } else {
+        einfuegen();
+      }
+      return;
     }
     window.location.href = url;
   });

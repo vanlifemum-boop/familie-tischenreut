@@ -642,3 +642,17 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
   .bw-frage { flex-direction: column; align-items: flex-start; }
   .bw-sterne label { font-size: 1.55rem; }
 }
+
+/* ---------- 20-Fragen-Katalog ---------- */
+.bw-gruppe {
+  font-weight: 700; font-size: .84rem; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--accent);
+  margin: 24px 0 10px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.bw-gruppe:first-of-type { margin-top: 8px; }
+.bw-nr {
+  display: inline-block; min-width: 1.6em;
+  font-weight: 700; color: var(--accent);
+}
+.bw-frage legend { display: block; }
