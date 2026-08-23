@@ -128,16 +128,23 @@
 
         <div class="guta-formular" id="guta-formular">
           <h2 style="text-align:center;margin-bottom:10px;">Bewerten &amp; Erfahrung einreichen</h2>
-          <p class="lead" style="text-align:center;max-width:640px;margin:0 auto 24px;">
-            Sie haben selbst Erfahrungen mit einem/einer Gutachter/in oder Anwalt/Anwältin
-            gemacht? Geben Sie eine Bewertung (Sterne) ab und schildern Sie Ihren Eindruck. Jede
-            Einreichung wird vor Veröffentlichung von Hand geprüft und ggf. rechtlich sicher
-            umformuliert – so bleiben alle Beteiligten geschützt.
+          <p class="lead" style="text-align:center;max-width:660px;margin:0 auto 20px;">
+            Sie haben selbst Erfahrungen mit einer Gutachterin oder einem Gutachter gemacht?
+            Bewerten Sie sieben Punkte mit Sternen und schildern Sie Ihren Eindruck.
           </p>
-          <form action="https://api.web3forms.com/submit" method="POST"
-                style="display:grid;gap:16px;max-width:560px;margin:0 auto;">
-            <input type="hidden" name="access_key" value="HIER-IHREN-WEB3FORMS-SCHLUESSEL-EINTRAGEN">
-            <input type="hidden" name="subject" value="Neue Bewertung für Gutachter-Suche">
+
+          <div class="guta-hinweis-box" style="max-width:660px;margin-inline:auto;">
+            <strong>Wer eine Bewertung hinterlassen möchte, schreibt mir bitte eine E-Mail:</strong>
+            <a href="mailto:tussyvan@gmail.com">tussyvan@gmail.com</a>. Sie können dafür einfach das Formular unten
+            ausfüllen – beim Absenden öffnet sich Ihr E-Mail-Programm mit allen Angaben, Sie müssen
+            die Nachricht nur noch abschicken. Oder Sie schreiben mir direkt frei formuliert.<br><br>
+            Jede Einreichung wird von Hand geprüft, bevor sie erscheint, und im Zweifel rechtlich
+            sicher umformuliert. Bitte schildern Sie Ihre <strong>eigene Wahrnehmung</strong>
+            („Aus meiner Sicht …“, „Ich hatte den Eindruck …“) und keine Tatsachenbehauptungen über
+            eine namentlich genannte Person – so bleiben Sie und wir geschützt.
+          </div>
+
+          <form id="bewertung-formular" style="display:grid;gap:16px;max-width:560px;margin:0 auto;">
             <div>
               <label for="g-art" style="font-weight:600;display:block;margin-bottom:6px;">Worum geht es?</label>
               <select id="g-art" name="Kategorie" required
@@ -152,38 +159,67 @@
                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
             </div>
             <div>
-              <label for="g-sterne" style="font-weight:600;display:block;margin-bottom:6px;">Ihre Bewertung</label>
-              <select id="g-sterne" name="Bewertung (Sterne)"
-                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
-                <option value="">Keine Sternebewertung</option>
-                <option value="5">★★★★★ – sehr gut (5)</option>
-                <option value="4">★★★★☆ – gut (4)</option>
-                <option value="3">★★★☆☆ – geht so (3)</option>
-                <option value="2">★★☆☆☆ – schlecht (2)</option>
-                <option value="1">★☆☆☆☆ – sehr schlecht (1)</option>
-              </select>
-            </div>
-            <div>
-              <label for="g-ort" style="font-weight:600;display:block;margin-bottom:6px;">Ort / Kanzlei- bzw. Praxissitz</label>
+              <label for="g-ort" style="font-weight:600;display:block;margin-bottom:6px;">Ort / Praxis- bzw. Kanzleisitz</label>
               <input id="g-ort" name="Ort" type="text"
                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
             </div>
+
+            <div class="bw-block">
+              <p class="bw-kopf">Ihre Sterne-Bewertung</p>
+              <p class="bw-hilfe">1 Stern = sehr schlecht, 5 Sterne = sehr gut. Sie müssen nicht
+                 jede Frage beantworten – lassen Sie offen, wozu Sie nichts sagen können.</p>
+            <fieldset class="bw-frage">
+              <legend><strong>Aufklärung</strong> – Wurde Ihnen verständlich erklärt, worum es geht und wie das Verfahren abläuft?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-aufklaerung-5" name="st-aufklaerung" value="5"><label for="st-aufklaerung-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-aufklaerung-4" name="st-aufklaerung" value="4"><label for="st-aufklaerung-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-aufklaerung-3" name="st-aufklaerung" value="3"><label for="st-aufklaerung-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-aufklaerung-2" name="st-aufklaerung" value="2"><label for="st-aufklaerung-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-aufklaerung-1" name="st-aufklaerung" value="1"><label for="st-aufklaerung-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Zuhören</strong> – Hatten Sie den Eindruck, ausreichend gehört zu werden?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-zuhoeren-5" name="st-zuhoeren" value="5"><label for="st-zuhoeren-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-zuhoeren-4" name="st-zuhoeren" value="4"><label for="st-zuhoeren-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-zuhoeren-3" name="st-zuhoeren" value="3"><label for="st-zuhoeren-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-zuhoeren-2" name="st-zuhoeren" value="2"><label for="st-zuhoeren-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-zuhoeren-1" name="st-zuhoeren" value="1"><label for="st-zuhoeren-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Umgang mit dem Kind</strong> – Wie haben Sie den Umgang mit Ihrem Kind erlebt?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-kind-5" name="st-kind" value="5"><label for="st-kind-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-kind-4" name="st-kind" value="4"><label for="st-kind-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-kind-3" name="st-kind" value="3"><label for="st-kind-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-kind-2" name="st-kind" value="2"><label for="st-kind-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-kind-1" name="st-kind" value="1"><label for="st-kind-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Unterlagen</strong> – Hatten Sie den Eindruck, dass Ihre Unterlagen und Einwände berücksichtigt wurden?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-unterlagen-5" name="st-unterlagen" value="5"><label for="st-unterlagen-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-unterlagen-4" name="st-unterlagen" value="4"><label for="st-unterlagen-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-unterlagen-3" name="st-unterlagen" value="3"><label for="st-unterlagen-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-unterlagen-2" name="st-unterlagen" value="2"><label for="st-unterlagen-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-unterlagen-1" name="st-unterlagen" value="1"><label for="st-unterlagen-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Ausgewogenheit</strong> – Wie ausgewogen haben Sie die Darstellung beider Seiten erlebt?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-ausgewogen-5" name="st-ausgewogen" value="5"><label for="st-ausgewogen-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-ausgewogen-4" name="st-ausgewogen" value="4"><label for="st-ausgewogen-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-ausgewogen-3" name="st-ausgewogen" value="3"><label for="st-ausgewogen-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-ausgewogen-2" name="st-ausgewogen" value="2"><label for="st-ausgewogen-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-ausgewogen-1" name="st-ausgewogen" value="1"><label for="st-ausgewogen-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Nachvollziehbarkeit</strong> – Konnten Sie nachvollziehen, wie das Ergebnis zustande gekommen ist?</legend>
+              <div class="bw-sterne"><input type="radio" id="st-nachvollzieh-5" name="st-nachvollzieh" value="5"><label for="st-nachvollzieh-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-nachvollzieh-4" name="st-nachvollzieh" value="4"><label for="st-nachvollzieh-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-nachvollzieh-3" name="st-nachvollzieh" value="3"><label for="st-nachvollzieh-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-nachvollzieh-2" name="st-nachvollzieh" value="2"><label for="st-nachvollzieh-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-nachvollzieh-1" name="st-nachvollzieh" value="1"><label for="st-nachvollzieh-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            <fieldset class="bw-frage">
+              <legend><strong>Gesamteindruck</strong> – Ihr Gesamteindruck.</legend>
+              <div class="bw-sterne"><input type="radio" id="st-gesamt-5" name="st-gesamt" value="5"><label for="st-gesamt-5" title="5 von 5"><span class="sr-only">5 von 5</span>★</label><input type="radio" id="st-gesamt-4" name="st-gesamt" value="4"><label for="st-gesamt-4" title="4 von 5"><span class="sr-only">4 von 5</span>★</label><input type="radio" id="st-gesamt-3" name="st-gesamt" value="3"><label for="st-gesamt-3" title="3 von 5"><span class="sr-only">3 von 5</span>★</label><input type="radio" id="st-gesamt-2" name="st-gesamt" value="2"><label for="st-gesamt-2" title="2 von 5"><span class="sr-only">2 von 5</span>★</label><input type="radio" id="st-gesamt-1" name="st-gesamt" value="1"><label for="st-gesamt-1" title="1 von 5"><span class="sr-only">1 von 5</span>★</label></div>
+            </fieldset>
+            </div>
+
             <div>
-              <label for="g-text" style="font-weight:600;display:block;margin-bottom:6px;">Ihr Kommentar (bitte als eigene Wahrnehmung formulieren, z. B. „Aus meiner Sicht …")</label>
-              <textarea id="g-text" name="Kommentar" rows="6" required
+              <label for="g-text" style="font-weight:600;display:block;margin-bottom:6px;">Ihr Kommentar (bitte als eigene Wahrnehmung formulieren)</label>
+              <textarea id="g-text" name="Kommentar" rows="6" required placeholder="Aus meiner Sicht …"
                         style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;"></textarea>
             </div>
             <div>
               <label for="g-von" style="font-weight:600;display:block;margin-bottom:6px;">Wie sollen Sie genannt werden?</label>
-              <input id="g-von" name="Genannt als" type="text" placeholder="z. B. „Betroffene Mutter, 2026" oder „anonym"" required
+              <input id="g-von" name="Genannt als" type="text" required
+                     placeholder="z. B. „Betroffene Mutter, 2026“ oder „anonym“"
                      style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
             </div>
-            <div>
-              <label for="g-email" style="font-weight:600;display:block;margin-bottom:6px;">Ihre E-Mail (nicht öffentlich, nur für Rückfragen)</label>
-              <input id="g-email" name="email" type="email" required
-                     style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;">
-            </div>
-            <button type="submit" class="btn btn--primary">Zur Prüfung einreichen</button>
+            <label style="display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--muted);">
+              <input type="checkbox" required style="margin-top:4px;"><span>
+              Ich habe die Bewertung selbst erlebt und schildere meine eigene Wahrnehmung. Mir ist
+              bekannt, dass sie vor einer Veröffentlichung geprüft wird
+              (siehe <a href="datenschutz.html">Datenschutz</a>).</span>
+            </label>
+            <button type="submit" class="btn btn--primary">Bewertung per E-Mail senden</button>
+            <p class="bw-hilfe" style="text-align:center;">
+              Es öffnet sich Ihr E-Mail-Programm mit allen Angaben. Falls das nicht funktioniert,
+              schreiben Sie bitte direkt an <a href="mailto:tussyvan@gmail.com">tussyvan@gmail.com</a>.
+            </p>
           </form>
         </div>
 
@@ -244,5 +280,6 @@
   <script src="js/animationen.js"></script>
   <script src="js/gutachter-daten.js"></script>
   <script src="js/gutachter-suche.js"></script>
+  <script src="js/bewertung.js"></script>
 </body>
 </html>

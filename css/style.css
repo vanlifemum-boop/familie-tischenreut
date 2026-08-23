@@ -382,7 +382,7 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
 }
 .guta-suchfeld:focus { outline: 2px solid var(--primary); border-color: transparent; }
 
-.guta-liste { display: grid; gap: 20px; }
+.guta-liste { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
 .guta-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -397,7 +397,10 @@ a.thema:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-c
   color: var(--accent); font-weight: 700;
 }
 .guta-fach { color: var(--muted); font-size: .95rem; margin-top: 4px; }
-.guta-adresse { color: var(--muted); font-size: .9rem; margin-top: 6px; }
+.guta-adresse {
+  color: var(--muted); font-size: .9rem; margin-top: 6px;
+  overflow-wrap: anywhere; word-break: break-word;
+}
 .guta-kommentare { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 12px; }
 .guta-kommentar {
   background: var(--bg); border-radius: 10px; padding: 12px 16px;
@@ -590,3 +593,52 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
 .ms-norm a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .ms-norm a:hover { text-decoration: underline; }
 .ms-text { color: var(--muted); font-size: .93rem; margin: 0; }
+
+/* ---------- Sterne-Bewertungsformular ---------- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.bw-block {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.bw-kopf { font-weight: 700; margin: 0 0 4px; color: var(--primary); }
+.bw-hilfe { font-size: .88rem; color: var(--muted); margin: 0 0 16px; }
+.bw-frage {
+  border: 0; padding: 0; margin: 0 0 14px;
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: 4px 16px;
+}
+.bw-frage:last-child { margin-bottom: 0; }
+.bw-frage legend {
+  padding: 0; font-size: .93rem; line-height: 1.4;
+  float: left; width: 100%;
+}
+.bw-frage legend strong { color: var(--ink); }
+
+/* Sterne: Radios in umgekehrter Reihenfolge im Markup, damit ~ das
+   Hover-/Checked-Verhalten nach links abbilden kann. */
+.bw-sterne {
+  display: inline-flex; flex-direction: row-reverse;
+  justify-content: flex-end; margin-top: 4px;
+}
+.bw-sterne input { position: absolute; opacity: 0; width: 0; height: 0; }
+.bw-sterne label {
+  font-size: 1.7rem; line-height: 1; cursor: pointer;
+  color: var(--line); padding: 0 2px;
+  transition: color .12s ease, transform .12s ease;
+}
+.bw-sterne label:hover,
+.bw-sterne label:hover ~ label,
+.bw-sterne input:checked ~ label { color: var(--accent); }
+.bw-sterne label:hover { transform: scale(1.12); }
+.bw-sterne input:focus-visible + label {
+  outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px;
+}
+@media (max-width: 480px) {
+  .bw-frage { flex-direction: column; align-items: flex-start; }
+  .bw-sterne label { font-size: 1.55rem; }
+}
