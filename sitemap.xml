@@ -3,7 +3,7 @@
   <url><loc>https://systemfehlerfamilie.de/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://systemfehlerfamilie.de/austausch.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://systemfehlerfamilie.de/berater.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://systemfehlerfamilie.de/blog.html</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://systemfehlerfamilie.de/blog.html</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://systemfehlerfamilie.de/downloads.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://systemfehlerfamilie.de/gutachter-suche.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://systemfehlerfamilie.de/hilfe-anlaufstellen.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -139,6 +139,12 @@
   <url>
     <loc>https://systemfehlerfamilie.de/beitraege/offener-brief-holger-hassel-sos-kinderdorf-oberpfalz-immenreuth.html</loc>
     <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://systemfehlerfamilie.de/beitraege/offener-brief-jugendamt-tirschenreuth-inobhutnahme.html</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
