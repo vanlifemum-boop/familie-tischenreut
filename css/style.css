@@ -132,6 +132,53 @@ h3 { font-size: 1.3rem; }
        letter-spacing: .06em; color: var(--primary); background: var(--accent-soft); border: 1px solid #e7d9bd;
        padding: 4px 10px; border-radius: 999px; }
 
+/* ---------- Offene Briefe ---------- */
+.crumb { color: var(--muted); font-size: .94rem; margin: 0 0 28px; }
+.letters-hero {
+  display: grid; grid-template-columns: minmax(240px,.8fr) minmax(280px,1fr); gap: clamp(30px,6vw,88px);
+  align-items: center; padding: clamp(38px,7vw,76px); color: #d8e1eb; background: var(--ink);
+  border-bottom: 7px solid var(--accent); box-shadow: var(--shadow);
+}
+.letters-hero h1 { color: #fff; font-size: clamp(3.2rem,8vw,6.4rem); line-height: .82; margin: 12px 0 0; }
+.letters-hero > p { font-size: clamp(1.12rem,2.3vw,1.5rem); line-height: 1.65; margin: 0; }
+.letters-kicker { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.letters-editorial {
+  margin: 32px 0 54px; padding: clamp(24px,4vw,34px); background: var(--surface);
+  border: 1px solid var(--line); border-left: 5px solid var(--primary); box-shadow: var(--shadow);
+}
+.letters-editorial h2 { margin: 0 0 12px; }
+.letters-editorial p { margin: 0; font-size: 1.05rem; }
+.letters-heading { margin-bottom: 24px; }
+.letters-heading h2 { margin: 6px 0 0; }
+.letters-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 24px; }
+.letter-card {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 370px;
+  padding: 30px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.letter-card-number {
+  position: absolute; top: 10px; right: 18px; color: #e7ebf0; font-family: var(--serif);
+  font-size: 5.6rem; font-weight: 700; line-height: 1; user-select: none;
+}
+.letter-card .letters-kicker { position: relative; margin: 0 0 40px; padding-right: 62px; }
+.letter-card h3 { position: relative; font-size: 1.65rem; margin: 0 0 14px; }
+.letter-card h3 a { color: var(--ink); }
+.letter-card h3 a:hover { color: var(--primary); text-decoration: none; }
+.letter-card > p:not(.letters-kicker) { color: var(--muted); margin: 0 0 24px; }
+.letter-card-footer {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center;
+  margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); font-size: .92rem;
+}
+.letter-card-footer time { color: var(--muted); }
+.letter-card-footer .more { font-weight: 700; }
+.letters-response { margin-top: 46px; padding: clamp(28px,5vw,46px); background: var(--primary); color: #dbe5ef; }
+.letters-response h2 { color: #fff; margin: 0 0 10px; }
+.letters-response p { max-width: 70ch; margin: 0; }
+@media (max-width: 720px) {
+  .letters-hero { grid-template-columns: 1fr; }
+  .letters-hero h1 { font-size: clamp(3.2rem,18vw,5.1rem); }
+  .letter-card { min-height: 0; }
+}
+
 /* ---------- Artikel ---------- */
 .article { max-width: var(--measure); margin-inline: auto; }
 .article .crumb { font-size: .95rem; margin: 0 0 20px; }
