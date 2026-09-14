@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Was ist der Deutsche Qualifikationsrahmen?</title>
+  <desc id="desc">Infografik mit acht DQR-Niveaus und dem Hinweis, dass der DQR Qualifikationen, nicht Persönlichkeit oder Arbeitsleistung bewertet.</desc>
+  <rect width="1080" height="1350" fill="#f7f3eb"/>
+  <g opacity="0.18" stroke="#b9aa91" stroke-width="1">
+    <path d="M0 90H1080M0 180H1080M0 270H1080M0 360H1080M0 450H1080M0 540H1080M0 630H1080M0 720H1080M0 810H1080M0 900H1080M0 990H1080M0 1080H1080"/>
+    <path d="M90 0V1080M180 0V1080M270 0V1080M360 0V1080M450 0V1080M540 0V1080M630 0V1080M720 0V1080M810 0V1080M900 0V1080M990 0V1080"/>
+  </g>
+
+  <text x="540" y="115" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="900">WAS IST DER DQR?</text>
+  <rect x="55" y="150" width="970" height="98" rx="8" fill="#102a43"/>
+  <text x="540" y="217" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">DEUTSCHER QUALIFIKATIONSRAHMEN</text>
+  <text x="540" y="292" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">8 NIVEAUS FÜR QUALIFIKATIONEN</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <rect x="70" y="335" width="235" height="82" rx="8" fill="#d1912f"/><text x="110" y="390" fill="#102a43" font-size="48">8</text><text x="170" y="385" fill="#102a43" font-size="21">FORSCHUNG</text>
+    <rect x="70" y="425" width="275" height="82" rx="8" fill="#dfa748"/><text x="110" y="480" fill="#102a43" font-size="48">7</text><text x="170" y="475" fill="#102a43" font-size="21">STRATEGIE</text>
+    <rect x="70" y="515" width="315" height="82" rx="8" fill="#e9bc67"/><text x="110" y="570" fill="#102a43" font-size="48">6</text><text x="170" y="565" fill="#102a43" font-size="21">KOMPLEXITÄT</text>
+    <rect x="70" y="605" width="355" height="82" rx="8" fill="#b7c5d1"/><text x="110" y="660" fill="#102a43" font-size="48">5</text><text x="170" y="655" fill="#102a43" font-size="21">SPEZIALISIERUNG</text>
+    <rect x="70" y="695" width="395" height="82" rx="8" fill="#a6b8c7"/><text x="110" y="750" fill="#102a43" font-size="48">4</text><text x="170" y="745" fill="#102a43" font-size="21">FACHARBEIT</text>
+    <rect x="70" y="785" width="435" height="82" rx="8" fill="#96aaba"/><text x="110" y="840" fill="#102a43" font-size="48">3</text><text x="170" y="835" fill="#102a43" font-size="21">FACHLICHE BASIS</text>
+    <rect x="70" y="875" width="475" height="82" rx="8" fill="#859cad"/><text x="110" y="930" fill="#102a43" font-size="48">2</text><text x="170" y="925" fill="#102a43" font-size="21">GRUNDLAGEN</text>
+    <rect x="70" y="965" width="515" height="82" rx="8" fill="#748d9f"/><text x="110" y="1020" fill="#ffffff" font-size="48">1</text><text x="170" y="1015" fill="#ffffff" font-size="21">EINFACHE ANFORDERUNGEN</text>
+  </g>
+
+  <rect x="625" y="348" width="385" height="450" rx="18" fill="#ffffff" stroke="#d8dee5" stroke-width="4"/>
+  <circle cx="818" cy="465" r="78" fill="#f5ecdb" stroke="#b57314" stroke-width="8"/>
+  <path d="M775 466l28 29 59-68" fill="none" stroke="#1f3a5f" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="818" y="584" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900">BELEGTE KOMPETENZ</text>
+  <g fill="#2a3644" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">
+    <text x="675" y="648">• WISSEN</text>
+    <text x="675" y="692">• FERTIGKEITEN</text>
+    <text x="675" y="736">• SOZIALKOMPETENZ</text>
+    <text x="675" y="780">• SELBSTSTÄNDIGKEIT</text>
+  </g>
+
+  <rect x="625" y="842" width="385" height="205" rx="18" fill="#f5ecdb" stroke="#d1912f" stroke-width="4"/>
+  <text x="818" y="910" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900">POSITION</text>
+  <text x="818" y="972" text-anchor="middle" fill="#b57314" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900">≠</text>
+  <text x="818" y="1022" text-anchor="middle" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900">QUALIFIKATIONSNACHWEIS</text>
+
+  <rect x="0" y="1100" width="1080" height="250" fill="#102a43"/>
+  <text x="540" y="1172" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">DER DQR BEWERTET EINE QUALIFIKATION.</text>
+  <text x="540" y="1234" text-anchor="middle" fill="#f4b942" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900">NICHT PERSÖNLICHKEIT.</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#f4b942" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900">NICHT ARBEITSLEISTUNG.</text>
+  <text x="1010" y="1325" text-anchor="end" fill="#ffffff" opacity="0.8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">SYSTEMFEHLER FAMILIE</text>
+</svg>
