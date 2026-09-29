@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbegründete Meldung beim Jugendamt: Wann muss gelöscht werden?</title>
+  <meta name="description" content="2015 geprüft, nichts gefunden – 2025 lag die Akte immer noch da und wanderte bis zur Polizei. Was das Recht zur Löschung unbegründeter Kinderschutzmeldungen sagt und wie du deine Daten zurückholst.">
+  <meta name="keywords" content="Jugendamt Daten löschen, unbegründete Meldung Jugendamt, Kindeswohlgefährdung Meldung Löschung, Art. 17 DSGVO Jugendamt, § 84 SGB X, Aufbewahrungsfrist Jugendamt, § 9b SGB VIII, Speicherbegrenzung">
+  <meta name="author" content="Systemfehler Familie">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f3a5f">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Systemfehler Familie">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Zehn Jahre gespeichert: Warum eine unbegründete Meldung nicht ewig in der Akte liegen darf">
+  <meta property="og:description" content="2015 wurde geprüft. Ergebnis: nichts. 2025 lag die Akte trotzdem noch da. Was das Recht zur Löschung sagt – und was du tun kannst.">
+  <meta property="og:url" content="https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html">
+  <meta property="og:image" content="https://systemfehlerfamilie.de/img/akteneinsicht-jugendamt-polizei-marionette.jpg">
+  <meta property="og:image:width" content="1122">
+  <meta property="og:image:height" content="1402">
+  <meta property="og:image:alt" content="Grafik zur Weitergabe einer Kindeswohlgefährdungsmeldung zwischen Jugendamt und Polizei">
+  <meta property="article:published_time" content="2026-09-29">
+  <meta property="article:modified_time" content="2026-09-29">
+  <meta property="article:section" content="Datenschutz und Behördenakten">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Unbegründete Meldung – und trotzdem zehn Jahre gespeichert?">
+  <meta name="twitter:description" content="Meldung ≠ bestätigte Kindeswohlgefährdung. Was zur Löschung gilt und wie du Auskunft, Sperrung und Löschung verlangst.">
+  <meta name="twitter:image" content="https://systemfehlerfamilie.de/img/akteneinsicht-jugendamt-polizei-marionette.jpg">
+
+  <style>
+    .article { max-width: 78ch; }
+    .article-hero { margin: 30px 0 36px; }
+    .article-hero img { width: 100%; border-radius: 14px; box-shadow: var(--shadow); }
+    .article-hero figcaption { color: var(--muted); font-size: .88rem; margin-top: 10px; text-align: center; }
+    .case-summary, .precision-box, .action-box, .legal-box {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: clamp(20px, 4vw, 30px); margin: 30px 0; box-shadow: var(--shadow);
+    }
+    .case-summary { border-top: 6px solid var(--accent); }
+    .precision-box { border-left: 5px solid #9b2f2f; background: #fff7f5; }
+    .action-box { border-left: 5px solid #2f7a5a; background: #f1f8f4; }
+    .legal-box { border-left: 5px solid var(--primary); }
+    .case-summary h2, .precision-box h2, .action-box h2, .legal-box h2 { margin-top: 0; }
+    .fact-line { display: grid; grid-template-columns: 130px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .fact-line:last-child { border-bottom: 0; }
+    .fact-line time { font-weight: 800; color: var(--primary); }
+    .fact-line p { margin: 0; }
+    .comparison { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: .96rem; }
+    .comparison th, .comparison td { text-align: left; vertical-align: top; padding: 14px; border: 1px solid var(--line); }
+    .comparison th { background: var(--primary); color: #fff; font-family: var(--sans); }
+    .comparison tr:nth-child(even) td { background: #f8fafc; }
+    .table-scroll { overflow-x: auto; margin: 24px 0; border-radius: var(--radius); }
+    .checklist { counter-reset: steps; list-style: none; padding: 0 !important; }
+    .checklist li { position: relative; padding: 0 0 22px 58px; margin: 0 !important; }
+    .checklist li::before { counter-increment: steps; content: counter(steps); position: absolute; left: 0; top: 2px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 800; }
+    .checklist li strong { display: block; font-size: 1.05rem; }
+    .quote-request { border-left: 4px solid var(--accent); padding: 18px 22px; margin: 26px 0; background: var(--accent-soft); color: var(--ink); }
+    .quote-request p { margin: .7em 0; }
+    .difference { font-size: clamp(1.25rem, 3vw, 1.65rem); font-family: var(--serif); font-weight: 700; text-align: center; color: var(--ink); padding: 24px; margin: 28px 0; border-block: 1px solid var(--line); }
+    .difference span { color: #a82c2c; }
+    .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; margin: 12px 0; padding: 16px 18px; }
+    .faq summary { cursor: pointer; color: var(--ink); font-weight: 750; }
+    .faq details p { margin: .8em 0 0; }
+    .source-list li { margin-bottom: .8em; }
+    @media (max-width: 620px) {
+      .fact-line { grid-template-columns: 1fr; gap: 4px; }
+      .comparison { min-width: 680px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html#article",
+        "headline": "Zehn Jahre gespeichert: Warum eine unbegründete Meldung nicht ewig in der Akte liegen darf",
+        "alternativeHeadline": "Unbegründete Kinderschutzmeldung: Wann das Jugendamt Daten löschen muss",
+        "description": "2015 geprüft, nichts gefunden – 2025 lag die Akte noch da und wanderte bis zur Polizei. Was das Recht zur Löschung sagt und wie Betroffene Auskunft, Sperrung und Löschung verlangen.",
+        "datePublished": "2026-09-29",
+        "dateModified": "2026-09-29",
+        "inLanguage": "de-DE",
+        "isAccessibleForFree": true,
+        "url": "https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html",
+        "mainEntityOfPage": {"@type":"WebPage","@id":"https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html"},
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://systemfehlerfamilie.de/img/akteneinsicht-jugendamt-polizei-marionette.jpg",
+          "width": 1122,
+          "height": 1402
+        },
+        "author": {"@type":"Organization","name":"Systemfehler Familie","url":"https://systemfehlerfamilie.de/"},
+        "publisher": {
+          "@type":"Organization",
+          "name":"Systemfehler Familie",
+          "url":"https://systemfehlerfamilie.de/",
+          "logo":{"@type":"ImageObject","url":"https://systemfehlerfamilie.de/img/logo.png"}
+        },
+        "about": [
+          {"@type":"Thing","name":"Löschung von Sozialdaten beim Jugendamt"},
+          {"@type":"Thing","name":"Kindeswohlgefährdungsmeldung"},
+          {"@type":"Thing","name":"Datenschutz-Grundverordnung"}
+        ],
+        "keywords": ["Jugendamt Daten löschen","Art. 17 DSGVO","Art. 18 DSGVO","§ 84 SGB X","§ 9b SGB VIII","Speicherbegrenzung"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Start","item":"https://systemfehlerfamilie.de/"},
+          {"@type":"ListItem","position":2,"name":"Blog","item":"https://systemfehlerfamilie.de/blog.html"},
+          {"@type":"ListItem","position":3,"name":"Unbegründete Meldung löschen","item":"https://systemfehlerfamilie.de/beitraege/unbegruendete-meldung-jugendamt-loeschen.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Gibt es eine feste Löschfrist für unbegründete Meldungen beim Jugendamt?",
+            "acceptedAnswer": {"@type":"Answer","text":"Bundesweit nicht. Berlin schreibt in seinen Ausführungsvorschriften zum Kinderschutz eine Löschung spätestens ein Jahr nach der abschließenden Entscheidung vor, wenn keine Kindeswohlgefährdung vorlag. In anderen Bundesländern gilt der allgemeine Grundsatz: Daten sind zu löschen, sobald sie nicht mehr erforderlich sind."}
+          },
+          {
+            "@type": "Question",
+            "name": "Sollte ich sofort die Löschung verlangen?",
+            "acceptedAnswer": {"@type":"Answer","text":"Nicht unbedingt. Wenn die Akte ein entlastendes Prüfergebnis enthält, kann sie ein wichtiger Beweis sein. Sinnvoll ist oft die Reihenfolge: erst Auskunft und Kopie, dann Einschränkung der Verarbeitung, dann Löschung."}
+          },
+          {
+            "@type": "Question",
+            "name": "Gilt die neue 100-Jahre-Aufbewahrung nach § 9b SGB VIII für jede Meldung?",
+            "acceptedAnswer": {"@type":"Answer","text":"Nach dem Wortlaut betrifft § 9b SGB VIII Erziehungshilfe-, Eingliederungshilfe-, Heim- oder Vormundschaftsakten. Eine reine Prüfung ohne Befund und ohne gewährte Hilfe wird dort nicht genannt. Die Vorschrift gilt zudem erst seit dem 1. Juli 2025."}
+          },
+          {
+            "@type": "Question",
+            "name": "Wohin kann ich mich wenden, wenn das Jugendamt nicht antwortet?",
+            "acceptedAnswer": {"@type":"Answer","text":"An die Datenschutzaufsicht des jeweiligen Bundeslandes (Art. 77 DSGVO). Die Beschwerde ist kostenlos. Daneben kommt gerichtlicher Rechtsschutz in Betracht."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="brand">System<span>fehler</span> Familie</a>
+      <button class="nav-toggle" aria-label="Menü" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../meine-geschichte.html">Meine Geschichte</a></li>
+        <li><a href="../blog.html" aria-current="page">Blog</a></li>
+        <li><a href="../podcast.html">Podcast</a></li>
+        <li><a href="../hilfe-anlaufstellen.html">Hilfe &amp; Anlaufstellen</a></li>
+        <li><a href="../gutachter-suche.html">Gutachter-Suche</a></li>
+        <li><a href="../urteile.html">Urteile</a></li>
+        <li><a href="../gesetze.html">Gesetze</a></li>
+        <li><a href="../recht-erklaert.html">Recht erklärt</a></li>
+        <li><a href="../berater.html">Beratung</a></li>
+        <li><a href="../downloads.html">Musterbriefe</a></li>
+        <li><a href="../austausch.html">Austausch</a></li>
+        <li><a href="../kontakt.html">Kontakt</a></li>
+        <li><a href="../spenden.html" class="nav-cta">Spenden</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <article class="section">
+      <div class="container article">
+        <p class="crumb"><a href="../blog.html">← Alle Beiträge</a></p>
+        <span class="kat">Datenschutz &amp; Behördenakten</span>
+        <h1>Zehn Jahre gespeichert: Warum eine unbegründete Meldung nicht ewig in der Akte liegen darf</h1>
+        <p class="lead">2015 wurde geprüft. Ergebnis: nichts. 2025 lag die Akte trotzdem noch da – und wanderte bis zur Polizei. Was das Recht zur Löschung sagt und wie du dir deine Daten zurückholst.</p>
+        <p class="article-meta"><strong>Veröffentlicht:</strong> 29. September 2026 · <strong>Lesedauer:</strong> etwa 10 Minuten · <strong>Schwerpunkt:</strong> Speicherung, Löschung und Weitergabe von Jugendamtsdaten</p>
+
+        <figure class="article-hero">
+          <img src="../img/akteneinsicht-jugendamt-polizei-marionette.jpg" width="1122" height="1402" loading="eager" decoding="async" alt="Grafische Gegenüberstellung eines Schreibens mit dem Ergebnis keine Kindeswohlgefährdung und einer späteren Weitergabe einer Kindeswohlgefährdungsmeldung an die Polizei">
+          <figcaption>Grafische Aufbereitung der zeitlichen Abfolge. Maßgeblich für die Bewertung bleibt der genaue Wortlaut der Originaldokumente.</figcaption>
+        </figure>
+
+        <div class="case-summary">
+          <h2>Das Wichtigste in Kürze</h2>
+          <ul>
+            <li>2015 prüfte das Jugendamt Köln eine anonyme Meldung über mich. Ergebnis: <strong>keine Kindeswohlgefährdung, kein Handlungsbedarf.</strong></li>
+            <li>Fast zehn Jahre später, im April 2025, lagen Meldung und Aktenvermerk immer noch vor – und wurden mit vielen privaten Details an eine andere Behörde weitergegeben.</li>
+            <li>Einen Tag später tauchte die alte Meldung in einer E-Mail an die Polizei auf – ohne den Hinweis, dass sie sich damals als unbegründet erwiesen hatte.</li>
+            <li>Behörden dürfen Daten nur so lange speichern, wie sie <strong>erforderlich</strong> sind. Berlin schreibt für Prüfungen ohne Befund sogar eine Löschung nach spätestens <strong>einem Jahr</strong> vor.</li>
+            <li>Ich habe deshalb Auskunft, Sperrung und Löschung beantragt. Wie du das auch machen kannst, steht unten.</li>
+          </ul>
+        </div>
+
+        <div class="article-body">
+          <h2>Ich dachte, das Thema sei erledigt</h2>
+          <p>Mein Kind war damals erst wenige Wochen alt. Jemand rief anonym beim Jugendamt an. Es ging um meine Wohnung, einen Wasserrohrbruch und einen Hund, der angeblich nachts bellte.</p>
+          <p>Das Jugendamt kam vorbei. Es sah sich alles an. Meine Hebamme bestätigte, dass sich mein Kind gut entwickelt. Das Ergebnis stand schwarz auf weiß in der Akte: keine Kindeswohlgefährdung, kein weiterer Handlungsbedarf. Danach hat das Jugendamt Köln nie wieder etwas mit uns zu tun gehabt.</p>
+          <p>Für mich war die Sache damit abgeschlossen. Für die Behörde nicht.</p>
+
+          <div class="difference">Wer nichts mehr <span>speichert</span>, kann auch nichts mehr <span>weitergeben</span>.</div>
+
+          <h2>Der Ablauf: 2015 geprüft, 2025 wieder hervorgeholt</h2>
+          <div class="fact-line">
+            <time datetime="2015-08-27">27. August 2015</time>
+            <p>Anonyme Meldung beim Bezirksjugendamt Köln-Rodenkirchen. Hausbesuch. Ergebnis: <strong>keine Kindeswohlgefährdung, kein Handlungsbedarf</strong>.</p>
+          </div>
+          <div class="fact-line">
+            <time datetime="2015/2025">2015 bis 2025</time>
+            <p>Kein weiterer Kontakt. Die Unterlagen bleiben trotzdem gespeichert – fast zehn Jahre lang.</p>
+          </div>
+          <div class="fact-line">
+            <time datetime="2025-04-22">22. April 2025</time>
+            <p>Das Landratsamt Bayreuth fragt in Köln nach. Die Antwort kommt noch am selben Vormittag. Köln nennt korrekt das entlastende Ergebnis – gibt aber zusätzlich Details zu Wohnsituation, Mietstreit, Hund, beruflicher Tätigkeit und den Angaben der Hebamme weiter.</p>
+          </div>
+          <div class="fact-line">
+            <time datetime="2025-04-23">23. April 2025</time>
+            <p>In einer E-Mail an die Polizei heißt es: „Im Austausch mit dem Jugendamt in Köln wurde eine bereits vergangene Kindeswohlgefährdungsmeldung im Jahr 2015 bestätigt.“ Dass damals keine Gefährdung festgestellt wurde, steht in dieser Passage nicht.</p>
+          </div>
+          <p>Wie diese Formulierung wirkt und warum Meldung und Prüfergebnis immer zusammengehören, habe ich ausführlich im Beitrag <a href="akteneinsicht-jugendamt-widersprueche-aufdecken.html">„Darum ist Akteneinsicht so wichtig“</a> analysiert. Hier geht es um die Frage davor: <strong>Warum war diese Akte 2025 überhaupt noch da?</strong></p>
+
+          <h2>Das eigentliche Problem: Alte Akten werden zur Vorgeschichte</h2>
+          <p>Jeder kann anonym beim Jugendamt anrufen. Das ist richtig so – Kinder müssen geschützt werden. Aber eine Meldung ist nur eine Behauptung. Erst die Prüfung zeigt, ob etwas dran ist.</p>
+          <p>Wenn eine Prüfung „nichts“ ergibt, dann muss es auch dabei bleiben. Bleibt die Akte jahrelang liegen, passiert genau das, was mir passiert ist: Irgendwann fragt eine andere Stelle nach, und aus einer entkräfteten Behauptung wird eine „Vorgeschichte“. Sie wandert von Behörde zu Behörde, wird kürzer, verliert ihr Ergebnis – und landet am Ende bei der Polizei.</p>
+          <p>Und es geht nicht nur um die Meldung selbst. Weitergegeben wurden Informationen über meinen Mietstreit, meinen Beruf und mein privates Umfeld. Nichts davon hatte mit einer Gefährdung meines Kindes zu tun.</p>
+
+          <h2>Was das Recht zur Speicherung und Löschung sagt</h2>
+
+          <div class="legal-box">
+            <h2>Der Grundsatz: Nur so lange wie nötig</h2>
+            <p>Nach <strong>Art. 5 Abs. 1 lit. e DSGVO</strong> dürfen personenbezogene Daten nur so lange gespeichert werden, wie es für ihren Zweck erforderlich ist. Sind sie nicht mehr nötig, besteht ein <strong>Recht auf Löschung nach Art. 17 DSGVO</strong>. Für Sozialdaten beim Jugendamt ergänzt <a href="https://www.gesetze-im-internet.de/sgb_10/__84.html" target="_blank" rel="noopener">§ 84 SGB X</a> diese Regeln.</p>
+            <p>Der Zweck einer Gefährdungseinschätzung ist es zu klären, ob ein Kind geschützt werden muss. Ist das geklärt – und zwar mit „nein“ –, muss die Behörde begründen können, warum sie die Daten trotzdem weiter braucht.</p>
+          </div>
+
+          <div class="legal-box">
+            <h2>Berlin: spätestens nach einem Jahr</h2>
+            <p>Die Berliner <a href="https://www.berlin.de/sen/jugend/recht/mdb-sen-jugend-rechtsvorschriften-av_kinderschutz.pdf" target="_blank" rel="noopener">Ausführungsvorschriften zum Kinderschutz (AV Kinderschutz JugGes vom 16.06.2020)</a> sind hier ungewöhnlich deutlich. In Nr. 7.3.3 heißt es:</p>
+            <p class="quote-request">„Sofern die verantwortliche Stelle im Rahmen einer Gefährdungseinschätzung zu dem Ergebnis gelangt, dass eine Kindeswohlgefährdung nicht vorliegt, sind spätestens ein Jahr nach der abschließenden Entscheidung die Unterlagen zu vernichten und gespeicherte Daten zu löschen, sofern Rechtsvorschriften nicht kürzere Vernichtungs- oder Löschungsfristen vorsehen.“</p>
+            <p>Diese Regel gilt nur für Berliner Jugendämter. Sie zeigt aber, was eine Landesverwaltung selbst für angemessen hält.</p>
+          </div>
+
+          <div class="legal-box">
+            <h2>Bayern: drei Jahre für allgemeine Akten</h2>
+            <p>Das <a href="https://www.blja.bayern.de/bibliothek/ministerielle-bekanntmachungen/empfehlungen-aktenaufbewahrung-jugendaemter/" target="_blank" rel="noopener">Bayerische Landesjugendamt</a> empfiehlt für „alle übrigen Akten der Jugendämter“ eine Aufbewahrung von drei Jahren, gerechnet ab Ablauf des Jahres, in dem das letzte Schriftstück entstand. Die oft genannten zehn Jahre gelten für Akten über tatsächlich gewährte Hilfen.</p>
+          </div>
+
+          <div class="legal-box">
+            <h2>Nordrhein-Westfalen: keine feste Frist gefunden</h2>
+            <p>Für NRW habe ich keine vergleichbare, öffentlich zugängliche Regel gefunden. Auch die gemeinsame Empfehlung der beiden NRW-Landesjugendämter zum Schutzauftrag nach § 8a SGB VIII enthält keine Löschfrist. Es gilt also der allgemeine Grundsatz der Erforderlichkeit. Ob die Stadt Köln eine interne Aktenordnung hat, frage ich in meinem Antrag ausdrücklich ab.</p>
+          </div>
+
+          <div class="table-scroll" role="region" aria-label="Vergleich der Regeln" tabindex="0">
+            <table class="comparison">
+              <thead>
+                <tr>
+                  <th>Maßstab</th>
+                  <th>Regel</th>
+                  <th>Was das für eine Prüfung ohne Befund von 2015 bedeutet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Berlin</td>
+                  <td>Löschung spätestens 1 Jahr nach der Entscheidung</td>
+                  <td>Spätestens 2016 gelöscht</td>
+                </tr>
+                <tr>
+                  <td>Bayern (Empfehlung)</td>
+                  <td>3 Jahre ab Jahresende des letzten Schriftstücks</td>
+                  <td>Spätestens Ende 2018 aussonderbar</td>
+                </tr>
+                <tr>
+                  <td>NRW</td>
+                  <td>Keine feste Frist gefunden – Grundsatz der Erforderlichkeit</td>
+                  <td>Weitere Speicherung muss begründet werden</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="legal-box">
+            <h2>Und die neue 100-Jahre-Regel?</h2>
+            <p>Seit dem 1. Juli 2025 gilt <a href="https://www.sozialgesetzbuch-sgb.de/sgbviii/9b.html" target="_blank" rel="noopener">§ 9b SGB VIII</a>. Er soll Betroffenen von Gewalt in der Jugendhilfe ermöglichen, noch Jahrzehnte später ihre Akten einzusehen. Deshalb sind dort sehr lange Aufbewahrungsfristen vorgesehen.</p>
+            <p>Die Vorschrift nennt aber <strong>Erziehungshilfe-, Eingliederungshilfe-, Heim- oder Vormundschaftsakten</strong>. Eine reine Prüfung ohne Befund und ohne gewährte Hilfe wird dort nicht genannt. Außerdem galt § 9b bei der Auskunft im April 2025 noch gar nicht. Falls sich eine Behörde darauf beruft: genau nachfragen, welche Aktenart gemeint ist.</p>
+          </div>
+
+          <div class="precision-box">
+            <h2>Präzision statt Vorverurteilung</h2>
+            <p>Ich behaupte nicht, dass die Stadt Köln eine bestimmte gesetzliche Frist verletzt hat. Eine feste Frist für NRW konnte ich nicht belegen.</p>
+            <p>Köln hat 2025 außerdem korrekt mitgeteilt, dass 2015 keine Gefährdung festgestellt wurde. Die verkürzte Formulierung gegenüber der Polizei stammt nicht aus Köln.</p>
+            <p>Meine Kritik ist eine andere: Eine Prüfung ohne Befund lag fast zehn Jahre in der Akte. Nach den Maßstäben anderer Bundesländer wäre sie längst gelöscht gewesen. Und bei der Weitergabe wurden mehr private Details übermittelt, als für die Anfrage nötig gewesen wären. Genau das lasse ich jetzt prüfen.</p>
+          </div>
+
+          <h2>Was ich jetzt tue</h2>
+          <p>Mein Antrag an das Bezirksjugendamt Köln-Rodenkirchen ist fertig und auf den 30. September 2026 datiert. Ich verlange darin:</p>
+          <ol class="checklist">
+            <li><strong>Auskunft und Kopie der Akte</strong>Alle gespeicherten Daten zu mir und meinem Kind, einschließlich Meldung, Hausbesuchsbericht und Aktenvermerken (Art. 15 DSGVO, § 83 SGB X).</li>
+            <li><strong>Offenlegung der Weitergabe</strong>Die Anfrage aus Bayreuth und die Antwort im Wortlaut, die Rechtsgrundlage dafür und alle weiteren Empfänger.</li>
+            <li><strong>Sperrung der Daten</strong>Keine weitere Übermittlung an irgendeine Stelle, solange meine Verfahren laufen (Art. 18 DSGVO).</li>
+            <li><strong>Löschung</strong>Sobald ich die Kopie habe und die Verfahren abgeschlossen sind (Art. 17 DSGVO).</li>
+            <li><strong>Benachrichtigung aller Empfänger</strong>Auch das Landratsamt Bayreuth muss über Sperrung und Löschung informiert werden (Art. 19 DSGVO).</li>
+          </ol>
+          <p>Antwortet das Jugendamt nicht innerhalb eines Monats, gehe ich zur Landesbeauftragten für Datenschutz und Informationsfreiheit NRW (Art. 77 DSGVO).</p>
+
+          <div class="action-box">
+            <h2>Erst sichern, dann löschen</h2>
+            <p>Das klingt paradox, ist aber entscheidend: Die alte Akte ist nicht nur ein Problem – sie ist auch mein <strong>wichtigster Beweis</strong>. Sie zeigt schwarz auf weiß, dass 2015 keine Gefährdung festgestellt wurde.</p>
+            <p>Wer sofort die Löschung verlangt, riskiert, dass genau dieser Beleg verschwindet, während die verkürzte Version in anderen Akten weiterlebt. Deshalb: <strong>Kopie holen. Sperren lassen. Erst dann löschen.</strong></p>
+          </div>
+
+          <h2>So holst du dir deine Daten zurück</h2>
+          <ul>
+            <li><strong>Frag nach, was gespeichert ist.</strong> Das Auskunftsrecht nach Art. 15 DSGVO gilt auch gegenüber dem Jugendamt. Es kostet nichts.</li>
+            <li><strong>Frag nach der Weitergabe.</strong> Du hast ein Recht zu erfahren, an wen deine Daten gegangen sind.</li>
+            <li><strong>Frag nach der Speicherdauer.</strong> Das Jugendamt muss dir sagen, wie lange es deine Daten aufbewahren will und nach welchen Kriterien.</li>
+            <li><strong>Achte auf Formulierungen.</strong> „Es gab eine Meldung“ ist etwas anderes als „eine Gefährdung wurde bestätigt“. Falsche oder irreführende Angaben kannst du berichtigen lassen (Art. 16 DSGVO).</li>
+            <li><strong>Setz eine Frist.</strong> Die Behörde hat in der Regel einen Monat Zeit (Art. 12 Abs. 3 DSGVO).</li>
+            <li><strong>Nutz die Aufsichtsbehörde.</strong> Eine Beschwerde beim Landesdatenschutzbeauftragten ist kostenlos.</li>
+          </ul>
+
+          <h2>Musterformulierung</h2>
+          <div class="quote-request">
+            <p><strong>Betreff: Auskunft, Einschränkung der Verarbeitung und Löschung meiner Sozialdaten (Art. 15, 17, 18, 19 DSGVO i. V. m. §§ 83, 84 SGB X)</strong></p>
+            <p>Hiermit beantrage ich Auskunft über alle zu meiner Person und zu meinem Kind [Name] gespeicherten Daten, insbesondere zum Vorgang vom [Datum], einschließlich einer Kopie der Meldung, des Prüfberichts und aller Aktenvermerke. Bitte teilen Sie mir mit, an welche Stellen diese Daten übermittelt wurden, auf welcher Rechtsgrundlage und wie lange Sie sie speichern wollen.</p>
+            <p>Da die damalige Prüfung keine Kindeswohlgefährdung ergeben hat, ist die weitere Speicherung nach meiner Auffassung nicht mehr erforderlich. Ich beantrage daher, die Verarbeitung dieser Daten bis zur vollständigen Auskunftserteilung einzuschränken und sie anschließend zu löschen. Bitte unterrichten Sie alle Empfänger über Einschränkung und Löschung.</p>
+            <p>Ich bitte um Antwort innerhalb eines Monats nach Zugang.</p>
+          </div>
+          <p>Die Formulierung muss an deinen Fall angepasst werden. Wenn du die Akte noch als Beweis brauchst, lass den Löschungsteil zunächst weg oder formuliere ihn wie oben als zweiten Schritt.</p>
+
+          <div class="precision-box">
+            <h2>Die zentrale Forderung</h2>
+            <p>Kinderschutz braucht Meldungen, und Meldungen müssen geprüft werden. Aber wenn eine Prüfung ergibt, dass nichts war, darf das Ergebnis nicht zehn Jahre später in einer verkürzten Fassung bei der Polizei landen. Unbegründete Meldungen gehören nach Abschluss der Prüfung gelöscht – nicht archiviert, bis jemand nachfragt.</p>
+          </div>
+
+          <p><strong>Meldung ≠ bestätigte Kindeswohlgefährdung.</strong></p>
+          <p><strong>Auskunft verlangen. Beweise sichern. Weitergabe stoppen. Löschung durchsetzen.</strong></p>
+
+          <section class="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Häufige Fragen zur Löschung von Jugendamtsdaten</h2>
+            <details>
+              <summary>Gibt es eine feste Löschfrist für unbegründete Meldungen?</summary>
+              <p>Bundesweit nicht. Berlin schreibt eine Löschung spätestens ein Jahr nach der abschließenden Entscheidung vor, wenn keine Kindeswohlgefährdung vorlag. In anderen Bundesländern gilt der allgemeine Grundsatz: Daten sind zu löschen, sobald sie nicht mehr erforderlich sind.</p>
+            </details>
+            <details>
+              <summary>Sollte ich sofort die Löschung verlangen?</summary>
+              <p>Nicht unbedingt. Wenn die Akte ein entlastendes Prüfergebnis enthält, kann sie ein wichtiger Beweis sein. Oft sinnvoll: erst Auskunft und Kopie, dann Einschränkung der Verarbeitung, dann Löschung.</p>
+            </details>
+            <details>
+              <summary>Gilt die neue 100-Jahre-Aufbewahrung für jede Meldung?</summary>
+              <p>Nach dem Wortlaut betrifft § 9b SGB VIII Erziehungshilfe-, Eingliederungshilfe-, Heim- oder Vormundschaftsakten. Eine reine Prüfung ohne Befund und ohne gewährte Hilfe wird dort nicht genannt. Die Vorschrift gilt zudem erst seit dem 1. Juli 2025.</p>
+            </details>
+            <details>
+              <summary>Darf das Jugendamt mir sagen, wer mich gemeldet hat?</summary>
+              <p>In der Regel nicht. Die Identität von Meldenden ist meist besonders geschützt. Dein Auskunftsrecht umfasst aber die Daten über dich, die Herkunft soweit zulässig und die Empfänger, an die sie weitergegeben wurden.</p>
+            </details>
+            <details>
+              <summary>Wohin kann ich mich wenden, wenn das Jugendamt nicht antwortet?</summary>
+              <p>An die Datenschutzaufsicht deines Bundeslandes (Art. 77 DSGVO). Die Beschwerde ist kostenlos. Daneben kommt gerichtlicher Rechtsschutz in Betracht – hier lohnt sich anwaltliche Beratung.</p>
+            </details>
+          </section>
+
+          <h2>Quellen</h2>
+          <ul class="source-list">
+            <li><a href="https://www.berlin.de/sen/jugend/recht/mdb-sen-jugend-rechtsvorschriften-av_kinderschutz.pdf" target="_blank" rel="noopener">AV Kinderschutz JugGes Berlin vom 16.06.2020, Nr. 7.3.3</a></li>
+            <li><a href="https://www.blja.bayern.de/bibliothek/ministerielle-bekanntmachungen/empfehlungen-aktenaufbewahrung-jugendaemter/" target="_blank" rel="noopener">Bayerisches Landesjugendamt – Empfehlungen über die Aufbewahrung von Akten der Jugendämter</a></li>
+            <li><a href="https://www.kinderschutz.nrw/sites/default/files/2022-09/210128-lvr-lwl-empfehlungen-gelingensfaktoren-schutzauftrag-bf1_0.pdf" target="_blank" rel="noopener">LVR/LWL – Gelingensfaktoren bei der Wahrnehmung des Schutzauftrags gemäß § 8a SGB VIII (2020)</a></li>
+            <li><a href="https://www.gesetze-im-internet.de/sgb_10/__84.html" target="_blank" rel="noopener">§ 84 SGB X – Berichtigung, Löschung, Einschränkung und Widerspruch bei Sozialdaten</a></li>
+            <li><a href="https://www.sozialgesetzbuch-sgb.de/sgbviii/9b.html" target="_blank" rel="noopener">§ 9b SGB VIII – Aufarbeitung</a></li>
+            <li><a href="https://www.bfdi.bund.de/DE/Buerger/Inhalte/Allgemein/Betroffenenrechte/Betroffenenrechte_Auskunftsrecht.html" target="_blank" rel="noopener">BfDI – Das Recht auf Auskunft nach Art. 15 DSGVO</a></li>
+          </ul>
+
+          <p class="article-meta"><strong>Stand:</strong> 29. September 2026. Der Beitrag wurde anhand der vorliegenden Dokumente und der zu diesem Zeitpunkt abrufbaren Rechtsquellen erstellt.</p>
+        </div>
+
+        <div class="note">
+          <strong>Hinweis:</strong> Dieser Beitrag schildert meine persönlichen Erfahrungen und meine eigene Recherche. Er behauptet keine nachgewiesene Rechtsverletzung einer bestimmten Person und ersetzt keine individuelle Rechtsberatung. Das Titelbild ist eine grafische Aufbereitung; für eine rechtliche Bewertung sind ausschließlich die Originalunterlagen maßgeblich.
+        </div>
+        <p class="crumb"><a href="../blog.html">← Alle Beiträge</a></p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Systemfehler Familie</h4>
+          <p>Aufklärung, Information und Solidarität für Eltern im Konflikt mit Jugendamt und Familiengericht.</p>
+        </div>
+        <div>
+          <h4>Seiten</h4>
+          <ul>
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="../meine-geschichte.html">Meine Geschichte</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../podcast.html">Podcast</a></li>
+            <li><a href="../hilfe-anlaufstellen.html">Hilfe &amp; Anlaufstellen</a></li>
+            <li><a href="../gutachter-suche.html">Gutachter-Suche</a></li>
+            <li><a href="../urteile.html">Urteile</a></li>
+            <li><a href="../gesetze.html">Gesetze</a></li>
+            <li><a href="../recht-erklaert.html">Recht erklärt</a></li>
+            <li><a href="../berater.html">Beratung</a></li>
+            <li><a href="../downloads.html">Musterbriefe</a></li>
+            <li><a href="../austausch.html">Austausch</a></li>
+            <li><a href="../kontakt.html">Kontakt</a></li>
+            <li><a href="../spenden.html">Spenden</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="../impressum.html">Impressum</a></li>
+            <li><a href="../datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">Dieser Blog dient der Information und Aufklärung und ersetzt keine individuelle Rechtsberatung.</p>
+      <div class="footer-bottom">© <span id="year">2026</span> Systemfehler Familie</div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/animationen.js"></script>
+</body>
+</html>
