@@ -16,12 +16,12 @@
 .court-group { scroll-margin-top: 100px; }
 .court-group > p { max-width: 78ch; }
 .court-table-wrap { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
-.court-table { min-width: 850px; table-layout: fixed; }
+.court-table { min-width: 800px; table-layout: fixed; }
 .court-table caption { text-align: left; padding: 15px 12px; color: var(--muted); font-size: .88rem; }
-.court-table th:nth-child(1) { width: 11%; }
+.court-table th:nth-child(1) { width: 25%; }
 .court-table th:nth-child(2) { width: 23%; }
-.court-table th:nth-child(3) { width: 28%; }
-.court-table th:nth-child(4) { width: 38%; }
+.court-table th:nth-child(3) { width: 27%; }
+.court-table th:nth-child(4) { width: 25%; }
 .court-table td, .court-table th { overflow-wrap: anywhere; }
 .court-table a { font-weight: 650; }
 .court-kind { color: var(--muted); font-size: .86em; }
@@ -32,3 +32,39 @@
 .court-article a:focus-visible, .court-table-wrap:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 900px) { .court-scroll-hint { display: block; } }
 @media (max-width: 540px) { .court-record { grid-template-columns: 1fr; } .court-article .crumb { font-size: .87rem; } }
+
+/* Quellen direkt öffnen; Anträge, Ergebnis und Einordnung klar zuordnen. */
+.court-decision-link { padding: 22px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--surface); }
+.court-source-button { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border-radius: 7px; background: var(--primary); color: #fff !important; font-weight: 700; text-decoration: none !important; line-height: 1.45; }
+.court-source-button:hover { filter: brightness(1.15); }
+.court-decision-link p { margin: 14px 0 0; font-size: .9rem; line-height: 1.6; color: var(--muted); }
+.case-toc { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 24px 0; font-size: .9rem; }
+.case-toc a { text-underline-offset: 3px; }
+.court-article h2[id] { scroll-margin-top: 110px; }
+.court-everyday { margin: 32px 0; padding: 24px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); }
+.court-everyday .court-kicker { color: var(--muted); text-transform: uppercase; font-size: .76rem; letter-spacing: .07em; font-weight: 700; margin: 0 0 8px; }
+.court-everyday h2 { margin-top: 0; }
+.court-everyday p:last-child { margin-bottom: 0; }
+.court-link-guide { max-width: 78ch; padding: 8px 0 20px; }
+.court-table td { vertical-align: top; }
+.court-table td p { margin: 10px 0; }
+.court-table td p:first-child { margin-top: 0; }
+.court-table-source, .court-case-link { font-size: .9em; text-underline-offset: 3px; }
+.court-table-source { display: inline-block; }
+.court-case-link { display: inline-block; padding: 8px 0; }
+@media (max-width: 800px) {
+  .court-table { min-width: 0; width: 100%; }
+  .court-table, .court-table caption, .court-table tbody, .court-table tr, .court-table td { display: block; }
+  .court-table thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .court-table tr { padding: 18px; border-bottom: 2px solid var(--line); }
+  .court-table tr:last-child { border-bottom: 0; }
+  .court-table td { padding: 10px 0; border: 0; width: auto; }
+  .court-table td::before { content: attr(data-label); display: block; font-weight: 700; font-size: .78rem; letter-spacing: .03em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .court-table-wrap { overflow: visible; }
+  .court-table tr:nth-child(even) { background: var(--surface); }
+}
+@media (max-width: 540px) {
+  .court-decision-link, .court-everyday { padding: 18px; }
+  .court-source-button { width: 100%; justify-content: space-between; }
+  .case-toc { flex-direction: column; gap: 12px; }
+}
