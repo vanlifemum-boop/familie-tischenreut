@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "paragraf-8a-sgb-viii-schutzauftrag",
+    "category": "Jugendamt",
+    "norm": "§ 8a SGB VIII",
+    "title": "Das Jugendamt prüft eine Meldung",
+    "description": "Gefährdungseinschätzung, Beteiligung und die Grenzen eines Hausbesuchs.",
+    "keywords": "hausbesuch kindeswohlgefährdung meldung"
+  },
+  {
+    "slug": "paragraf-42-sgb-viii-inobhutnahme",
+    "category": "Jugendamt",
+    "norm": "§ 42 SGB VIII",
+    "title": "Mein Kind wurde in Obhut genommen",
+    "description": "Widersprechen, Informationen sichern und die zuständigen Verfahren unterscheiden.",
+    "keywords": "notfall widerspruch rückführung"
+  },
+  {
+    "slug": "paragraf-25-sgb-x-akteneinsicht",
+    "category": "Verfahren",
+    "norm": "§ 25 SGB X",
+    "title": "Ich möchte meine Akte einsehen",
+    "description": "Antrag, geschützte Daten Dritter und der Unterschied zur Datenschutz-Auskunft.",
+    "keywords": "akte akteneinsicht datenschutz dsgvo"
+  },
+  {
+    "slug": "paragraf-13-sgb-x-beistand",
+    "category": "Verfahren",
+    "norm": "§ 13 SGB X",
+    "title": "Ich möchte jemanden zum Gespräch mitnehmen",
+    "description": "Beistand und Vertretung im Verwaltungsverfahren.",
+    "keywords": "begleitung termin vertrauensperson"
+  },
+  {
+    "slug": "paragraf-36-sgb-viii-hilfeplan",
+    "category": "Jugendamt",
+    "norm": "§ 36 SGB VIII",
+    "title": "Ich soll einen Hilfeplan unterschreiben",
+    "description": "Beteiligung, Ziele und der Umgang mit unzutreffenden Protokollen.",
+    "keywords": "protokoll unterschrift vier wochen hilfeplan"
+  },
+  {
+    "slug": "paragraf-18-sgb-viii-unterstuetzung-beim-umgang",
+    "category": "Jugendamt",
+    "norm": "§ 18 SGB VIII",
+    "title": "Ich brauche Unterstützung beim Umgang",
+    "description": "Beratung und Hilfe für Kinder, Eltern und weitere Umgangsberechtigte.",
+    "keywords": "kontakt begleiteter umgang"
+  },
+  {
+    "slug": "istanbul-konvention-gewaltschutz-umgang",
+    "category": "International",
+    "norm": "Istanbul-Konvention",
+    "title": "Gewalt muss bei Sorge und Umgang berücksichtigt werden",
+    "description": "Was Art. 31 verlangt und wie konkrete Schutzbedürfnisse benannt werden.",
+    "keywords": "gewalt schutz frauen kinder umgang"
+  },
+  {
+    "slug": "art-8-emrk-familienleben",
+    "category": "International",
+    "norm": "Art. 8 EMRK",
+    "title": "Mein Familienleben braucht rechtlichen Schutz",
+    "description": "Schutz der Familie, Verhältnismäßigkeit und Grenzen einer EGMR-Beschwerde.",
+    "keywords": "europa menschenrechte strassburg"
+  },
+  {
+    "slug": "un-kinderrechtskonvention-beteiligung-familie",
+    "category": "International",
+    "norm": "UN-Kinderrechtskonvention",
+    "title": "Mein Kind hat eigene Rechte",
+    "description": "Kindeswohl, Trennung und Beteiligung nach Art. 3, 9 und 12.",
+    "keywords": "kinderrechte kindeswille anhörung"
+  },
+  {
+    "slug": "paragraf-9a-sgb-viii-ombudsstellen",
+    "category": "Jugendamt",
+    "norm": "§ 9a SGB VIII",
+    "title": "Ich suche unabhängige Unterstützung",
+    "description": "Ombudsstellen helfen bei Konflikten mit der Kinder- und Jugendhilfe.",
+    "keywords": "ombudsstelle beschwerde vermittlung"
+  },
+  {
+    "slug": "paragraf-1-sgb-viii-hilfe-vor-kontrolle",
+    "category": "Jugendamt",
+    "norm": "§ 1 SGB VIII",
+    "title": "Welche Aufgaben hat die Jugendhilfe?",
+    "description": "Förderung, Unterstützung und Schutz im Zusammenhang verstehen.",
+    "keywords": "hilfe erziehung förderung"
+  },
+  {
+    "slug": "paragraf-5-sgb-viii-wunsch-und-wahlrecht",
+    "category": "Jugendamt",
+    "norm": "§ 5 SGB VIII",
+    "title": "Kann ich eine andere Hilfe wählen?",
+    "description": "Wünsche zu Träger und Gestaltung einer Hilfe begründen.",
+    "keywords": "anbieter träger kosten wahl"
+  },
+  {
+    "slug": "paragraf-8-sgb-viii-beteiligung-des-kindes",
+    "category": "Jugendamt",
+    "norm": "§ 8 SGB VIII",
+    "title": "Wie wird mein Kind beteiligt?",
+    "description": "Verständliche Beteiligung und vertrauliche Beratung.",
+    "keywords": "kindeswille mitbestimmung beratung"
+  },
+  {
+    "slug": "paragraf-8b-sgb-viii-insoweit-erfahrene-fachkraft",
+    "category": "Jugendamt",
+    "norm": "§ 8b SGB VIII",
+    "title": "Was macht eine insoweit erfahrene Fachkraft?",
+    "description": "Wer fachliche Beratung beanspruchen kann und was Eltern erfragen können.",
+    "keywords": "ief kinderschutz kita schule"
+  },
+  {
+    "slug": "art-1-gg-menschenwuerde",
+    "category": "Grundrechte",
+    "norm": "Art. 1 GG",
+    "title": "Menschenwürde im Kontakt mit Behörden",
+    "description": "Respekt, konkrete Vorfälle und die Grenzen dieses Grundrechtsarguments.",
+    "keywords": "würde respekt"
+  },
+  {
+    "slug": "art-2-gg-persoenlichkeitsrecht",
+    "category": "Grundrechte",
+    "norm": "Art. 2 GG",
+    "title": "Persönlichkeit und Privatleben schützen",
+    "description": "Privatsphäre, persönliche Daten und rechtmäßige Eingriffe.",
+    "keywords": "privatsphäre daten"
+  },
+  {
+    "slug": "art-6-abs-1-gg-schutz-der-familie",
+    "category": "Grundrechte",
+    "norm": "Art. 6 Abs. 1 GG",
+    "title": "Die Familie steht unter besonderem Schutz",
+    "description": "Was Familienschutz für behördliche und gerichtliche Entscheidungen bedeutet.",
+    "keywords": "familie schutz"
+  },
+  {
+    "slug": "art-6-abs-2-gg-elternrecht",
+    "category": "Grundrechte",
+    "norm": "Art. 6 Abs. 2 GG",
+    "title": "Elternrecht und Elternverantwortung",
+    "description": "Erziehung, Verantwortung und das staatliche Wächteramt.",
+    "keywords": "elternrechte erziehung"
+  },
+  {
+    "slug": "art-6-abs-3-gg-trennung-von-der-familie",
+    "category": "Grundrechte",
+    "norm": "Art. 6 Abs. 3 GG",
+    "title": "Welche Grenzen gelten für eine Trennung?",
+    "description": "Gesetzliche Voraussetzungen und mildere Mittel prüfen.",
+    "keywords": "trennung sorgerecht fremdunterbringung"
+  },
+  {
+    "slug": "art-19-abs-4-gg-rechtsweggarantie",
+    "category": "Grundrechte",
+    "norm": "Art. 19 Abs. 4 GG",
+    "title": "Wie kann ich staatliches Handeln überprüfen lassen?",
+    "description": "Gerichtsweg, Rechtsbehelf und Eilrechtsschutz auseinanderhalten.",
+    "keywords": "rechtsweg frist widerspruch klage beschwerde"
+  },
+  {
+    "slug": "art-20-abs-3-gg-bindung-an-gesetz-und-recht",
+    "category": "Grundrechte",
+    "norm": "Art. 20 Abs. 3 GG",
+    "title": "Auch Behörden sind an Recht und Gesetz gebunden",
+    "description": "Begründungen und Rechtsgrundlagen konkret hinterfragen.",
+    "keywords": "rechtsstaat ermessen begründung"
+  },
+  {
+    "slug": "art-103-gg-rechtliches-gehoer",
+    "category": "Grundrechte",
+    "norm": "Art. 103 Abs. 1 GG",
+    "title": "Ich möchte vor Gericht gehört werden",
+    "description": "Stellungnahmen, Akteneinsicht und rechtliches Gehör.",
+    "keywords": "anhörung gericht gehör stellungnahme"
+  }
+]
