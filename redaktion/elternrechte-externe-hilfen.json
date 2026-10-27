@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Beratungshilfe: anwaltliche Hilfe finanzieren",
+    "url": "https://service.justiz.de/beratungshilfe",
+    "description": "Offizielle Informationen, Vorab-Check und Ausfüllhilfe für Beratungshilfe bei geringem Einkommen und Vermögen. Für anwaltliche Beratung und außergerichtliche Vertretung; das Amtsgericht prüft die Voraussetzungen. Hinweise zu den abweichenden öffentlichen Beratungsangeboten in Hamburg und Bremen sind enthalten.",
+    "provider": "Justiz-Services – Bundesministerium der Justiz und für Verbraucherschutz / DigitalService GmbH des Bundes",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "title": "Prozess- und Verfahrenskostenhilfe",
+    "url": "https://service.justiz.de/prozesskostenhilfe",
+    "description": "Erklärt die finanzielle Unterstützung für Gerichtsverfahren, in Familienangelegenheiten Verfahrenskostenhilfe genannt. Mit Voraussetzungen, Formularhilfe, Hinweisen zu Ratenzahlungen und verbleibenden Kostenrisiken. Über die Bewilligung entscheidet das zuständige Gericht.",
+    "provider": "Justiz-Services – Bundesministerium der Justiz und für Verbraucherschutz / DigitalService GmbH des Bundes",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "title": "Unabhängige Ombudsstellen der Kinder- und Jugendhilfe finden",
+    "url": "https://www.ombudschaft-jugendhilfe.de/de/topic/6477.ombudsstellen.html",
+    "description": "Verzeichnis der Ombudsstellen nach Bundesland. Junge Menschen und ihre Familien finden hier unabhängige Information, Beratung und Vermittlung bei Konflikten mit der Kinder- und Jugendhilfe. Die jeweilige Stelle erläutert ihr regionales Angebot und ihre Zuständigkeit.",
+    "provider": "Bundesnetzwerk Ombudschaft in der Jugendhilfe e. V.",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "title": "Zentrale Behörde für internationale Sorgerechtskonflikte",
+    "url": "https://www.bundesjustizamt.de/DE/Themen/Familieinternational/Sorgerecht/Sorgerecht_node.html",
+    "description": "Amtliche Anlaufstelle des Bundes für internationale Sorgerechtskonflikte. Die Themenseite bündelt Informationen und Kontaktmöglichkeiten insbesondere bei grenzüberschreitender Kindesentziehung, Umgangsfragen und internationaler Zusammenarbeit im Kinderschutz. Welche Unterstützung möglich ist, hängt vom betroffenen Staat und dem anwendbaren Rechtsinstrument ab.",
+    "provider": "Bundesamt für Justiz",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "title": "Anwältinnen und Anwälte über die Rechtsanwaltskammern finden",
+    "url": "https://www.brak.de/service/verbraucherinformationen/anwaltssuche/",
+    "description": "Die Bundesrechtsanwaltskammer verlinkt die regionalen Anwaltssuchen und das Bundesweite Amtliche Anwaltsverzeichnis zur Prüfung der Zulassung. Sie erklärt außerdem Fachanwaltstitel, etwa für Familien-, Verwaltungs- und Sozialrecht. Die BRAK erteilt selbst keine Rechtsberatung und empfiehlt keine einzelne Kanzlei.",
+    "provider": "Bundesrechtsanwaltskammer",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "title": "Hilfetelefon Gewalt gegen Frauen: Beratung und Schutzangebote",
+    "url": "https://www.hilfetelefon.de/beratung-fuer-frauen/",
+    "description": "Kostenfreie, vertrauliche Erstberatung für Frauen, die Gewalt erleben oder erlebt haben, sowie für unterstützende Angehörige und Fachkräfte. Telefonische und geschützte Online-Beratung helfen bei der Orientierung und vermitteln auf Wunsch passende Unterstützung vor Ort. Die Seite erläutert Zugangswege, Sprachen und barrierefreie Angebote.",
+    "provider": "Bundesamt für Familie und zivilgesellschaftliche Aufgaben",
+    "checked_on": "2026-10-26"
+  }
+]

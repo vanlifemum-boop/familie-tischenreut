@@ -5,11 +5,10 @@
   "initial_series_articles": 15,
   "revised_series_articles": 15,
   "new_series_articles": 7,
-  "published_catalogue_size": 22,
   "glossary_terms": 20,
   "revised_additional_blog_articles": 4,
   "updated_docx_templates": 4,
-  "scope_limit": "Das frühere 70er-ZIP lag nicht vor. Es wurde kein vollständiger Abgleich mit dessen unbekanntem Inhaltsverzeichnis behauptet. Weitere Blog-/Urteilsbestände wurden verlinkt, nicht vollständig inhaltlich bestätigt.",
+  "scope_limit": "Erste Prüfstufe vor Bereitstellung des 70er-ZIPs. Der vollständige Abgleich und die Überarbeitung nach Upload stehen ergänzend in paket70-rechtspruefung.json. Weitere verlinkte Blog-/Urteilsbestände werden weiterhin nicht vollständig inhaltlich bestätigt.",
   "changes": [
     {
       "report": "gg_review.json",
@@ -833,5 +832,8 @@
         }
       ]
     }
-  ]
+  ],
+  "catalogue_status": "22 ergänzende Artikel redaktionell überarbeitet; die Veröffentlichung zusammen mit dem vollständigen 70er-Paket wurde am 27.10.2026 ausdrücklich freigegeben. Veröffentlichungsstand siehe Pull Request 1 und GitHub-Pages-Lauf.",
+  "followup_report": "paket70-rechtspruefung.json",
+  "prepared_supplementary_catalogue_size": 22
 }
