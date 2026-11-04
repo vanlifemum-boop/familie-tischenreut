@@ -1,0 +1,839 @@
+{
+  "checked_on": "2026-10-26",
+  "repository": "vanlifemum-boop/familie-tischenreut",
+  "base_commit": "58fcd7cf6de0671e0ccb0b414a7c44fa99c4294a",
+  "initial_series_articles": 15,
+  "revised_series_articles": 15,
+  "new_series_articles": 7,
+  "glossary_terms": 20,
+  "revised_additional_blog_articles": 4,
+  "updated_docx_templates": 4,
+  "scope_limit": "Erste Prüfstufe vor Bereitstellung des 70er-ZIPs. Der vollständige Abgleich und die Überarbeitung nach Upload stehen ergänzend in paket70-rechtspruefung.json. Weitere verlinkte Blog-/Urteilsbestände werden weiterhin nicht vollständig inhaltlich bestätigt.",
+  "changes": [
+    {
+      "report": "gg_review.json",
+      "details": [
+        {
+          "file": "recht-erklaert/art-2-gg-persoenlichkeitsrecht.html",
+          "words": 999,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_2.html",
+            "https://www.gesetze-im-internet.de/gg/art_1.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__62.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__64.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__65.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__84.html",
+            "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de",
+            "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2019/11/rs20191106_1bvr001613.html"
+          ],
+          "checked": "2026-10-26",
+          "changes": [
+            "Einwilligung/Schweigepflicht und gesetzliche Datenbefugnisse differenziert.",
+            "Widerruf wirkt nur für Zukunft; keine automatische Löschung.",
+            "Keine automatische negative Schlussfolgerung aus Datenschutzrechten.",
+            "Rechte und Einsichtsfähigkeit des Kindes berücksichtigt."
+          ],
+          "validation": [
+            "HTML-Nesting fehlerfrei",
+            "JSON-LD syntaktisch gültig",
+            "Article-body über 800 Wörter",
+            "Behauptung vorhandener M-XX-Muster entfernt"
+          ],
+          "words_article_body_without_sources": 928
+        },
+        {
+          "file": "recht-erklaert/art-6-abs-1-gg-schutz-der-familie.html",
+          "words": 994,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_6.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__37.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__37c.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__36.html",
+            "https://www.gesetze-im-internet.de/bgb/__1696.html"
+          ],
+          "checked": "2026-10-26",
+          "changes": [
+            "Pauschale Rückführungsgarantie durch Perspektivklärung nach §§37/37c SGB VIII ersetzt.",
+            "Andere dauerhafte Lebensperspektive und fortbestehende Elternberatung beschrieben.",
+            "Beziehungen, Kindesbeteiligung und Gerichtsbeschlüsse unterschieden."
+          ],
+          "validation": [
+            "HTML-Nesting fehlerfrei",
+            "JSON-LD syntaktisch gültig",
+            "Article-body über 800 Wörter",
+            "Behauptung vorhandener M-XX-Muster entfernt"
+          ],
+          "words_article_body_without_sources": 938
+        },
+        {
+          "file": "recht-erklaert/art-6-abs-2-gg-elternrecht.html",
+          "words": 966,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_6.html",
+            "https://www.gesetze-im-internet.de/bgb/__1626.html",
+            "https://www.gesetze-im-internet.de/bgb/__1688.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__42.html",
+            "https://www.gesetze-im-internet.de/bgb/__1666.html"
+          ],
+          "checked": "2026-10-26",
+          "changes": [
+            "Verbliebene Sorge bedeutet keine ausschließliche Entscheidungsbefugnis in jedem Alltagsschritt.",
+            "§1688 BGB und notwendige Rechtshandlungen bei Inobhutnahme ergänzt.",
+            "Information/Einwilligung und Kindesrechte getrennt."
+          ],
+          "validation": [
+            "HTML-Nesting fehlerfrei",
+            "JSON-LD syntaktisch gültig",
+            "Article-body über 800 Wörter",
+            "Behauptung vorhandener M-XX-Muster entfernt"
+          ],
+          "words_article_body_without_sources": 913
+        },
+        {
+          "file": "recht-erklaert/art-6-abs-3-gg-trennung-von-der-familie.html",
+          "words": 977,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_6.html",
+            "https://www.gesetze-im-internet.de/bgb/__1666.html",
+            "https://www.gesetze-im-internet.de/bgb/__1666a.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__42.html",
+            "https://www.gesetze-im-internet.de/bgb/__1696.html",
+            "https://www.gesetze-im-internet.de/famfg/__166.html"
+          ],
+          "checked": "2026-10-26",
+          "changes": [
+            "Mildere Mittel müssen nicht ausnahmslos zuvor praktisch ausgeschöpft werden.",
+            "Inobhutnahme und familiengerichtliche Schutzentscheidung getrennt.",
+            "§1696 Abs1,Abs2,Abs3 und §166 FamFG differenziert.",
+            "Keine automatische Rückgabe nach Widerspruch behauptet."
+          ],
+          "validation": [
+            "HTML-Nesting fehlerfrei",
+            "JSON-LD syntaktisch gültig",
+            "Article-body über 800 Wörter",
+            "Behauptung vorhandener M-XX-Muster entfernt"
+          ],
+          "words_article_body_without_sources": 937
+        },
+        {
+          "words_article_body_without_sources": 939,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_1.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__24.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+            "https://www.gesetze-im-internet.de/famfg/__13.html",
+            "https://www.gesetze-im-internet.de/famfg/__37.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__9a.html"
+          ],
+          "checked_on": "2026-10-26",
+          "file": "recht-erklaert/art-1-gg-menschenwuerde.html",
+          "changes": [
+            "Schwelle der Menschenwürdeverletzung eingegrenzt; unhöfliche Behandlung und Verfahrensfehler nicht automatisch Art.1-Verstoß.",
+            "Art.103 gerichtliches Gehör von §24 SGB X getrennt; Akteneinsichtsvoraussetzungen ergänzt.",
+            "Beschwerde und Rechtsbehelf getrennt; keine erfundene verfügbare M-01-Vorlage."
+          ],
+          "checked": "2026-10-26"
+        },
+        {
+          "words_article_body_without_sources": 949,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_103.html",
+            "https://www.gesetze-im-internet.de/famfg/__37.html",
+            "https://www.gesetze-im-internet.de/famfg/__13.html",
+            "https://www.gesetze-im-internet.de/famfg/__26.html",
+            "https://www.gesetze-im-internet.de/famfg/__44.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__24.html"
+          ],
+          "checked_on": "2026-10-26",
+          "file": "recht-erklaert/art-103-gg-rechtliches-gehoer.html",
+          "changes": [
+            "Nicht jede Nichterwähnung im Beschluss beweist Gehörsverstoß.",
+            "§44 FamFG vollständig eingegrenzt: andere Abänderungsmöglichkeit, Entscheidungserheblichkeit, Kenntnis-Glaubhaftmachung, 2Wochen und1Jahr.",
+            "Kein Ersatz einer versäumten Beschwerde; gerichtliche Akteneinsicht und Fristverlängerung differenziert."
+          ],
+          "checked": "2026-10-26"
+        },
+        {
+          "words_article_body_without_sources": 921,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_19.html",
+            "https://www.gesetze-im-internet.de/vwgo/__68.html",
+            "https://www.gesetze-im-internet.de/vwgo/__58.html",
+            "https://www.gesetze-im-internet.de/vwgo/__80.html",
+            "https://www.gesetze-im-internet.de/vwgo/__123.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__33.html",
+            "https://www.gesetze-im-internet.de/famfg/__57.html",
+            "https://www.gesetze-im-internet.de/famfg/__58.html",
+            "https://www.gesetze-im-internet.de/famfg/__63.html",
+            "https://www.gesetze-im-internet.de/famfg/__17.html"
+          ],
+          "checked_on": "2026-10-26",
+          "file": "recht-erklaert/art-19-abs-4-gg-rechtsweggarantie.html",
+          "changes": [
+            "Falsche Aussage kein Rechtsschutz ohne Bescheid entfernt.",
+            "Widerspruch abhängig von gesetzlichem/Landesrecht; Rechtswege getrennt.",
+            "Keine pauschale Fristverlängerung bei fehlender Belehrung im FamFG; Monats-/Zweiwochenfrist und Anfechtbarkeit getrennt.",
+            "Eilrechtsschutz §§80/123 VwGO unterschieden."
+          ],
+          "checked": "2026-10-26"
+        },
+        {
+          "words_article_body_without_sources": 1031,
+          "sources": [
+            "https://www.gesetze-im-internet.de/gg/art_20.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__31.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__33.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__35.html",
+            "https://www.gesetze-im-internet.de/sgb_1/__39.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__39.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__40.html",
+            "https://www.gesetze-im-internet.de/vwgo/__80.html"
+          ],
+          "checked_on": "2026-10-26",
+          "file": "recht-erklaert/art-20-abs-3-gg-bindung-an-gesetz-und-recht.html",
+          "changes": [
+            "Mündlicher Verwaltungsakt und schriftliche Bestätigung differenziert.",
+            "§35 Begründungspflicht samt Grenzen, §39 SGB I Ermessen vs §§39/40 SGB X berichtigt.",
+            "Rechtswidrigkeit, Wirksamkeit und Nichtigkeit getrennt; nicht zu Nichtbefolgung geraten."
+          ],
+          "checked": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "report": "sgb_review.json",
+      "details": [
+        {
+          "path": "recht-erklaert/paragraf-1-sgb-viii-hilfe-vor-kontrolle.html",
+          "words": 943,
+          "corrections": [
+            "Keine Rangfolge der Aufgaben aus Reihenfolge des § 1 abgeleitet.",
+            "Programmnorm von konkretem Leistungsanspruch getrennt.",
+            "Hilfesuche und Gefährdungseinschätzung sachlich unterschieden."
+          ],
+          "sources": [
+            {
+              "label": "§ 1 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__1.html"
+            },
+            {
+              "label": "§ 27 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__27.html"
+            },
+            {
+              "label": "§ 36 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__36.html"
+            },
+            {
+              "label": "§ 8a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8a.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-5-sgb-viii-wunsch-und-wahlrecht.html",
+          "words": 990,
+          "corrections": [
+            "Eignung, Bedarf, Kapazität und Sonderregel für fehlende Leistungsvereinbarungen ergänzt.",
+            "Kein freies Recht auf bestimmte Fachkraft oder Pflegefamilie behauptet.",
+            "Selbstbeschaffung und Kostenübernahme getrennt."
+          ],
+          "sources": [
+            {
+              "label": "§ 5 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__5.html"
+            },
+            {
+              "label": "§ 27 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__27.html"
+            },
+            {
+              "label": "§ 36 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__36.html"
+            },
+            {
+              "label": "§ 36a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__36a.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-8-sgb-viii-beteiligung-des-kindes.html",
+          "words": 961,
+          "corrections": [
+            "Absätze 1–4 zutreffend zugeordnet.",
+            "Voraussetzung vertraulicher Beratung ergänzt.",
+            "Kein automatisches Elternrecht auf sämtliche vertraulichen Gesprächsinhalte behauptet."
+          ],
+          "sources": [
+            {
+              "label": "§ 8 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8.html"
+            },
+            {
+              "label": "§ 36 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__36.html"
+            },
+            {
+              "label": "§ 8a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8a.html"
+            },
+            {
+              "label": "§ 9a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__9a.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-8a-sgb-viii-schutzauftrag.html",
+          "words": 959,
+          "corrections": [
+            "Erforderlichkeitsvorbehalt für unmittelbaren Eindruck ergänzt.",
+            "Keine Hausbesuchs- oder Betretungsbefugnis aus §8a abgeleitet.",
+            "Starre Reihenfolge Hilfe vor Gericht entfernt.",
+            "Mehrere Jugendamtsfachkräfte von insoweit erfahrener Fachkraft bei Trägern getrennt."
+          ],
+          "sources": [
+            {
+              "label": "§ 8a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8a.html"
+            },
+            {
+              "label": "§ 42 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+            },
+            {
+              "label": "Art. 13 GG",
+              "url": "https://www.gesetze-im-internet.de/gg/art_13.html"
+            },
+            {
+              "label": "§ 25 SGB X",
+              "url": "https://www.gesetze-im-internet.de/sgb_10/__25.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-8b-sgb-viii-insoweit-erfahrene-fachkraft.html",
+          "words": 993,
+          "corrections": [
+            "Beratungsanspruch beruflich mit Kindern tätiger Personen von Elternberatung getrennt.",
+            "Keine allgemeine Pflicht aller Meldenden zur vorherigen IseF-Beratung behauptet.",
+            "Keine automatische Entwertung einer Meldung wegen behaupteten Verfahrensfehlers."
+          ],
+          "sources": [
+            {
+              "label": "§ 8b SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8b.html"
+            },
+            {
+              "label": "§ 8a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8a.html"
+            },
+            {
+              "label": "§ 4 KKG",
+              "url": "https://www.gesetze-im-internet.de/kkg/__4.html"
+            },
+            {
+              "label": "§ 9a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__9a.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-9a-sgb-viii-ombudsstellen.html",
+          "words": 1061,
+          "corrections": [
+            "Falschen ausdrücklichen Ombudshinweis in §8 Abs2 entfernt.",
+            "Unabhängigkeit von pauschalen Behauptungen über Trägerschaft getrennt.",
+            "Keine Garantie bestimmter Begleitung, Erreichbarkeit oder Rechtsvertretung.",
+            "Fristwahrung und Beratung unterschieden."
+          ],
+          "sources": [
+            {
+              "label": "§ 9a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__9a.html"
+            },
+            {
+              "label": "§ 2 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__2.html"
+            },
+            {
+              "label": "§ 17 SGB I",
+              "url": "https://www.gesetze-im-internet.de/sgb_1/__17.html"
+            },
+            {
+              "label": "§ 8 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8.html"
+            }
+          ]
+        },
+        {
+          "path": "recht-erklaert/paragraf-18-sgb-viii-unterstuetzung-beim-umgang.html",
+          "words": 1069,
+          "corrections": [
+            "Beratung/Unterstützung von gerichtlicher Umgangsregelung getrennt.",
+            "Anspruchsberechtigte und weitere Bereiche der Norm ergänzt.",
+            "Kein automatischer Finanzierungsanspruch oder Anspruch auf gewünschtes Umgangsergebnis.",
+            "Mitwirkungsbereiter Dritter und Schutzbedürfnisse bei Begleitung erklärt."
+          ],
+          "sources": [
+            {
+              "label": "§ 18 SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__18.html"
+            },
+            {
+              "label": "§ 1684 BGB",
+              "url": "https://www.gesetze-im-internet.de/bgb/__1684.html"
+            },
+            {
+              "label": "§ 36a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__36a.html"
+            },
+            {
+              "label": "§ 9a SGB VIII",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__9a.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report": "new_procedure.json",
+      "details": {
+        "reviewed": "2026-10-26",
+        "articles": [
+          {
+            "path": "recht-erklaert/paragraf-42-sgb-viii-inobhutnahme.html",
+            "title": "§ 42 SGB VIII – Inobhutnahme: Was jetzt zu klären ist",
+            "words": 975,
+            "sources": [
+              "https://www.gesetze-im-internet.de/sgb_8/__42.html",
+              "https://www.gesetze-im-internet.de/sgb_10/__33.html",
+              "https://www.gesetze-im-internet.de/vwgo/__80.html",
+              "https://www.gesetze-im-internet.de/vwgo/__123.html",
+              "https://www.gesetze-im-internet.de/bgb/__1666.html"
+            ]
+          },
+          {
+            "path": "recht-erklaert/paragraf-25-sgb-x-akteneinsicht.html",
+            "title": "§ 25 SGB X – Akteneinsicht beim Jugendamt",
+            "words": 1098,
+            "sources": [
+              "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+              "https://www.gesetze-im-internet.de/sgb_10/__12.html",
+              "https://www.gesetze-im-internet.de/sgb_8/__65.html",
+              "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de",
+              "https://www.gesetze-im-internet.de/sgb_10/__83.html",
+              "https://www.gesetze-im-internet.de/famfg/__13.html",
+              "https://www.gesetze-im-internet.de/vwgo/__44a.html",
+              "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=oj%3AJOC_2023_216_R_0010"
+            ]
+          },
+          {
+            "path": "recht-erklaert/paragraf-13-sgb-x-beistand.html",
+            "title": "§ 13 SGB X – Mit Beistand zum Jugendamt",
+            "words": 1049,
+            "sources": [
+              "https://www.gesetze-im-internet.de/sgb_10/__13.html",
+              "https://www.gesetze-im-internet.de/sgb_10/__8.html",
+              "https://www.gesetze-im-internet.de/rdg/__3.html",
+              "https://www.gesetze-im-internet.de/rdg/__6.html",
+              "https://www.gesetze-im-internet.de/famfg/__12.html",
+              "https://www.gesetze-im-internet.de/stgb/__201.html"
+            ]
+          },
+          {
+            "path": "recht-erklaert/paragraf-36-sgb-viii-hilfeplan.html",
+            "title": "§ 36 SGB VIII – Hilfeplan: Mitreden, Ziele klären, Fehler benennen",
+            "words": 1096,
+            "sources": [
+              "https://www.gesetze-im-internet.de/sgb_8/__36.html",
+              "https://www.gesetze-im-internet.de/sgb_8/__37c.html",
+              "https://www.gesetze-im-internet.de/sgb_8/__8.html",
+              "https://www.gesetze-im-internet.de/sgb_10/__13.html",
+              "https://www.gesetze-im-internet.de/sgb_10/__25.html"
+            ]
+          }
+        ],
+        "notes": [
+          "Neue Artikel, keine Behauptung Wiederherstellung des 70er-Pakets.",
+          "§42 Abs3 Widersprechen und verwaltungsrechtliche Rechtsbehelfe getrennt; keine pauschale Dreitagesfrist.",
+          "§25 Grenzen, Drittinteressen, Art15-Abgrenzung, Fristen und Gerichtsakten erläutert.",
+          "§13 Anwendbarkeit, Vertretung, Zurechnung, Zurückweisung und FamFG-Abgrenzung erläutert.",
+          "§36 Beteiligung, Bedarf, Unterschrift und fehlende allgemeine Vierwochenfrist erläutert."
+        ],
+        "verification": "Schemadaten geparst, H1/Titel/Canonical und Hub-Verweise geprüft; alle Artikel >800 Wörter. Aktuelle amtliche Normen teils per Direktabruf gelesen, da Web-open Timeout."
+      }
+    },
+    {
+      "report": "new_international.json",
+      "details": [
+        {
+          "file": "recht-erklaert/art-8-emrk-familienleben.html",
+          "title": "Art. 8 EMRK – Familienleben schützen und Eingriffe prüfen",
+          "words_article_body": 1091,
+          "checked": "2026-10-26",
+          "changes": [
+            "Neuer Artikel: EMRK-Rang, Verhältnismäßigkeit und konkrete Dokumentation",
+            "Keine automatische Rückführung oder aufschiebende Wirkung behauptet",
+            "Rechtswegerschöpfung, Viermonatsfrist und Formanforderungen EGMR eingeordnet"
+          ],
+          "sources": [
+            {
+              "title": "EMRK, insbesondere Art. 8 und 35 – vom EGMR bereitgestellte deutsche Übersetzung",
+              "url": "https://www.echr.coe.int/documents/d/echr/convention_deu"
+            },
+            {
+              "title": "Bundesverfassungsgericht: Rang der EMRK und Berücksichtigung der EGMR-Rechtsprechung, 19.10.2004",
+              "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2004/bvg04-092.html"
+            },
+            {
+              "title": "EGMR: Aktuelle Hinweise zur Einreichung einer Beschwerde",
+              "url": "https://www.echr.coe.int/apply-to-the-court"
+            },
+            {
+              "title": "EGMR: Hinweise zum Ausfüllen des Beschwerdeformulars",
+              "url": "https://www.echr.coe.int/documents/d/echr/application_notes_eng"
+            },
+            {
+              "title": "§ 1684 BGB – Umgang",
+              "url": "https://www.gesetze-im-internet.de/bgb/__1684.html"
+            },
+            {
+              "title": "§ 1666a BGB – Verhältnismäßigkeit",
+              "url": "https://www.gesetze-im-internet.de/bgb/__1666a.html"
+            }
+          ]
+        },
+        {
+          "file": "recht-erklaert/istanbul-konvention-gewaltschutz-umgang.html",
+          "title": "Istanbul-Konvention – Gewalt bei Sorge und Umgang berücksichtigen",
+          "words_article_body": 1123,
+          "checked": "2026-10-26",
+          "changes": [
+            "Neuer Artikel: Art31 Sorge/Umgang und Sicherheitsprüfung",
+            "Keine automatische Umgangssperre/keine Aufhebung bestehender Beschlüsse",
+            "GewSchG3 Minderjährige gegenüber Eltern und sichere Dokumentation erläutert"
+          ],
+          "sources": [
+            {
+              "title": "Europarat: Istanbul-Konvention, insbesondere Art. 2, 26 und 31 (Vertragstext, Englisch)",
+              "url": "https://rm.coe.int/168046031c"
+            },
+            {
+              "title": "§ 1684 BGB – Umgang des Kindes mit den Eltern",
+              "url": "https://www.gesetze-im-internet.de/bgb/__1684.html"
+            },
+            {
+              "title": "§ 1 Gewaltschutzgesetz – Gerichtliche Schutzmaßnahmen",
+              "url": "https://www.gesetze-im-internet.de/gewschg/__1.html"
+            },
+            {
+              "title": "§ 3 Gewaltschutzgesetz – Geltungsbereich und Minderjährige",
+              "url": "https://www.gesetze-im-internet.de/gewschg/__3.html"
+            },
+            {
+              "title": "§ 49 FamFG – Einstweilige Anordnung",
+              "url": "https://www.gesetze-im-internet.de/famfg/__49.html"
+            }
+          ]
+        },
+        {
+          "file": "recht-erklaert/un-kinderrechtskonvention-beteiligung-familie.html",
+          "title": "UN-Kinderrechtskonvention – Beteiligung und Familie aus Sicht des Kindes",
+          "words_article_body": 1140,
+          "checked": "2026-10-26",
+          "changes": [
+            "Neuer Artikel: Art3/9/12 UNKRK mit kindgerechter Beteiligung",
+            "Keine falsche wörtliche Ultima-ratio-Zuschreibung an Art9",
+            "Verknüpfung §8 SGBVIII, §159/158b FamFG und §1666a BGB"
+          ],
+          "sources": [
+            {
+              "title": "UNICEF: Volltext der UN-Kinderrechtskonvention, insbesondere Art. 3, 9 und 12 (Englisch)",
+              "url": "https://www.unicef.org/child-rights-convention/convention-text"
+            },
+            {
+              "title": "OHCHR: UN-Kinderrechtskonvention – Vertragsseite",
+              "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child"
+            },
+            {
+              "title": "§ 8 SGB VIII – Beteiligung von Kindern und Jugendlichen",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__8.html"
+            },
+            {
+              "title": "§ 159 FamFG – Persönliche Anhörung des Kindes",
+              "url": "https://www.gesetze-im-internet.de/famfg/__159.html"
+            },
+            {
+              "title": "§ 158b FamFG – Aufgaben des Verfahrensbeistands",
+              "url": "https://www.gesetze-im-internet.de/famfg/__158b.html"
+            },
+            {
+              "title": "§ 1666a BGB – Verhältnismäßigkeit und öffentliche Hilfen",
+              "url": "https://www.gesetze-im-internet.de/bgb/__1666a.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "report": "overview_review.json",
+      "details": {
+        "date": "2026-10-26",
+        "scope": [
+          "gesetze.html",
+          "downloads.html",
+          "downloads/dienstaufsichtsbeschwerde-muster.docx",
+          "downloads/auskunft-art15-dsgvo-muster.docx",
+          "downloads/akteneinsicht-25-sgb-x-art-15-dsgvo.docx",
+          "downloads/ankuendigung-beistand-13-sgb-x.docx"
+        ],
+        "git_mutations": "none",
+        "summary": "21 Normen-Kurzerklärungen präzisiert; neun Download-Beschreibungen und 15 geplante Musterschreiben sachlich überarbeitet; Portalverweis ergänzt; internen Betreiberhinweis entfernt. Alle vier vorhandenen Word-Downloads tatsächlich ersetzt: klare Musterbriefseite, Gebrauchshinweise, Quellen, aktuelle Fassung. Dateinamen und Links erhalten.",
+        "legal_changes": [
+          "Art. 13 GG",
+          "Art. 19 Abs. 4 GG",
+          "§ 8a SGB VIII",
+          "§ 16 SGB VIII",
+          "§ 27 SGB VIII",
+          "§ 13 Abs. 4 SGB X",
+          "§ 25 SGB X",
+          "§ 35 SGB X",
+          "§ 36 SGB X",
+          "§ 1666 BGB",
+          "§ 49 FamFG",
+          "§ 58 FamFG",
+          "§ 63 FamFG",
+          "§ 155 FamFG",
+          "§ 158 FamFG",
+          "§ 159 FamFG",
+          "§ 160 FamFG",
+          "Art. 15 DSGVO",
+          "Art. 7 Abs. 3 DSGVO",
+          "Art. 6 Abs. 1 EMRK",
+          "Art. 8 EMRK"
+        ],
+        "downloads_preserved": [
+          "downloads/dienstaufsichtsbeschwerde-muster.docx",
+          "downloads/auskunft-art15-dsgvo-muster.docx",
+          "downloads/akteneinsicht-25-sgb-x-art-15-dsgvo.docx",
+          "downloads/ankuendigung-beistand-13-sgb-x.docx"
+        ],
+        "known_limitations": [
+          "Allgemeine redaktionelle Prüfung, keine individuelle Rechtsberatung.",
+          "Nicht alle bestehenden Normen vollständig neu bewertet."
+        ],
+        "primary_sources": [
+          "https://www.gesetze-im-internet.de/sgb_8/__8a.html",
+          "https://www.gesetze-im-internet.de/sgb_10/__13.html",
+          "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+          "https://www.gesetze-im-internet.de/sgb_10/__35.html",
+          "https://www.gesetze-im-internet.de/sgb_10/__82a.html",
+          "https://www.gesetze-im-internet.de/sgb_10/__83.html",
+          "https://www.gesetze-im-internet.de/sgb_8/__79a.html",
+          "https://www.gesetze-im-internet.de/sgb_8/__27.html",
+          "https://www.gesetze-im-internet.de/gg/art_13.html",
+          "https://www.gesetze-im-internet.de/vwgo/__58.html",
+          "https://www.gesetze-im-internet.de/famfg/BJNR258700008.html",
+          "https://www.gesetze-im-internet.de/famfg/__155b.html",
+          "https://www.gesetze-im-internet.de/famfg/__160.html",
+          "https://www.echr.coe.int/documents/d/echr/convention_deu",
+          "https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de",
+          "https://www.bfdi.bund.de/DE/Buerger/Inhalte/Allgemein/Betroffenenrechte/Betroffenenrechte_Auskunftsrecht.html",
+          "https://www.datenschutz-bayern.de/tbs/tb29/k8.html",
+          "https://www.datenschutzkonferenz-online.de/media/kp/dsk_kpnr_6.pdf",
+          "https://www.gesetze-im-internet.de/gg/art_17.html"
+        ],
+        "source_limitations": "Einige amtliche Einzelabrufe waren zeitweise nicht zugänglich. FamFG-Vorschriften wurden im amtlichen Gesamtgesetz gelesen; Auskunftsgrenzen wurden zusätzlich am Datenschutzbericht des BayLfD und bei Datenschutzaufsichten geprüft. Ältere Orientierungspapiere wurden nur ergänzend verwendet.",
+        "validation": [
+          "Vier ursprüngliche DOCX-Downloadpfade erhalten und als existierend geprüft.",
+          "20 geplante Vorlagen explizit noch nicht veröffentlicht; keine erfundenen Kauf- oder Downloadlinks.",
+          "Alle vier DOCX mit kanonischem render_docx.py gerendert; jeweils zwei Seiten.",
+          "Alle acht finalen Seitenbilder einzeln visuell kontrolliert; keine Überschneidung, abgeschnittenen Texte, Leerseiten oder Titellinien.",
+          "DOCX-ZIP-Struktur, Title-Stile, aktuelle Datierung und Gebrauchshinweise geprüft."
+        ],
+        "qa_directory": "/workspace/scratch/5b0768323b24/qa_downloads"
+      }
+    },
+    {
+      "report": "blog_deadlines_review.json",
+      "details": [
+        {
+          "file": "beitraege/inobhutnahme-die-drei-tage-regel-was-kaum-ein-elternteil-kennt.html",
+          "title": "Inobhutnahme: Was „unverzüglich“ nach § 42 SGB VIII bedeutet",
+          "description": "Welche Pflichten nach einem Widersprechen gelten und warum es keine allgemeine Drei-Tage-Frist gibt.",
+          "words": 1072,
+          "checked": "2026-10-26",
+          "changes": [
+            "Erfundene allgemeine Drei-Tage-Frist entfernt und sichtbar korrigiert.",
+            "§42 Abs3 erklärt, keine automatische Rückgabe oder automatische Rechtswidrigkeit allein aus Zeitablauf.",
+            "Inobhutnahme von zusätzlicher Freiheitsentziehung und deren §42Abs5-Frist unterschieden.",
+            "Erklärung nach§42Abs3 von förmlichem verwaltungsrechtlichem Rechtsbehelf getrennt.",
+            "§42Abs4-Beendigung und Gerichtszuständigkeiten erläutert.",
+            "Unbelegte Aussagen über systematische Behördenverstöße entfernt."
+          ],
+          "sources": [
+            "https://www.gesetze-im-internet.de/sgb_8/__42.html",
+            "https://www.gesetze-im-internet.de/sgb_8/BJNR111630990.html",
+            "https://www.gesetze-im-internet.de/vwgo/__80.html",
+            "https://www.gesetze-im-internet.de/vwgo/__123.html",
+            "https://www.gesetze-im-internet.de/famfg/__49.html",
+            "https://www.gesetze-im-internet.de/famfg/__155.html",
+            "https://www.gesetze-im-internet.de/famfg/__155b.html",
+            "https://www.gesetze-im-internet.de/famfg/BJNR258700008.html"
+          ],
+          "metadata_to_update_by_root": false,
+          "metadata_updated": true,
+          "validation": [
+            "HTML nesting valid",
+            "JSON-LD valid",
+            "URL unchanged",
+            "Visible correction dated2026-10-26",
+            "Metadata consistent with H1"
+          ]
+        },
+        {
+          "words_article_body_without_sources": 1147,
+          "sources": [
+            "https://www.gesetze-im-internet.de/vwgo/__68.html",
+            "https://www.gesetze-im-internet.de/vwgo/__70.html",
+            "https://www.gesetze-im-internet.de/vwgo/__74.html",
+            "https://www.gesetze-im-internet.de/vwgo/__58.html",
+            "https://www.gesetze-im-internet.de/vwgo/__60.html",
+            "https://www.gesetze-im-internet.de/vwgo/__80.html",
+            "https://www.gesetze-im-internet.de/vwgo/__123.html",
+            "https://www.gesetze-im-internet.de/sgb_8/__42.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__33.html",
+            "https://www.gesetze-im-internet.de/sgb_10/__36.html",
+            "https://voris.wolterskluwer-online.de/browse/document/7a65c0c5-c1f2-35ad-aaef-9c18acd27707",
+            "https://www.landesrecht.sachsen-anhalt.de/perma?a=VwGO%2FBDGAG_ST"
+          ],
+          "verification_limit": "Landesrechtportale identifiziert; NI-VORIS Volltext HTTP402 und Sachsen-Anhalt dynamischer Text nicht vollständig lesbar. Deshalb keine konkrete Landesfallgruppe abschließend eingeordnet; Bundesrechtsnormen vollständig geprüft.",
+          "file": "beitraege/inobhutnahme-sonderregel-in-niedersachsen-und-sachsen-anhalt-was-viele-el.html",
+          "title": "Widerspruch oder direkte Klage? Landesrecht und Fristen bei Jugendamtsbescheiden",
+          "description": "Widerspruch oder Klage gegen Jugendamtsentscheidungen: Landesrecht, § 42 SGB VIII, Rechtsbehelfsbelehrung, Fristen und Eilrechtsschutz verständlich eingeordnet.",
+          "changes": [
+            "Keine pauschale Abschaffung des Widerspruchs für alle Jugendamtsentscheidungen in Niedersachsen und Sachsen-Anhalt; konkrete Fallgruppe und Landesfassung erforderlich.",
+            "Widersprechen nach §42Abs3SGBVIII vom förmlichen VwGO-Widerspruch getrennt.",
+            "Falsche Aussage Fristversäumnis zwingt Kind zum Verbleib in Obhut entfernt.",
+            "§58VwGO regelhafte Jahresfrist mit Ausnahmen; nicht auf FamFG übertragbar.",
+            "§36SGBX Belehrungspflicht auf gesetzlich erfasste Form eingegrenzt.",
+            "§60VwGO Wiedereinsetzung, §§80/123VwGO Eilrechtsschutz ergänzt."
+          ],
+          "checked": "2026-10-26",
+          "metadata_updated": true,
+          "validation": [
+            "HTML nesting valid",
+            "JSON-LD valid",
+            "URL unchanged",
+            "Visible correction dated2026-10-26",
+            "Metadata consistent with H1"
+          ]
+        }
+      ]
+    },
+    {
+      "report": "blog_remedies_review.json",
+      "details": [
+        {
+          "file": "beitraege/inobhutnahme-widerspruch-einlegen-diese-frist-und-form-gelten-wirklich.html",
+          "title": "Inobhutnahme widersprechen – Erklärung, Rechtsbehelf und Fristen unterscheiden",
+          "description": "Die Ablehnung nach § 42 Abs. 3 SGB VIII ist vom förmlichen Widerspruch nach der VwGO zu unterscheiden. Welche Form, Frist und Zuständigkeit jeweils wichtig sind.",
+          "checked": "2026-10-26",
+          "words_article_body": 1072,
+          "changes": [
+            "§42Abs3-Erklärung von förmlichemVwGO-Rechtsbehelf getrennt",
+            "Fristen, Landesrecht und Form klar eingeordnet",
+            "Keine automatische Rückgabe, starre3Tage oder Einschreibenpflicht",
+            "Unbelegte generalisierende Behördenvorwürfe entfernt"
+          ],
+          "sources": [
+            {
+              "title": "§ 42 SGB VIII – Inobhutnahme",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+            },
+            {
+              "title": "§ 68 VwGO – Vorverfahren und Ausnahmen",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__68.html"
+            },
+            {
+              "title": "§ 70 VwGO – Form und Frist des Widerspruchs",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__70.html"
+            },
+            {
+              "title": "§ 58 VwGO – Rechtsbehelfsbelehrung",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__58.html"
+            },
+            {
+              "title": "§ 74 VwGO – Klagefrist",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__74.html"
+            }
+          ]
+        },
+        {
+          "file": "beitraege/inobhutnahme-eilrechtsschutz-wenn-das-jugendamt-trotz-widerspruch-schweig.html",
+          "title": "Eilrechtsschutz bei Inobhutnahme – Zuständigkeit, Antrag und Kosten klären",
+          "description": "Wann § 80 Abs. 5 oder § 123 VwGO in Betracht kommt, wie sich Verwaltungs- und Familiengericht unterscheiden und was Gerichtskostenfreiheit und Prozesskostenhilfe bedeuten.",
+          "checked": "2026-10-26",
+          "words_article_body": 1207,
+          "changes": [
+            "§80Abs5 und §123VwGO nach Rechtsschutzziel abgegrenzt",
+            "Verwaltungsgericht/Familiengericht und aktuelle Entscheidungsgrundlage unterschieden",
+            "Gerichtskostenfreiheit§188, PKH-Erfolgsaussicht/Raten/Beiordnung und gegnerischeKosten präzisiert",
+            "Unbelegte strategischeSchweigen-Behauptung und Erfolgsgarantien entfernt"
+          ],
+          "sources": [
+            {
+              "title": "§ 42 SGB VIII – Inobhutnahme und Reaktion auf Widersprechen",
+              "url": "https://www.gesetze-im-internet.de/sgb_8/__42.html"
+            },
+            {
+              "title": "§ 80 VwGO – Aufschiebende Wirkung und Eilantrag",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__80.html"
+            },
+            {
+              "title": "§ 123 VwGO – Einstweilige Anordnung und Abgrenzung",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__123.html"
+            },
+            {
+              "title": "§ 67 VwGO – Vertretung",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__67.html"
+            },
+            {
+              "title": "§ 55a VwGO – Elektronische Eingaben",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__55a.html"
+            },
+            {
+              "title": "§ 188 VwGO – Gerichtskosten in Jugendhilfesachen",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__188.html"
+            },
+            {
+              "title": "§ 166 VwGO – Prozesskostenhilfe",
+              "url": "https://www.gesetze-im-internet.de/vwgo/__166.html"
+            },
+            {
+              "title": "§ 114 ZPO – Voraussetzungen der Prozesskostenhilfe",
+              "url": "https://www.gesetze-im-internet.de/zpo/__114.html"
+            },
+            {
+              "title": "§ 115 ZPO – Einkommen und Vermögen",
+              "url": "https://www.gesetze-im-internet.de/zpo/__115.html"
+            },
+            {
+              "title": "§ 121 ZPO – Anwaltliche Beiordnung",
+              "url": "https://www.gesetze-im-internet.de/zpo/__121.html"
+            },
+            {
+              "title": "§ 123 ZPO – Kostenerstattung trotz Prozesskostenhilfe",
+              "url": "https://www.gesetze-im-internet.de/zpo/__123.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalogue_status": "22 ergänzende Artikel redaktionell überarbeitet; die Veröffentlichung zusammen mit dem vollständigen 70er-Paket wurde am 27.10.2026 ausdrücklich freigegeben. Veröffentlichungsstand siehe Pull Request 1 und GitHub-Pages-Lauf.",
+  "followup_report": "paket70-rechtspruefung.json",
+  "prepared_supplementary_catalogue_size": 22
+}
