@@ -1,0 +1,36 @@
+/* Glossary: readable entries, direct anchors and optional local search. */
+.lexikon-container { max-width: 940px; }
+.lexikon-container .page-head { max-width: 760px; }
+.lexikon-container a:not(.btn) { text-decoration: underline; text-underline-offset: 3px; }
+.lexikon-zurueck { display: inline-block; margin-bottom: 24px; }
+.lexikon-stand, .lexikon-quellen, .lexikon-weiter { color: var(--muted); font-size: .9rem; }
+.lexikon-skip { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px; background: white; }
+.lexikon-skip:focus { top: 12px; }
+.lexikon-suche { padding: 24px; margin-bottom: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.lexikon-suche label { display: block; margin-bottom: 10px; font-weight: 700; color: var(--ink); }
+.lexikon-suchzeile { display: flex; flex-wrap: wrap; gap: 12px; }
+.lexikon-suchzeile input { flex: 1 1 300px; min-width: 0; width: 100%; font: inherit; color: var(--ink); padding: 12px; border: 1px solid var(--muted); border-radius: 6px; background: white; }
+.lexikon-suchzeile .btn { background: var(--accent-soft); color: var(--ink); padding: 10px 16px; }
+#lexikon-treffer { margin: 10px 0 0; font-size: .9rem; color: var(--muted); }
+.lexikon-index { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 36px; }
+.lexikon-index h2 { margin-top: 0; font-size: 1.35rem; }
+.lexikon-index ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px 28px; margin-bottom: 0; padding-left: 20px; }
+.lexikon-eintrag { padding: 28px; margin-block: 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow-wrap: anywhere; }
+.lexikon-eintrag h2 { font-size: clamp(1.3rem,3vw,1.7rem); margin: 0 0 16px; scroll-margin-top: 110px; }
+.lexikon-eintrag p { max-width: 75ch; }
+.lexikon-eintrag p:last-child { margin-bottom: 0; }
+.lexikon-hinweise { margin: 44px 0; }
+.lexikon-leer { padding: 24px; border-left: 4px solid var(--accent); background: var(--accent-soft); }
+.lexikon-container [hidden] { display: none !important; }
+.lexikon-container :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 600px) {
+  .lexikon-index ul { grid-template-columns: minmax(0,1fr); }
+  .lexikon-index, .lexikon-suche, .lexikon-eintrag { padding: 20px; }
+  .lexikon-container .btn { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  .lexikon-suche, .lexikon-index, .lexikon-leer, .lexikon-zurueck, .artikel80-werbung, .site-header, .site-footer { display: none !important; }
+  .lexikon-container .lexikon-eintrag[hidden] { display: block !important; }
+  .lexikon-eintrag { break-inside: avoid; border: 0; padding: 0; }
+}
