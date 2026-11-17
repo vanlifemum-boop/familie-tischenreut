@@ -657,3 +657,21 @@ table.urteile-tabelle tr:hover td { background: var(--bg); }
 .ms-norm a:hover { text-decoration: underline; }
 .ms-text { color: var(--muted); font-size: .93rem; margin: 0; }
 
+
+/* Rights hub and approved Article 80 advertising release, November 2026 */
+.rechte-sprung { display:flex; flex-wrap:wrap; gap:12px; margin:28px 0 42px; }
+.rechte-sprung a { padding:12px 18px; border:1px solid var(--line); border-radius:8px; background:var(--surface); font-weight:650; }
+.rechte-bereich { margin:48px 0; scroll-margin-top:100px; }
+.rechte-bereich .post-list { margin-top:22px; }
+.rechte-bereich .post-card h3 { margin-top:0; }
+.rechte-einstieg { margin-block:24px; padding:20px 24px; border-left:4px solid var(--accent); background:var(--surface); }
+.rechte-einstieg p { margin:6px 0 0; }
+.artikel80-platz { max-width:900px; padding-bottom:48px; }
+.artikel80-werbung { padding:clamp(22px,4vw,40px); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:var(--radius); background:var(--surface); margin:32px auto; }
+.artikel80-kopf { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.artikel80-kopf span { color:var(--muted); font-size:.8rem; text-transform:uppercase; letter-spacing:.1em; }
+.artikel80-kopf a { font-size:1.35rem; font-weight:750; color:var(--primary); }
+.artikel80-werbung h2 { font-size:clamp(1.5rem,4vw,2rem); margin:24px 0 16px; }
+.artikel80-werbung .btn { white-space:normal; text-align:center; max-width:100%; }
+.artikel80-preis { font-size:1.15rem; }
+.artikel80-stand { color:var(--muted); font-size:.82rem; }
