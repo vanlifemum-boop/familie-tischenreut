@@ -83,6 +83,17 @@ h3 { font-size: 1.3rem; }
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.7rem; color: var(--primary); cursor: pointer; line-height: 1; }
 .nav-links a.nav-cta { background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 9px 18px; font-weight: 700; }
 .nav-links a.nav-cta:hover { background: #925c0f; color: #fff; border: 0; text-decoration: none; }
+.language-switcher { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px;
+                     padding: 4px 16px 10px; font-size: .9rem; }
+.language-switcher a { color: var(--primary); padding: 2px 4px; }
+.language-switcher a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.translation-note { margin: 0 auto; padding-block: 8px; font-size: .9rem; color: var(--muted); }
+.translation-note a { margin-inline-start: .35rem; text-decoration: underline; }
+
+@media (min-width: 1561px) {
+  html:not([lang|="de"]) .nav-links { flex-wrap: wrap; justify-content: flex-end; row-gap: 8px; }
+}
+
 
 @media (max-width: 1560px) {
   .nav-toggle { display: block; }
