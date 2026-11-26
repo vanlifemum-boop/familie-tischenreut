@@ -49,3 +49,19 @@ select{appearance:none;padding-right:46px;background-image:url('data:image/svg+x
 .story-body blockquote{background:#fff}
 .story-body .sources{margin-bottom:0}
 @media(max-width:600px){.story{margin:40px 0;border-radius:12px}.story-heading{padding:28px 22px}.story-body{padding:26px 20px}.story-body p{font-size:17px}.story-body .evidence{padding:10px}.story-body blockquote{margin:22px 0;padding:16px;font-size:18px}}
+
+/* Show the motifs first, downloads immediately below, guidance at print time. */
+.hero.hero-compact{display:block;padding:28px 0 8px;border:0}
+.hero-compact h1{font-size:clamp(28px,3.3vw,42px);margin:0 0 10px;max-width:1050px}
+.hero-compact p{margin:0;font-size:17px}
+#generator{padding-top:16px}
+#generator .motif-picker{margin:8px 0 26px}
+#generator .motif-picker>legend{font-size:20px}
+#generator .motif-picker>.hint{margin:4px 0 14px}
+.gallery-downloads{padding:28px 0 32px;margin-bottom:32px;border-top:1px solid #dce5e5}
+.gallery-downloads h2{font-size:clamp(23px,2.6vw,30px)}
+.campaign-intro,.sheet-print-help{padding:14px 0;font-size:16px}
+.campaign-intro summary,.sheet-print-help summary{cursor:pointer;font-weight:700;color:var(--green)}
+.sheet-print-help{margin-top:28px;border-top:1px solid #ccd7d9;border-bottom:1px solid #ccd7d9}
+.customize-heading{font-size:clamp(24px,2.7vw,32px)}
+@media(max-width:600px){.hero.hero-compact{padding-top:20px}.hero-compact p{font-size:16px}.gallery-downloads{padding:24px 0}.hero-compact h1{font-size:28px}}
