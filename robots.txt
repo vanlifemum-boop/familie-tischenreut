@@ -37,3 +37,4 @@ User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://systemfehlerfamilie.de/sitemap.xml
+Sitemap: https://systemfehlerfamilie.de/adventskalender/sitemap.xml
