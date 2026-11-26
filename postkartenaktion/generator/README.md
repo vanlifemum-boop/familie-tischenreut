@@ -67,3 +67,20 @@ Formatierung. Das zusätzliche Feld unterliegt derselben Wortprüfung.
 Die Seite bindet `/js/main.js` für die bestehende interne Aufrufstatistik ein.
 Die Statistik übermittelt nur Seitenpfad und Seitentitel, keine Formularinhalte;
 die vorhandene lokale Widerspruchseinstellung bleibt wirksam.
+
+## Bearbeitbare Vorlagen und Vierer-Druckbögen
+
+Mustertext und Überschrift werden in die Eingabefelder geladen. Änderungen bleiben
+pro Auswahl während der geöffneten Sitzung erhalten. Eigener Text startet leer.
+Grenzen: 70 Wörter / 550 Zeichen im Text, 80 Zeichen in der Überschrift;
+zusätzlich prüft die PDF das Layout mit mindestens 9 pt Textgröße.
+Die lokale Beleidigungsprüfung gilt auch für bearbeitete Vorlagen.
+Jede generierte Rückseite enthält einen QR-Code zur Aktion.
+
+`scripts/build-postcard-sheets.py` erzeugt drei feste Vierer-PDFs (A4 quer,
+140 × 99,32 mm je Karte, direkt aneinander, kleiner Druckrand) und das große
+A4-Ausmalbild. Für Duplex an der kurzen Kante sind die Rückseitenspalten
+vertauscht. Kartenreihenfolge vorn: Rot, Eisblau, Fenster, Rot.
+Texte: 1, 2, 3, 1. PDF-Druckeinstellungen: tatsächliche Größe, kurze Kante;
+bei manuellem Wenden Einlegerichtung anhand eines Probeblatts prüfen.
+Quellen und Prüfdatum der SOS-Vorstandsadresse stehen im Erzeugungsskript.

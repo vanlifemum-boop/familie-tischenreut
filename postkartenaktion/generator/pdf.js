@@ -23,9 +23,12 @@
     }
     return result;
   }
-  async function build({image, fontBytes, title, body, extra = '', address = '', mode = 'duplex', monochrome = false}) {
+  async function build({image, fontBytes, qrImage, title, body, extra = '', address = '', mode = 'duplex', monochrome = false}) {
     if(!root.PostcardTextPolicy) throw new Error('Die Textprüfung konnte nicht geladen werden. Bitte lade die Seite erneut.');
     root.PostcardTextPolicy.assertAllowed({title,body,extra,address});
+    const lengthError=root.PostcardTextPolicy.lengthError(title,[body.trim(),extra.trim()].filter(Boolean).join('\n\n'));
+    if(lengthError) throw new Error(lengthError);
+    if(!qrImage) throw new Error('Der QR-Code konnte nicht geladen werden. Bitte erneut versuchen.');
     const {PDFDocument, rgb} = root.PDFLib;
     const pdf = await PDFDocument.create();
     pdf.registerFontkit(root.fontkit);
@@ -37,6 +40,7 @@
       }
     }
     const picture = await pdf.embedPng(image);
+    const qr = await pdf.embedPng(qrImage);
     const black = rgb(0,0,0), accent = monochrome ? black : rgb(.03,.25,.22);
     const text = [body.trim(), extra.trim()].filter(Boolean).join('\n\n');
     let size = 9.3;
@@ -44,8 +48,8 @@
     const titleLines = lines(title, font, 11.5, 69*mm);
     const titleGap = titleLines.length ? 10 : 0;
     const top = 95*mm - titleLines.length*14 - titleGap;
-    while (top - textLines.length*size*1.3 < 23*mm && size > 8) {
-      size = Math.max(8, size - .2); textLines = lines(text,font,size,69*mm);
+    while (top - textLines.length*size*1.3 < 23*mm && size > 9) {
+      size = Math.max(9, size - .2); textLines = lines(text,font,size,69*mm);
     }
     if (top - textLines.length*size*1.3 < 23*mm) throw new Error('Der Text ist zu lang für die Postkarte. Bitte kürze deinen Text oder die Überschrift, oder wähle einen kürzeren Ausgangstext.');
     const addressLines = lines(address.trim(),font,9,55*mm);
@@ -53,6 +57,7 @@
     function drawText(page, content, x, y, fontSize=8, color=black) { page.drawText(content,{x,y,size:fontSize,font,color}); }
     function front(page,x,y) {page.drawImage(picture,{x,y,width:148*mm,height:105*mm});}
     function back(page,x,y) {
+      page.drawImage(qr,{x:x+86*mm,y:y+77*mm,width:20*mm,height:20*mm});
       let yText = y+95*mm;
       for (const line of titleLines) {drawText(page,line,x+6*mm,yText,11.5,accent); yText-=14;}
       yText -=titleGap;

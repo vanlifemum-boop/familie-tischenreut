@@ -25,5 +25,11 @@
   function assertAllowed(fields) {
     if (findBlocked(fields).length) throw new Error(message);
   }
-  root.PostcardTextPolicy={isBlocked,findBlocked,assertAllowed,message};
+  function wordCount(value) {return String(value).trim().split(/\s+/).filter(Boolean).length;}
+  function lengthError(title,body) {
+    if(title.length>80) return 'Bitte kürze die Überschrift auf höchstens 80 Zeichen.';
+    if(body.length>550||wordCount(body)>70) return 'Bitte kürze den Kartentext auf höchstens 70 Wörter und 550 Zeichen, damit er lesbar bleibt.';
+    return '';
+  }
+  root.PostcardTextPolicy={isBlocked,findBlocked,assertAllowed,message,wordCount,lengthError};
 })(globalThis);
