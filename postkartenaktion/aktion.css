@@ -1,0 +1,50 @@
+.aktion-skip { position: absolute; left: 1rem; top: -5rem; z-index: 100; padding: .8rem 1rem; background: #fff; }
+.aktion-skip:focus { top: .5rem; }
+.aktion-nav { flex-wrap: wrap; gap: .8rem 2rem; }
+.aktion-nav nav { display: flex; gap: .6rem 1.3rem; flex-wrap: wrap; }
+.aktion-nav nav a { font-weight: 600; font-size: 1rem; }
+.aktion-nav [aria-current] { color: #9d332e; text-decoration: underline; text-underline-offset: .3em; }
+.aktion-hero { padding-block: clamp(2.6rem, 7vw, 5.5rem); background: #f1f5f5; }
+.aktion-grid { display: grid; grid-template-columns: 1.08fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.aktion-kicker { color: #8f332c; text-transform: uppercase; letter-spacing: .08em; font-size: .9rem; font-weight: 700; }
+.aktion-hero h1 { font-size: clamp(2.3rem, 4.4vw, 3.65rem); margin: .7rem 0 1.2rem; line-height: 1.12; }
+.aktion-hero h1 span { color: #07514d; }
+.aktion-leitsatz { font-size: 1.35rem; font-weight: 700; color: #07514d; }
+.aktion-einstieg { font-size: 1.08rem; max-width: 45ch; margin-bottom: 1.8rem; }
+.aktion-textlink { display: inline-block; margin: .9rem 0 0 1rem; font-weight: 600; text-decoration: underline; }
+.aktion-logo { margin: 0; }
+.aktion-logo img { width: 100%; height: auto; }
+.aktion-logo figcaption { font-size: .875rem; color: #526372; margin-top: 1rem; text-align: center; }
+.aktion-downloads { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.6rem; margin-top: 2rem; align-items: start; }
+.aktion-card { border: 1px solid #d9e1e5; border-radius: 12px; background: white; overflow: hidden; }
+.aktion-card > img { width: 100%; height: auto; background: #f6f8f8; border-bottom: 1px solid #d9e1e5; }
+.aktion-card-body { padding: clamp(1.3rem, 3vw, 2rem); }
+.aktion-card h3 { margin-top: .4rem; }
+.aktion-format { font-size: .875rem; color: #526372; font-weight: 600; }
+.aktion-hinweis { font-size: .875rem; color: #526372; margin-bottom: 0; }
+.aktion-downloadlink { font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+.aktion-card hr { border: 0; border-top: 1px solid #d9e1e5; margin-block: 2rem; }
+.aktion-qr { display: block; width: 180px; height: 180px; max-width: 100%; }
+.aktion-qr-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.aktion-ziel { font-size: .875rem; overflow-wrap: anywhere; }
+.aktion-schritte { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-left: 1.3rem; margin-top: 2rem; }
+.aktion-schritte li { padding-left: .4rem; }
+.aktion-schritte li::marker { color: #07514d; font-weight: 700; }
+.aktion-schritte h3 { font-size: 1.2rem; }
+.aktion-gedanke { padding: 1.8rem 2rem; margin: 2rem 0; background: #07514d; border-radius: 12px; color: white; }
+.aktion-gedanke p { font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; margin: 0 0 .5rem; }
+.aktion-gedanke span { font-size: 1rem; }
+.aktion-footer { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+#downloads, #mitmachen { scroll-margin-top: 8rem; }
+body .btn--primary { background: #07514d; }
+body .btn--primary:hover { background: #043c39; }
+a:focus-visible { outline: 3px solid #b57314; outline-offset: 4px; }
+@media (max-width: 760px) {
+  .aktion-grid, .aktion-downloads, .aktion-schritte { grid-template-columns: 1fr; }
+  .aktion-logo { width: min(100%, 420px); justify-self: center; }
+  .aktion-schritte { gap: .5rem; }
+  .aktion-textlink { margin-left: 0; display: block; }
+  .aktion-nav .brand { white-space: normal; }
+}
+@media (max-width: 380px) { .aktion-hero h1 { font-size: 2rem; overflow-wrap: anywhere; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }

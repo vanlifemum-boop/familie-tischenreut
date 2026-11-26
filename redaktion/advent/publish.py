@@ -20,7 +20,7 @@ def shell(title, description, path, main):
 <meta property="og:site_name" content="Systemfehler Familie"><meta name="theme-color" content="#172536">
 <link rel="stylesheet" href="/adventskalender/calendar.css"></head><body>
 <a class="skip" href="#inhalt">Zum Inhalt</a>
-<header class="sitebar"><a class="brand" href="/">System<span>fehler</span> Familie</a><nav aria-label="Hauptnavigation"><a href="/blog.html">Blog</a><a href="/adventskalender/">Adventskalender</a><a href="/kontakt.html">Kontakt</a></nav></header>
+<header class="sitebar"><a class="brand" href="/">System<span>fehler</span> Familie</a><nav aria-label="Hauptnavigation"><a href="/blog.html">Blog</a><a href="/adventskalender/">Adventskalender</a><a href="/postkartenaktion/">Postkartenaktion</a><a href="/kontakt.html">Kontakt</a></nav></header>
 <main id="inhalt">{main}</main>
 <footer><a href="/">Systemfehler Familie</a><span>Advent 2026</span><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></footer>
 <script src="/js/main.js"></script></body></html>'''
