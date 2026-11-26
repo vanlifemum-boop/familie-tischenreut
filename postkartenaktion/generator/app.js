@@ -33,6 +33,9 @@
       ? 'Dein Text wird direkt in die PDF gedruckt. Lass die Felder leer, wenn du eine leere Textfläche möchtest.'
       : 'Deine Ergänzung wird unter dem gewählten Vorlagentext direkt in die PDF gedruckt.';
     el('front-preview').src='generator/assets/'+motif()+'.png';
+    const selectedMotif=motifs.find(item=>item.id===motif());
+    el('front-preview').alt='Gewähltes Postkartenmotiv: '+selectedMotif.name;
+    el('selected-motif').textContent=selectedMotif.name;
     el('preview-title').textContent=text.title;
     el('preview-title').hidden=!text.title;
     el('preview-body').textContent=text.paragraphs.join('\n\n');
@@ -58,8 +61,9 @@
     [recipients,texts]=await Promise.all(['recipients.json','texts.json'].map(name=>fetch('generator/'+name).then(r=>{if(!r.ok) throw new Error('Laden fehlgeschlagen');return r.json();})));
     motifs.forEach((item,index)=>{
       const label=document.createElement('label');label.className='motif';
-      const img=document.createElement('img');img.src='generator/assets/'+item.id+'.png';img.alt=item.name;img.width=1491;img.height=1055;
+      const img=document.createElement('img');img.src='generator/assets/'+item.id+'.png';img.alt='';img.width=1491;img.height=1055;
       const line=document.createElement('span'),input=document.createElement('input');input.type='radio';input.name='motif';input.value=item.id;input.checked=index===0;
+      input.setAttribute('form','card-form');
       line.append(input,document.createTextNode(item.name));label.append(img,line);el('motifs').append(label);
     });
     texts.forEach((text,index)=>el('text-choice').add(new Option(text.title,index)));
@@ -67,6 +71,7 @@
     filterRecipients();update();el('download').disabled=false;el('status').textContent='49 Empfänger stehen zur Auswahl.';
   }catch(error){el('status').textContent='Der Generator konnte nicht geladen werden. Bitte lade die Seite erneut.';return;}
   el('card-form').addEventListener('input',update);
+  el('motifs').addEventListener('change',update);
   el('recipient-search').addEventListener('input',filterRecipients);
   el('address').addEventListener('input',()=>{el('recipient').value='';});
   el('recipient').addEventListener('change',()=>{const chosen=recipients.find(r=>r.id===el('recipient').value);el('address').value=chosen?chosen.address:'';update();});
