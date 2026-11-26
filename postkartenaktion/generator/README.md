@@ -58,3 +58,12 @@ Hilfeplanung: §§ 36, 37c SGB VIII. Kinderrechte: UNICEF-Verweis auf UN-KRK.
 
 Die Vorschauverzeichnisse previewdist/ und .openai/ gehören nicht zur
 GitHub-Pages-Veröffentlichung dieser bestehenden Website.
+
+## Empfänger und Statistik
+
+`address.js` setzt die optionale Zeile „z. Hd.“ unter die erste Empfängerzeile.
+Freie Anschriften bleiben bearbeitbar; Vorschau und PDF nutzen dieselbe
+Formatierung. Das zusätzliche Feld unterliegt derselben Wortprüfung.
+Die Seite bindet `/js/main.js` für die bestehende interne Aufrufstatistik ein.
+Die Statistik übermittelt nur Seitenpfad und Seitentitel, keine Formularinhalte;
+die vorhandene lokale Widerspruchseinstellung bleibt wirksam.

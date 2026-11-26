@@ -16,7 +16,7 @@
   }
   function validateText() {
     const custom=el('text-choice').value==='custom';
-    const fields={'custom-title':custom?el('custom-title').value:'',extra:el('extra').value,address:el('address').value};
+    const fields={'custom-title':custom?el('custom-title').value:'',extra:el('extra').value,address:el('address').value,attention:el('attention').value};
     const blocked=PostcardTextPolicy.findBlocked(fields);
     for(const id of Object.keys(fields)) {
       el(id).setCustomValidity(blocked.includes(id)?PostcardTextPolicy.message:'');
@@ -38,7 +38,7 @@
     el('preview-body').textContent=text.paragraphs.join('\n\n');
     el('preview-body').hidden=!text.paragraphs.length;
     el('preview-extra').textContent=el('extra').value;
-    el('preview-address').textContent=el('address').value || 'Adresse später von Hand ergänzen';
+    el('preview-address').textContent=PostcardAddress.format(el('address').value,el('attention').value) || 'Adresse später von Hand ergänzen';
     el('print-tip').textContent=tips[el('print-mode').value];
     validateText();
   }
@@ -75,7 +75,7 @@
     if(!validateText()){el('card-form').reportValidity();return;}
     el('download').disabled=true;el('status').textContent='Deine PDF wird erstellt …';
     const selected=motif(),text=selectedText(),mode=el('print-mode').value;
-    const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:el('address').value,mode,monochrome:selected==='malen'};
+    const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:PostcardAddress.format(el('address').value,el('attention').value),mode,monochrome:selected==='malen'};
     try {
       const [image,fontBytes]=await Promise.all([bytes('generator/assets/'+selected+'.png'),bytes('generator/assets/Schrift.ttf')]);
       const result=await PostcardPDF.build({...state,image,fontBytes});
