@@ -20,8 +20,8 @@ W,H=140*mm,(140*105/148)*mm
 X,Y=(297*mm-2*W)/2,(210*mm-2*H)/2
 S=140/148
 INK='#102c35'
-# All three approved colour motifs; the fourth repeats red/text 1.
-CARDS=[('rot',0),('eis',1),('fenster',2),('rot',0)]
+# All four approved colour motifs; green uses text 1.
+CARDS=[('rot',0),('eis',1),('fenster',2),('gruen',0)]
 ADDRESS=['SOS-Kinderdorf e. V.','z. Hd. Jörg Faulstich','Vorstandsvorsitzender','Renatastraße 77','80639 München']
 # Address and chair verified 2026-11-26:
 # https://www.sos-kinderdorf.de/footer/impressum
@@ -50,14 +50,20 @@ def back(c,x,y,idx,with_text,with_address):
  def text(value,x,y,size):
   c.setFont('Card',size);c.drawString(x*mm,y*mm,value)
  if with_text:
-  t=TEXTS[idx];title=wrap(t['title'],11.5,69*mm);body=wrap('\n\n'.join(t['paragraphs']),9.3,69*mm)
+  t=TEXTS[idx];title=wrap(t['title'],11.5,69*mm);size=9.3
+  body=wrap('\n\n'.join(t['paragraphs']),size,69*mm)
+  top=95*mm-len(title)*14-10
+  while top-len(body)*size*1.2<28*mm and size>9:
+   size=max(9,size-.2);body=wrap('\n\n'.join(t['paragraphs']),size,69*mm)
   pos=95*mm
   for line in title:
    c.setFont('Card',11.5);c.drawString(6*mm,pos,line);pos-=14
   pos-=10
   for line in body:
-   c.setFont('Card',9.3);c.drawString(6*mm,pos,line);pos-=9.3*1.3
-  assert pos>=23*mm,(idx,pos/mm)
+   c.setFont('Card',size);c.drawString(6*mm,pos,line);pos-=size*1.2
+  assert pos>=28*mm,(idx,pos/mm)
+ text('Mama liebt dich, Mama liebt dich',6,24,7.5)
+ text('und kämpft um dich.',6,20.5,7.5)
  c.setLineWidth(.5);c.line(80*mm,18*mm,80*mm,98*mm)
  c.drawImage(QR,86*mm,77*mm,20*mm,20*mm)
  c.rect(124*mm,76*mm,18*mm,23*mm);text('Briefmarke',126,87,6.4)
@@ -108,12 +114,12 @@ flow=[]
 def p(text,kind='body'):flow.append(Paragraph(text,styles[kind]))
 p('Postkarten drucken','title')
 p('Vier Postkarten auf einem A4-Blatt','head')
-p('Die drei Vierer-PDFs enthalten jeweils zwei Seiten: vorne vier Farbmotive, hinten vier passend zugeordnete Postkartenrückseiten. Weihnachtsrot ist zweimal dabei, Eisblau und Adventsfenster je einmal. Jede Karte ist etwa 140 × 99 mm groß; die Karten liegen direkt aneinander und passen in einen C6-Umschlag.')
+p('Die drei Vierer-PDFs enthalten jeweils zwei Seiten: vorne vier Farbmotive, hinten vier passend zugeordnete Postkartenrückseiten. Weihnachtsrot, Eisblau, Adventsfenster und Weihnachtsgrün mit fünf Jungen sind je einmal dabei. Jede Karte ist etwa 140 × 99 mm groß; die Karten liegen direkt aneinander und passen in einen C6-Umschlag.')
 p('A4 quer · 100 % / Tatsächliche Größe · Duplex an der kurzen Kante. Eine PDF-Seite pro Blattseite. „An Seite anpassen“, „Mehrere Seiten pro Blatt“ und Broschürendruck ausschalten. Die PDF enthält bereits vier Karten je Seite.')
 p('Die Rückseiten sind für das Wenden an der kurzen Kante angeordnet. Erst nach dem beidseitigen Druck die äußeren und mittleren Schnittlinien schneiden. Der kleine weiße Außenrand ist Druckreserve und wird entfernt.')
 p('Drei fertige Varianten','head')
 p('Mit Texten und SOS-Adresse: drei Mustertexte, adressiert an SOS-Kinderdorf e. V., z. Hd. Jörg Faulstich, Vorstandsvorsitzender, Renatastraße 77, 80639 München. Text 1 ist zweimal enthalten.')
-p('Mit Texten, ohne Adresse: gleiche Texte, freie Adresszeilen. Leere Rückseiten: Platz für eigenen Text und Adresse. Auf jeder Rückseite bleibt der QR-Code zur Aktion enthalten.')
+p('Mit Texten, ohne Adresse: gleiche Texte, freie Adresszeilen. Leere Rückseiten: Platz für eigenen Text und Adresse. Auf jeder Rückseite bleiben die Grußzeile „Mama liebt dich, Mama liebt dich und kämpft um dich.“ und der QR-Code zur Aktion enthalten.')
 p('Wenn dein Drucker nicht automatisch beidseitig druckt','head')
 p('Zuerst nur PDF-Seite 1 drucken. Das Blatt nach der Anleitung deines Druckers wieder einlegen und nur PDF-Seite 2 auf die Rückseite drucken. Die richtige Einlegerichtung hängt vom Drucker ab. Vorher ein Probeblatt markieren und testen, welche Seite und welcher Rand eingezogen werden. Beide Kartenseiten müssen nach dem Ausschneiden aufrecht lesbar sein.')
 p('Immer zuerst ein Probeblatt','head')
@@ -121,7 +127,7 @@ p('Auf gewöhnlichem Papier Druckränder, Ausrichtung und Versatz prüfen. Erst 
 flow.append(PageBreak())
 p('Einzelkarten und Ausmalbild','title')
 p('Deine persönliche Karte aus dem Generator','head')
-p('Mustertext wählen, direkt im Feld bearbeiten oder „Nur eigener Text / leere Textfläche“ wählen. Für eine ganz leere Textfläche Überschrift und Text löschen. Maximal 70 Wörter und 550 Zeichen im Text, dazu 80 Zeichen für die Überschrift. Wenn der Platz trotzdem nicht reicht, bittet der Generator um Kürzung. Empfängeradresse und „Zu Händen“ lassen sich frei bearbeiten.')
+p('Mustertext wählen, direkt im Feld bearbeiten oder „Nur eigener Text / leere Textfläche“ wählen. Für eine ganz leere Textfläche Überschrift und Text löschen und die Grußzeile abwählen. Maximal 70 Wörter und 550 Zeichen im Text, dazu 80 Zeichen für die Überschrift. Wenn der Platz trotzdem nicht reicht, bittet der Generator um Kürzung. Empfängeradresse und „Zu Händen“ lassen sich frei bearbeiten.')
 p('A4 einseitig zum Zusammenkleben','head')
 p('A4 hoch, 100 %, einseitig. Vorder- und Rückseite sind auf demselben Blatt. Beide Karten an den Schnittmarken ausschneiden und die unbedruckten Seiten deckungsgleich zusammenkleben. Fertigformat 148 × 105 mm.')
 p('A4 automatisch doppelseitig','head')
@@ -134,3 +140,9 @@ p('Ein großes Ausmalbild auf A4','head')
 p('„Ausmalbild_A4.pdf“ enthält eine einzige A4-Querformatseite mit großem Motiv. Einseitig in Schwarz-Weiß oder Graustufen drucken, 100 %. Keine Rückseite, kein Ausschneiden und kein Zusammenkleben erforderlich. Mehrere Exemplare können mit Erlaubnis zum Mitnehmen ausgelegt werden.')
 p('systemfehlerfamilie.de/postkartenaktion/')
 SimpleDocTemplate(str(BASE/'downloads/Druckanleitung.pdf'),pagesize=(210*mm,297*mm),rightMargin=18*mm,leftMargin=18*mm,topMargin=16*mm,bottomMargin=16*mm,title='Postkartenaktion - Druckanleitung',author='Systemfehler Familie').build(flow)
+# Do not publish author, creator, timestamps or document IDs in generated downloads.
+import fitz
+for name in ['Vier_Postkarten_SOS_Muenchen.pdf','Vier_Postkarten_Texte.pdf','Vier_Postkarten_Leer.pdf','Druckanleitung.pdf']:
+ path=BASE/'downloads'/name
+ doc=fitz.open(path);doc.set_metadata({});doc.del_xml_metadata();doc.xref_set_key(-1,'ID','null')
+ data=doc.tobytes(garbage=4,deflate=True,no_new_id=True);doc.close();path.write_bytes(data)

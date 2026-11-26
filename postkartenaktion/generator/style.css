@@ -65,3 +65,5 @@ select{appearance:none;padding-right:46px;background-image:url('data:image/svg+x
 .sheet-print-help{margin-top:28px;border-top:1px solid #ccd7d9;border-bottom:1px solid #ccd7d9}
 .customize-heading{font-size:clamp(24px,2.7vw,32px)}
 @media(max-width:600px){.hero.hero-compact{padding-top:20px}.hero-compact p{font-size:16px}.gallery-downloads{padding:24px 0}.hero-compact h1{font-size:28px}}
+
+.dedication-choice{display:flex;align-items:flex-start;gap:10px;font-size:15px;font-weight:400}.dedication-choice input{width:auto;flex:0 0 auto;margin-top:6px;accent-color:var(--green)}.dedication-preview{font-style:italic;color:var(--green);font-size:14px;margin-top:24px}

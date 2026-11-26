@@ -1,6 +1,6 @@
 (async function () {
   const el = id => document.getElementById(id);
-  const motifs = [{id:'rot',name:'Weihnachtsrot und Gold'},{id:'eis',name:'Eisblau und Silber'},{id:'fenster',name:'Adventsfenster'},{id:'malen',name:'Zum Ausmalen'}];
+  const motifs = [{id:'rot',name:'Weihnachtsrot und Gold'},{id:'eis',name:'Eisblau und Silber'},{id:'fenster',name:'Adventsfenster'},{id:'gruen',name:'Weihnachtsgrün · fünf Jungen'},{id:'malen',name:'Zum Ausmalen'}];
   const tips = {glue:'A4 hoch, einseitig und 100 %. Vorder- und Rückseite ausschneiden und zusammenkleben.',duplex:'A4 hoch, 100 %, beidseitig an der langen Kante wenden. Zuerst ein Probeblatt drucken.',manual:'A4 hoch und 100 %. Erst Seite 1 drucken, dasselbe Blatt passend einlegen, dann Seite 2. Die Einlegerichtung am Probeblatt prüfen.',a6:'A6 quer und 100 %. Bei Duplex zunächst kurze Kante wählen und testen. Für das vollständige Motiv ist randloser A6-Druck nötig.'};
   let recipients, texts;
   const cache = new Map();
@@ -43,6 +43,7 @@
     el('preview-body').textContent=text.paragraphs.join('\n\n');
     el('preview-body').hidden=!text.paragraphs.length;
     el('preview-extra').textContent=el('extra').value;
+    el('preview-dedication').hidden=!el('dedication').checked;
     el('preview-address').textContent=PostcardAddress.format(el('address').value,el('attention').value) || 'Adresse später von Hand ergänzen';
     el('print-tip').textContent=tips[el('print-mode').value];
     validateText();
@@ -60,7 +61,7 @@
   }
   el('download').disabled=true;
   try {
-    [recipients,texts]=await Promise.all(['recipients.json','texts.json'].map(name=>fetch('generator/'+name).then(r=>{if(!r.ok) throw new Error('Laden fehlgeschlagen');return r.json();})));
+    [recipients,texts]=await Promise.all(['recipients.json','texts.json'].map(name=>fetch('generator/'+name+'?v=gruen-gruss-1').then(r=>{if(!r.ok) throw new Error('Laden fehlgeschlagen');return r.json();})));
     motifs.forEach((item,index)=>{
       const label=document.createElement('label');label.className='motif';
       const img=document.createElement('img');img.src='generator/assets/'+item.id+'.png';img.alt='';img.width=1491;img.height=1055;
@@ -84,7 +85,7 @@
     if(!validateText()){el('card-form').reportValidity();return;}
     el('download').disabled=true;el('status').textContent='Deine PDF wird erstellt …';
     const selected=motif(),text=selectedText(),mode=el('print-mode').value;
-    const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:PostcardAddress.format(el('address').value,el('attention').value),mode,monochrome:selected==='malen'};
+    const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:PostcardAddress.format(el('address').value,el('attention').value),mode,monochrome:selected==='malen',dedication:el('dedication').checked};
     try {
       const [image,fontBytes,qrImage]=await Promise.all([bytes('generator/assets/'+selected+'.png'),bytes('generator/assets/Schrift.ttf'),bytes('downloads/qr-postkartenaktion.png')]);
       const result=await PostcardPDF.build({...state,image,fontBytes,qrImage});
