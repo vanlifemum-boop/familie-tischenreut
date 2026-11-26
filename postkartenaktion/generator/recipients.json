@@ -1,0 +1,296 @@
+[
+  {
+    "id": "empfaenger-01",
+    "name": "Deutscher Bundestag Kinderkommission",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nKinderkommission\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-02",
+    "name": "Deutscher Bundestag Ausschuss für Bildung, Familie, Senioren, Frauen und Jugend",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nAusschuss für Bildung, Familie,\nSenioren, Frauen und Jugend\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-03",
+    "name": "Deutscher Bundestag Ausschuss für Recht und Verbraucherschutz",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nAusschuss für Recht und\nVerbraucherschutz\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-04",
+    "name": "Deutscher Bundestag Ausschuss für Menschenrechte und humanitäre Hilfe",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nAusschuss für Menschenrechte\nund humanitäre Hilfe\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-05",
+    "name": "Deutscher Bundestag Petitionsausschuss",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nPetitionsausschuss\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-06",
+    "name": "Deutscher Bundestag Angela Rudzka, MdB",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nAngela Rudzka, MdB\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-07",
+    "name": "Deutscher Bundestag Michael Hose, MdB",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nMichael Hose, MdB\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-08",
+    "name": "Deutscher Bundestag Truels Reichardt, MdB",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nTruels Reichardt, MdB\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-09",
+    "name": "Deutscher Bundestag Nyke Slawik, MdB",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nNyke Slawik, MdB\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-10",
+    "name": "Deutscher Bundestag Mareike Hermeier, MdB",
+    "group": "Deutscher Bundestag",
+    "address": "Deutscher Bundestag\nMareike Hermeier, MdB\nPlatz der Republik 1\n11011 Berlin"
+  },
+  {
+    "id": "empfaenger-11",
+    "name": "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend Ministerbüro",
+    "group": "Bundesregierung und Bundespräsident",
+    "address": "Bundesministerium für Bildung,\nFamilie, Senioren, Frauen und\nJugend\nMinisterbüro\nGlinkastraße 24\n10117 Berlin"
+  },
+  {
+    "id": "empfaenger-12",
+    "name": "Bundesministerium der Justiz und für Verbraucherschutz Ministerbüro",
+    "group": "Bundesregierung und Bundespräsident",
+    "address": "Bundesministerium der Justiz und\nfür Verbraucherschutz\nMinisterbüro\nAnton-Wilhelm-Amo-Straße 37\n10117 Berlin"
+  },
+  {
+    "id": "empfaenger-13",
+    "name": "Bundeskanzleramt An den Bundeskanzler",
+    "group": "Bundesregierung und Bundespräsident",
+    "address": "Bundeskanzleramt\nAn den Bundeskanzler\n11012 Berlin"
+  },
+  {
+    "id": "empfaenger-14",
+    "name": "Bundespräsident Bundespräsidialamt",
+    "group": "Bundesregierung und Bundespräsident",
+    "address": "Bundespräsident\nBundespräsidialamt\n11010 Berlin"
+  },
+  {
+    "id": "empfaenger-15",
+    "name": "Bayerischer Landtag Zentralstelle für Petitionen",
+    "group": "Bayern und Oberpfalz",
+    "address": "Bayerischer Landtag\nZentralstelle für Petitionen\nMaximilianeum\n81627 München"
+  },
+  {
+    "id": "empfaenger-16",
+    "name": "Bayerischer Landtag Kinderkommission",
+    "group": "Bayern und Oberpfalz",
+    "address": "Bayerischer Landtag\nKinderkommission\nMaximilianeum\n81627 München"
+  },
+  {
+    "id": "empfaenger-17",
+    "name": "Bayerischer Landtag Ausschuss für Arbeit und Soziales, Jugend und Familie",
+    "group": "Bayern und Oberpfalz",
+    "address": "Bayerischer Landtag\nAusschuss für Arbeit und Soziales,\nJugend und Familie\nMaximilianeum\n81627 München"
+  },
+  {
+    "id": "empfaenger-18",
+    "name": "Bayerisches Staatsministerium für Familie, Arbeit und Soziales Ministerbüro",
+    "group": "Bayern und Oberpfalz",
+    "address": "Bayerisches Staatsministerium für\nFamilie, Arbeit und Soziales\nMinisterbüro\nWinzererstraße 9\n80797 München"
+  },
+  {
+    "id": "empfaenger-19",
+    "name": "Bayerische Staatskanzlei An den Ministerpräsidenten",
+    "group": "Bayern und Oberpfalz",
+    "address": "Bayerische Staatskanzlei\nAn den Ministerpräsidenten\nPostfach 22 00 11\n80535 München"
+  },
+  {
+    "id": "empfaenger-20",
+    "name": "Regierung der Oberpfalz Sachgebiet 13 - Soziales und Jugend",
+    "group": "Bayern und Oberpfalz",
+    "address": "Regierung der Oberpfalz\nSachgebiet 13 - Soziales und\nJugend\n93039 Regensburg"
+  },
+  {
+    "id": "empfaenger-21",
+    "name": "Landesombudsstelle Bayern ZBFS - Bayerisches Landesjugendamt",
+    "group": "Bayern und Oberpfalz",
+    "address": "Landesombudsstelle Bayern\nZBFS - Bayerisches\nLandesjugendamt\nPostfach 40 02 60\n80702 München"
+  },
+  {
+    "id": "empfaenger-22",
+    "name": "Deutsches Institut für Menschenrechte Monitoring-Stelle UN-Kinderrechtskonvention",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Deutsches Institut für\nMenschenrechte\nMonitoring-Stelle\nUN-Kinderrechtskonvention\nZimmerstraße 26/27\n10969 Berlin"
+  },
+  {
+    "id": "empfaenger-23",
+    "name": "National Coalition Deutschland Netzwerk Kinderrechte",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "National Coalition Deutschland\nNetzwerk Kinderrechte\nSteinstraße 13\n10119 Berlin"
+  },
+  {
+    "id": "empfaenger-24",
+    "name": "Deutsches Kinderhilfswerk e. V.",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Deutsches Kinderhilfswerk e. V.\nLeipziger Straße 116-118\n10117 Berlin"
+  },
+  {
+    "id": "empfaenger-25",
+    "name": "Der Kinderschutzbund Bundesverband e. V.",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Der Kinderschutzbund\nBundesverband e. V.\nKalckreuthstraße 4\n10777 Berlin"
+  },
+  {
+    "id": "empfaenger-26",
+    "name": "Bundesnetzwerk Ombudschaft in der Jugendhilfe e. V. Bundeskoordinierungsstelle",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Bundesnetzwerk Ombudschaft in\nder Jugendhilfe e. V.\nBundeskoordinierungsstelle\nEmser Straße 126\n12051 Berlin"
+  },
+  {
+    "id": "empfaenger-27",
+    "name": "Deutsches Komitee für UNICEF e. V.",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Deutsches Komitee für UNICEF e.\nV.\nHöninger Weg 104\n50969 Köln"
+  },
+  {
+    "id": "empfaenger-28",
+    "name": "Save the Children Deutschland e. V.",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Save the Children Deutschland e.\nV.\nSeesener Straße 10-13\n10709 Berlin"
+  },
+  {
+    "id": "empfaenger-29",
+    "name": "Amnesty International Deutschland e. V.",
+    "group": "Kinderrechte und Menschenrechte in Deutschland",
+    "address": "Amnesty International Deutschland\ne. V.\nSonnenallee 221 C\n12059 Berlin"
+  },
+  {
+    "id": "empfaenger-30",
+    "name": "European Parliament Chair of the Committee on Petitions c/o PETI Secretariat",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "European Parliament\nChair of the Committee on\nPetitions\nc/o PETI Secretariat\nRue Wiertz 60\n1047 Bruxelles\nBELGIEN"
+  },
+  {
+    "id": "empfaenger-31",
+    "name": "European Parliament Office of the Coordinator on Children’s Rights",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "European Parliament\nOffice of the Coordinator on\nChildren’s Rights\nRue Wiertz 60\n1047 Bruxelles\nBELGIEN"
+  },
+  {
+    "id": "empfaenger-32",
+    "name": "European Parliament LIBE Committee Secretariat",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "European Parliament\nLIBE Committee Secretariat\nRue Wiertz 60\n1047 Bruxelles\nBELGIEN"
+  },
+  {
+    "id": "empfaenger-33",
+    "name": "European Commission Directorate-General for Justice and Consumers Coordinator for the Rights of the Child",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "European Commission\nDirectorate-General for Justice and\nConsumers\nCoordinator for the Rights of the\nChild\n1049 Bruxelles\nBELGIEN"
+  },
+  {
+    "id": "empfaenger-34",
+    "name": "European Union Agency for Fundamental Rights FRA",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "European Union Agency for\nFundamental Rights\nFRA\nRennweg 12\n1030 Wien\nÖSTERREICH"
+  },
+  {
+    "id": "empfaenger-35",
+    "name": "Eurochild AISBL",
+    "group": "Europäische Union und europäische Vernetzung",
+    "address": "Eurochild AISBL\nAvenue des Arts 7/8\n1210 Bruxelles\nBELGIEN"
+  },
+  {
+    "id": "empfaenger-36",
+    "name": "Council of Europe Office of the Commissioner for Human Rights",
+    "group": "Europarat, Vereinte Nationen und internationale Netzwerke",
+    "address": "Council of Europe\nOffice of the Commissioner for\nHuman Rights\n67075 Strasbourg Cedex\nFRANKREICH"
+  },
+  {
+    "id": "empfaenger-37",
+    "name": "Council of Europe Children’s Rights Division",
+    "group": "Europarat, Vereinte Nationen und internationale Netzwerke",
+    "address": "Council of Europe\nChildren’s Rights Division\n67075 Strasbourg Cedex\nFRANKREICH"
+  },
+  {
+    "id": "empfaenger-38",
+    "name": "Committee on the Rights of the Child Secretariat, c/o OHCHR",
+    "group": "Europarat, Vereinte Nationen und internationale Netzwerke",
+    "address": "Committee on the Rights of the\nChild\nSecretariat, c/o OHCHR\nPalais des Nations\n8-14 Avenue de la Paix\n1211 Genève 10\nSCHWEIZ"
+  },
+  {
+    "id": "empfaenger-39",
+    "name": "Child Rights Connect",
+    "group": "Europarat, Vereinte Nationen und internationale Netzwerke",
+    "address": "Child Rights Connect\n1 rue Varembé\n1202 Genève\nSCHWEIZ"
+  },
+  {
+    "id": "empfaenger-40",
+    "name": "SOS-Kinderdorf e. V. An den Vorstand",
+    "group": "Träger, Verband und Datenschutz",
+    "address": "SOS-Kinderdorf e. V.\nAn den Vorstand\nRenatastraße 77\n80639 München"
+  },
+  {
+    "id": "empfaenger-41",
+    "name": "Der Paritätische Landesverband Bayern e. V. An den Vorstand",
+    "group": "Träger, Verband und Datenschutz",
+    "address": "Der Paritätische\nLandesverband Bayern e. V.\nAn den Vorstand\nCharles-de-Gaulle-Straße 4\n81737 München"
+  },
+  {
+    "id": "empfaenger-42",
+    "name": "Der Bayerische Landesbeauftragte für den Datenschutz",
+    "group": "Träger, Verband und Datenschutz",
+    "address": "Der Bayerische Landesbeauftragte\nfür den Datenschutz\nPostfach 22 12 19\n80502 München"
+  },
+  {
+    "id": "empfaenger-43",
+    "name": "Bayerisches Landesamt für Datenschutzaufsicht BayLDA",
+    "group": "Träger, Verband und Datenschutz",
+    "address": "Bayerisches Landesamt für\nDatenschutzaufsicht\nBayLDA\nPostfach 1349\n91504 Ansbach"
+  },
+  {
+    "id": "empfaenger-44",
+    "name": "Bayerischer Rundfunk Redaktion Kontrovers",
+    "group": "Medien und Öffentlichkeit",
+    "address": "Bayerischer Rundfunk\nRedaktion Kontrovers\nFloriansmühlstraße 60\n80939 München"
+  },
+  {
+    "id": "empfaenger-45",
+    "name": "Westdeutscher Rundfunk Redaktion MONITOR",
+    "group": "Medien und Öffentlichkeit",
+    "address": "Westdeutscher Rundfunk\nRedaktion MONITOR\n50600 Köln"
+  },
+  {
+    "id": "empfaenger-46",
+    "name": "NDR Fernsehen Redaktion PANORAMA",
+    "group": "Medien und Öffentlichkeit",
+    "address": "NDR Fernsehen\nRedaktion PANORAMA\nHugh-Greene-Weg 1\n22529 Hamburg"
+  },
+  {
+    "id": "empfaenger-47",
+    "name": "Zweites Deutsches Fernsehen Redaktion frontal",
+    "group": "Medien und Öffentlichkeit",
+    "address": "Zweites Deutsches Fernsehen\nRedaktion frontal\n55100 Mainz"
+  },
+  {
+    "id": "empfaenger-48",
+    "name": "Europäische Bürgerbeauftragte Médiateur européen",
+    "group": "Stellen mit besonderer Zuständigkeit",
+    "address": "Europäische Bürgerbeauftragte\nMédiateur européen\n1 avenue du Président Robert Schuman\nCS 30403\n67001 Strasbourg Cedex\nFRANKREICH"
+  },
+  {
+    "id": "empfaenger-49",
+    "name": "The Registrar European Court of Human Rights Council of Europe",
+    "group": "Stellen mit besonderer Zuständigkeit",
+    "address": "The Registrar\nEuropean Court of Human Rights\nCouncil of Europe\n1 avenue de l’Europe\n67075 Strasbourg Cedex\nFRANKREICH"
+  }
+]
