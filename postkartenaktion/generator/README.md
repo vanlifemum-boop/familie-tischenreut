@@ -33,8 +33,18 @@ Adressen sowie nicht unterstützte Schriftzeichen lösen eine Meldung aus.
 
 Adressdatei: Systemfehlerfamilie_Postanschriften_2026-11-26.pdf, unverändert
 als downloads/Postanschriften.pdf hinterlegt. Texte in texts.json entsprechen
-den drei Vorgaben. Diese Veröffentlichung umfasst den Generator und die Download-Dateien.
-Die ausführlichen Falltexte bleiben im getrennten Arbeitsentwurf.
+den drei Vorgaben. Die Veröffentlichung der ausführlichen Falltexte und freigegebenen, geschwärzten
+Belegbilder wurde am 26.11.2026 erneut ausdrücklich beauftragt.
+
+## Respektvolle Texte
+
+`text-policy.js` prüft Überschrift, Text, Ergänzung und Adresse lokal auf eine
+begrenzte Liste von Beleidigungen, diskriminierenden Ausdrücken und eindeutigen
+Drohungen. Formular und PDF-Erstellung blockieren Treffer; nach Korrektur kann
+die PDF erstellt werden. Die Prüfung ist keine kontextbezogene Moderation und
+kann durch Änderungen am clientseitigen Code umgangen werden. Keine Eingaben
+werden zur Prüfung an einen Server geschickt. Ein sichtbarer Hinweis erklärt
+die Verhaltensregeln und die Grenzen der automatischen Erkennung.
 
 Porto November 2026: Deutsche Post 0,95 Euro Inland, 1,25 Euro Ausland.
 Steuerhinweis eingeschränkt auf betriebliche Veranlassung (§ 4 Abs. 4 EStG).

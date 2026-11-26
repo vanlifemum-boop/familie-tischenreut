@@ -24,6 +24,8 @@
     return result;
   }
   async function build({image, fontBytes, title, body, extra = '', address = '', mode = 'duplex', monochrome = false}) {
+    if(!root.PostcardTextPolicy) throw new Error('Die Textprüfung konnte nicht geladen werden. Bitte lade die Seite erneut.');
+    root.PostcardTextPolicy.assertAllowed({title,body,extra,address});
     const {PDFDocument, rgb} = root.PDFLib;
     const pdf = await PDFDocument.create();
     pdf.registerFontkit(root.fontkit);

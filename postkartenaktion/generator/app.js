@@ -14,6 +14,17 @@
       ? {title:el('custom-title').value.trim(),paragraphs:[]}
       : texts[Number(el('text-choice').value)];
   }
+  function validateText() {
+    const custom=el('text-choice').value==='custom';
+    const fields={'custom-title':custom?el('custom-title').value:'',extra:el('extra').value,address:el('address').value};
+    const blocked=PostcardTextPolicy.findBlocked(fields);
+    for(const id of Object.keys(fields)) {
+      el(id).setCustomValidity(blocked.includes(id)?PostcardTextPolicy.message:'');
+      el(id).setAttribute('aria-invalid',String(blocked.includes(id)));
+    }
+    el('text-validation').textContent=blocked.length?PostcardTextPolicy.message:'';
+    return blocked.length===0;
+  }
   function update() {
     const text=selectedText(), custom=el('text-choice').value==='custom';
     el('custom-title-field').hidden=!custom;
@@ -29,6 +40,7 @@
     el('preview-extra').textContent=el('extra').value;
     el('preview-address').textContent=el('address').value || 'Adresse später von Hand ergänzen';
     el('print-tip').textContent=tips[el('print-mode').value];
+    validateText();
   }
   function filterRecipients() {
     const selected=el('recipient').value, query=el('recipient-search').value.toLocaleLowerCase('de');
@@ -59,7 +71,9 @@
   el('address').addEventListener('input',()=>{el('recipient').value='';});
   el('recipient').addEventListener('change',()=>{const chosen=recipients.find(r=>r.id===el('recipient').value);el('address').value=chosen?chosen.address:'';update();});
   el('card-form').addEventListener('submit',async event=>{
-    event.preventDefault();el('download').disabled=true;el('status').textContent='Deine PDF wird erstellt …';
+    event.preventDefault();
+    if(!validateText()){el('card-form').reportValidity();return;}
+    el('download').disabled=true;el('status').textContent='Deine PDF wird erstellt …';
     const selected=motif(),text=selectedText(),mode=el('print-mode').value;
     const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:el('address').value,mode,monochrome:selected==='malen'};
     try {
