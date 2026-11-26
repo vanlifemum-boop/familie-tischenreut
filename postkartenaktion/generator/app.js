@@ -9,11 +9,23 @@
     return cache.get(path);
   }
   function motif() {return document.querySelector('input[name="motif"]:checked').value;}
+  function selectedText() {
+    return el('text-choice').value === 'custom'
+      ? {title:el('custom-title').value.trim(),paragraphs:[]}
+      : texts[Number(el('text-choice').value)];
+  }
   function update() {
-    const text=texts[Number(el('text-choice').value)];
+    const text=selectedText(), custom=el('text-choice').value==='custom';
+    el('custom-title-field').hidden=!custom;
+    el('extra-label').textContent=custom?'Dein eigener Rückseitentext':'Deine persönliche Ergänzung';
+    el('text-help').textContent=custom
+      ? 'Dein Text wird direkt in die PDF gedruckt. Lass die Felder leer, wenn du eine leere Textfläche möchtest.'
+      : 'Deine Ergänzung wird unter dem gewählten Vorlagentext direkt in die PDF gedruckt.';
     el('front-preview').src='generator/assets/'+motif()+'.png';
     el('preview-title').textContent=text.title;
+    el('preview-title').hidden=!text.title;
     el('preview-body').textContent=text.paragraphs.join('\n\n');
+    el('preview-body').hidden=!text.paragraphs.length;
     el('preview-extra').textContent=el('extra').value;
     el('preview-address').textContent=el('address').value || 'Adresse später von Hand ergänzen';
     el('print-tip').textContent=tips[el('print-mode').value];
@@ -39,6 +51,7 @@
       line.append(input,document.createTextNode(item.name));label.append(img,line);el('motifs').append(label);
     });
     texts.forEach((text,index)=>el('text-choice').add(new Option(text.title,index)));
+    el('text-choice').add(new Option('Nur eigener Text / leere Textfläche','custom'));
     filterRecipients();update();el('download').disabled=false;el('status').textContent='49 Empfänger stehen zur Auswahl.';
   }catch(error){el('status').textContent='Der Generator konnte nicht geladen werden. Bitte lade die Seite erneut.';return;}
   el('card-form').addEventListener('input',update);
@@ -47,7 +60,7 @@
   el('recipient').addEventListener('change',()=>{const chosen=recipients.find(r=>r.id===el('recipient').value);el('address').value=chosen?chosen.address:'';update();});
   el('card-form').addEventListener('submit',async event=>{
     event.preventDefault();el('download').disabled=true;el('status').textContent='Deine PDF wird erstellt …';
-    const selected=motif(),text=texts[Number(el('text-choice').value)],mode=el('print-mode').value;
+    const selected=motif(),text=selectedText(),mode=el('print-mode').value;
     const state={title:text.title,body:text.paragraphs.join('\n\n'),extra:el('extra').value,address:el('address').value,mode,monochrome:selected==='malen'};
     try {
       const [image,fontBytes]=await Promise.all([bytes('generator/assets/'+selected+'.png'),bytes('generator/assets/Schrift.ttf')]);

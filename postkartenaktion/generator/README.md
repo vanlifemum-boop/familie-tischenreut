@@ -6,7 +6,7 @@ und der Ausmalbild-Downloads wurde von der Nutzerin beauftragt.
 ## Funktionsumfang
 
 Vier genehmigte Vorderseiten, drei vorgegebene Rückseitentexte, persönliche
-Ergänzungen und 49 Empfänger aus der bereitgestellten PDF. Adressen bleiben
+Ergänzungen, eine Rückseite nur mit eigenem Text (optionale Überschrift) und 49 Empfänger aus der bereitgestellten PDF. Adressen bleiben
 bearbeitbar; ein leeres Feld erzeugt Linien zum späteren Ausfüllen.
 PDF-Erstellung erfolgt im Browser mit lokal ausgelieferten Bibliotheken,
 Schriftdateien und Motiven. Eingaben werden nicht an einen PDF-Dienst gesendet.

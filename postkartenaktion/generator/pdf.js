@@ -1,6 +1,7 @@
 (function (root) {
   const mm = 72 / 25.4;
   function lines(text, font, size, width) {
+    if (!text.trim()) return [];
     const result = [];
     for (const paragraph of text.split('\n')) {
       let line = '';
@@ -35,15 +36,16 @@
     }
     const picture = await pdf.embedPng(image);
     const black = rgb(0,0,0), accent = monochrome ? black : rgb(.03,.25,.22);
-    const text = body + (extra.trim() ? '\n\n' + extra.trim() : '');
+    const text = [body.trim(), extra.trim()].filter(Boolean).join('\n\n');
     let size = 9.3;
     let textLines = lines(text, font, size, 69*mm);
     const titleLines = lines(title, font, 11.5, 69*mm);
-    const top = 95*mm - titleLines.length*14 - 10;
+    const titleGap = titleLines.length ? 10 : 0;
+    const top = 95*mm - titleLines.length*14 - titleGap;
     while (top - textLines.length*size*1.3 < 23*mm && size > 8) {
       size = Math.max(8, size - .2); textLines = lines(text,font,size,69*mm);
     }
-    if (top - textLines.length*size*1.3 < 23*mm) throw new Error('Der Text ist zu lang für die Postkarte. Bitte kürze deine Ergänzung oder wähle einen kürzeren Ausgangstext.');
+    if (top - textLines.length*size*1.3 < 23*mm) throw new Error('Der Text ist zu lang für die Postkarte. Bitte kürze deinen Text oder die Überschrift, oder wähle einen kürzeren Ausgangstext.');
     const addressLines = lines(address.trim(),font,9,55*mm);
     if (addressLines.length > 12) throw new Error('Die Adresse benötigt zu viele Zeilen. Bitte kürze Zusätze auf höchstens zwölf Zeilen.');
     function drawText(page, content, x, y, fontSize=8, color=black) { page.drawText(content,{x,y,size:fontSize,font,color}); }
@@ -51,7 +53,7 @@
     function back(page,x,y) {
       let yText = y+95*mm;
       for (const line of titleLines) {drawText(page,line,x+6*mm,yText,11.5,accent); yText-=14;}
-      yText -=10;
+      yText -=titleGap;
       for (const line of textLines) {drawText(page,line,x+6*mm,yText,size); yText-=size*1.3;}
       page.drawLine({start:{x:x+80*mm,y:y+18*mm},end:{x:x+80*mm,y:y+98*mm},thickness:.5,color:accent});
       page.drawRectangle({x:x+124*mm,y:y+76*mm,width:18*mm,height:23*mm,borderColor:accent,borderWidth:.5});
