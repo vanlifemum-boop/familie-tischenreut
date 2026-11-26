@@ -35,3 +35,17 @@ select{appearance:none;padding-right:46px;background-image:url('data:image/svg+x
 }
 
 .download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.download-card{display:flex;flex-direction:column;gap:8px;border:1px solid #b6ccc8;border-radius:8px;padding:20px;text-decoration:none;background:#edf7f3}.download-card strong{font-size:19px}.download-card span{font-size:15px}.postal-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:24px}.postal-top img{width:70px;height:auto;max-width:46%}.postal-top .stamp{margin:0;width:70px;max-width:48%;font-size:10px}#text-count{font-variant-numeric:tabular-nums}textarea[aria-invalid=true],input[aria-invalid=true]{border:2px solid var(--red)}@media(max-width:600px){.download-grid{grid-template-columns:1fr}}
+
+/* A distinct, readable chapter for the personal background and evidence. */
+.story{max-width:none;margin:64px 0;padding:0;border:1px solid #c4dadd;border-radius:18px;background:#edf5f8;overflow:hidden;scroll-margin-top:24px}
+.story-heading{padding:clamp(28px,5vw,64px);background:#073f46;color:#fff}
+.story-heading .eyebrow{margin:0 0 18px;color:#c5e9e8;font-size:15px;font-weight:700;letter-spacing:.05em}
+.story-heading h2{max-width:850px;margin:0;font-family:Georgia,serif;font-size:clamp(34px,4.5vw,56px);line-height:1.12;text-wrap:balance}
+.story-heading .story-message{max-width:850px;margin:24px 0 0;padding-top:22px;border-top:1px solid #54838a;font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-weight:650}
+.story-body{max-width:940px;padding:clamp(22px,4.5vw,56px);margin:auto;overflow-wrap:anywhere}
+.story-body>p:first-child{margin-top:0;font-size:clamp(20px,2.2vw,23px);line-height:1.6;font-weight:550}
+.story-body h3{margin:44px 0 20px;padding-top:26px;border-top:2px solid #b1cfd2;color:#073f46;font-size:clamp(25px,2.8vw,31px);line-height:1.25}
+.story-body .why{margin:28px 0;padding:20px 22px;background:#fff;border-radius:0 8px 8px 0;font-size:clamp(20px,2.2vw,24px);line-height:1.45}
+.story-body blockquote{background:#fff}
+.story-body .sources{margin-bottom:0}
+@media(max-width:600px){.story{margin:40px 0;border-radius:12px}.story-heading{padding:28px 22px}.story-body{padding:26px 20px}.story-body p{font-size:17px}.story-body .evidence{padding:10px}.story-body blockquote{margin:22px 0;padding:16px;font-size:18px}}
