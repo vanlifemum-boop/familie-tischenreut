@@ -84,3 +84,28 @@ vertauscht. Kartenreihenfolge vorn: Rot, Eisblau, Fenster, Rot.
 Texte: 1, 2, 3, 1. PDF-Druckeinstellungen: tatsächliche Größe, kurze Kante;
 bei manuellem Wenden Einlegerichtung anhand eines Probeblatts prüfen.
 Quellen und Prüfdatum der SOS-Vorstandsadresse stehen im Erzeugungsskript.
+
+## Sprachversionen (27.11.2026)
+
+Die Postkartenaktion ist vollständig auf Deutsch, Polnisch, Ukrainisch, Englisch
+und Französisch verfügbar. Statische Sprachpfade: /postkartenaktion/ sowie
+/{pl,uk,en,fr}/postkartenaktion/. Deutsche Originalzitate bleiben unverändert;
+Übersetzungen stehen getrennt und gekennzeichnet daneben. Bei Änderungen
+am deutschen Inhalt sind alle Sprachversionen erneut sinngenau abzugleichen.
+
+`i18n.js` lädt synchron das zum HTML-lang passende Wörterbuch. Die editierbaren
+Vorlagen liegen unter `locales/*-texts.json`. `locales/runtime.json` hält die
+Zuordnung deutscher Ausgangstexte zu den Laufzeitübersetzungen; `i18n.js` muss
+bei deren Änderung entsprechend aktualisiert werden. Alle Bibliotheken, Motive
+und Schriften werden von den gemeinsamen absoluten /postkartenaktion/-Pfaden
+geladen. Empfängernamen und Postanschriften bleiben in der Originalschreibweise.
+
+Fertige Druckbögen und Bildvorderseiten bleiben deutsche Originale und sind so
+gekennzeichnet. Der Generator erstellt Rückseiten in der gewählten Sprache
+und unterstützt polnische, ukrainische, englische und französische Schriftzeichen.
+Die vorhandene begrenzte Wortprüfung bleibt erhalten; sie ist keine vollständige
+mehrsprachige Moderation.
+
+Prüfung: 30 PDFs über fünf Sprachen, alle drei Vorlagen und vier Druckarten;
+Seitenzahlen, Textgrenzen und Schriftzeichen kontrolliert, ukrainische und
+französische Druckausgaben visuell geprüft.

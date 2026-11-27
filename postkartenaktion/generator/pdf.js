@@ -1,4 +1,5 @@
 (function (root) {
+  const t = key => globalThis.PostcardI18n?.t(key) ?? key;
   const mm = 72 / 25.4;
   function lines(text, font, size, width) {
     if (!text.trim()) return [];
@@ -24,19 +25,19 @@
     return result;
   }
   async function build({image, fontBytes, qrImage, title, body, extra = '', address = '', mode = 'duplex', monochrome = false, dedication = true}) {
-    if(!root.PostcardTextPolicy) throw new Error('Die Textprüfung konnte nicht geladen werden. Bitte lade die Seite erneut.');
+    if(!root.PostcardTextPolicy) throw new Error(t('Die Textprüfung konnte nicht geladen werden. Bitte lade die Seite erneut.'));
     root.PostcardTextPolicy.assertAllowed({title,body,extra,address});
     const lengthError=root.PostcardTextPolicy.lengthError(title,[body.trim(),extra.trim()].filter(Boolean).join('\n\n'));
     if(lengthError) throw new Error(lengthError);
-    if(!qrImage) throw new Error('Der QR-Code konnte nicht geladen werden. Bitte erneut versuchen.');
+    if(!qrImage) throw new Error(t('Der QR-Code konnte nicht geladen werden. Bitte erneut versuchen.'));
     const {PDFDocument, rgb} = root.PDFLib;
     const pdf = await PDFDocument.create();
     pdf.registerFontkit(root.fontkit);
     const font = await pdf.embedFont(fontBytes, {subset: true});
     const supported = new Set(font.getCharacterSet());
-    for (const char of title + body + extra + address) {
+    for (const char of title + body + extra + address + t('Mama liebt dich, Mama liebt dich und kämpft um dich.')) {
       if (!/\s/.test(char) && !supported.has(char.codePointAt(0))) {
-        throw new Error('Das Zeichen „' + char + '“ kann nicht gedruckt werden. Bitte ersetze es in deinem Text oder in der Adresse.');
+        throw new Error(t('Das Zeichen „') + char + t('“ kann nicht gedruckt werden. Bitte ersetze es in deinem Text oder in der Adresse.'));
       }
     }
     const picture = await pdf.embedPng(image);
@@ -51,10 +52,13 @@
     while (top - textLines.length*size*1.2 < (dedication ? 28 : 23)*mm && size > 9) {
       size = Math.max(9, size - .2); textLines = lines(text,font,size,69*mm);
     }
-    if (top - textLines.length*size*1.2 < (dedication ? 28 : 23)*mm) throw new Error('Der Text ist zu lang für die Postkarte. Bitte kürze deinen Text oder die Überschrift, oder wähle einen kürzeren Ausgangstext.');
+    if (top - textLines.length*size*1.2 < (dedication ? 28 : 23)*mm) throw new Error(t('Der Text ist zu lang für die Postkarte. Bitte kürze deinen Text oder die Überschrift, oder wähle einen kürzeren Ausgangstext.'));
     const addressLines = lines(address.trim(),font,9,55*mm);
-    if (addressLines.length > 12) throw new Error('Die Adresse benötigt zu viele Zeilen. Bitte kürze Zusätze auf höchstens zwölf Zeilen.');
-    function drawText(page, content, x, y, fontSize=8, color=black) { page.drawText(content,{x,y,size:fontSize,font,color}); }
+    if (addressLines.length > 12) throw new Error(t('Die Adresse benötigt zu viele Zeilen. Bitte kürze Zusätze auf höchstens zwölf Zeilen.'));
+    function drawText(page, content, x, y, fontSize=8, color=black) {
+      const width=page.getWidth()-x-18;
+      for(const [i,line] of lines(content,font,fontSize,width).entries()) page.drawText(line,{x,y:y-i*fontSize*1.25,size:fontSize,font,color});
+    }
     function front(page,x,y) {page.drawImage(picture,{x,y,width:148*mm,height:105*mm});}
     function back(page,x,y) {
       page.drawImage(qr,{x:x+86*mm,y:y+77*mm,width:20*mm,height:20*mm});
@@ -63,13 +67,13 @@
       yText -=titleGap;
       for (const line of textLines) {drawText(page,line,x+6*mm,yText,size); yText-=size*1.2;}
       if (dedication) {
-        drawText(page,'Mama liebt dich, Mama liebt dich',x+6*mm,y+24*mm,7.5,accent);
-        drawText(page,'und kämpft um dich.',x+6*mm,y+20.5*mm,7.5,accent);
+        const greeting=lines(t('Mama liebt dich, Mama liebt dich und kämpft um dich.'),font,7.5,69*mm);
+        for(const [i,line] of greeting.entries()) drawText(page,line,x+6*mm,y+24*mm-i*9.9,7.5,accent);
       }
       page.drawLine({start:{x:x+80*mm,y:y+18*mm},end:{x:x+80*mm,y:y+98*mm},thickness:.5,color:accent});
       page.drawRectangle({x:x+124*mm,y:y+76*mm,width:18*mm,height:23*mm,borderColor:accent,borderWidth:.5});
-      drawText(page,'Briefmarke',x+126*mm,y+87*mm,6.4);
-      drawText(page,'An',x+86*mm,y+67*mm,9);
+      drawText(page,t('Briefmarke'),x+126*mm,y+87*mm,6.4);
+      drawText(page,t('An'),x+86*mm,y+67*mm,9);
       let addressY=y+59*mm;
       for(const line of addressLines) {drawText(page,line,x+86*mm,addressY,9);addressY-=10.5;}
       if(!address.trim()) for(let n=0;n<5;n++) page.drawLine({start:{x:x+86*mm,y:y+(57-n*10)*mm},end:{x:x+142*mm,y:y+(57-n*10)*mm},thickness:.4,color:accent});
@@ -84,17 +88,17 @@
     if(mode==='a6') {front(pdf.addPage([148*mm,105*mm]),0,0);back(pdf.addPage([148*mm,105*mm]),0,0);}
     else if(mode==='glue') {
       const page=pdf.addPage([210*mm,297*mm]);
-      drawText(page,'A4 hoch · Einseitig · 100 % / Tatsächliche Größe',31*mm,280*mm,10);
+      drawText(page,t('A4 hoch · Einseitig · 100 % / Tatsächliche Größe'),31*mm,280*mm,10);
       front(page,31*mm,162*mm);back(page,31*mm,39*mm);marks(page,31*mm,162*mm);marks(page,31*mm,39*mm);
-      drawText(page,'Ausschneiden und die unbedruckten Seiten zusammenkleben.',31*mm,25*mm,8);
-      drawText(page,'Fertigformat 148 × 105 mm · QR-Code und weißen Rand frei lassen.',31*mm,17*mm,8);
+      drawText(page,t('Ausschneiden und die unbedruckten Seiten zusammenkleben.'),31*mm,25*mm,8);
+      drawText(page,t('Fertigformat 148 × 105 mm · QR-Code und weißen Rand frei lassen.'),31*mm,17*mm,8);
     } else {
-      for(const [draw,label] of [[front,'Vorderseite'],[back,'Rückseite']]) {
+      for(const [draw,label] of [[front,t('Vorderseite')],[back,t('Rückseite')]]) {
         const page=pdf.addPage([210*mm,297*mm]);
-        drawText(page,label+' · A4 hoch · 100 % / Tatsächliche Größe',31*mm,275*mm,11);
-        drawText(page,mode==='manual'?'Einzelseiten drucken · Einlegerichtung vorher mit einem Probeblatt prüfen.':'Duplexdruck · An der langen Kante wenden.',31*mm,260*mm,8);
+        drawText(page,label+t(' · A4 hoch · 100 % / Tatsächliche Größe'),31*mm,275*mm,11);
+        drawText(page,mode==='manual'?t('Einzelseiten drucken · Einlegerichtung vorher mit einem Probeblatt prüfen.'):t('Duplexdruck · An der langen Kante wenden.'),31*mm,260*mm,8);
         draw(page,31*mm,96*mm);marks(page,31*mm,96*mm);
-        drawText(page,'Erst nach dem beidseitigen Druck ausschneiden · 148 × 105 mm.',31*mm,78*mm,8);
+        drawText(page,t('Erst nach dem beidseitigen Druck ausschneiden · 148 × 105 mm.'),31*mm,78*mm,8);
       }
     }
     pdf.context.trailerInfo.Info = undefined;
