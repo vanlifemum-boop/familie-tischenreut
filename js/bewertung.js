@@ -12,7 +12,7 @@
    Hinweiskasten in gutachter-suche.html.
    ============================================================ */
 (function () {
-  var EMPFAENGER = 'systemfehlerfamilie@gmail.com';
+  var EMPFAENGER = 'systemfehlefamilie@gmail.com';
 
   var FRAGEN = [
     ['st-transparenz',    '1. Arbeitsweise transparent erklärt'],
