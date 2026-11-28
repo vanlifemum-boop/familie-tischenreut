@@ -80,14 +80,15 @@ def build(source):
     paragraph(c,'Meine Nachricht:',7,57,62,7.5,True)
     c.setStrokeColor(HexColor('#b8c3c9'))
     c.setLineWidth(.45)
-    for y in [45,36,27,18]: c.line(7*mm,y*mm,69*mm,y*mm)
+    for y in [45,36,27]: c.line((7 if y==45 else 30)*mm,y*mm,69*mm,y*mm)
+    qr_on_pdf(c,matrix,7,16,20)
     c.line(77*mm,15*mm,77*mm,97*mm)
     c.rect(124*mm,77*mm,17*mm,21*mm,stroke=1,fill=0)
     paragraph(c,'Bitte<br/>frankieren',126,91,14,6.2)
     paragraph(c,'An',84,68,55,8,True)
     for y in [57,46,35,24]: c.line(84*mm,y*mm,141*mm,y*mm)
-    paragraph(c,'Systemfehler Familie · systemfehlerfamilie.de/postkartenaktion/',7,9,132,6)
-    c.linkURL(URL,(7*mm,3*mm,140*mm,10*mm),relative=0)
+    paragraph(c,'Systemfehler Familie<br/>systemfehlerfamilie.de/postkartenaktion/',30,23,45,6)
+    c.linkURL(URL,(30*mm,15.5*mm,75*mm,23*mm),relative=0)
     c.save()
 
 if __name__=='__main__':

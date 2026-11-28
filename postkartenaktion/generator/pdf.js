@@ -4,16 +4,17 @@
   function lines(text, font, size, width) {
     if (!text.trim()) return [];
     const result = [];
+    const available = () => typeof width === 'function' ? width(result.length) : width;
     for (const paragraph of text.split('\n')) {
       let line = '';
       for (const word of paragraph.split(/\s+/).filter(Boolean)) {
-        if (font.widthOfTextAtSize((line ? line + ' ' : '') + word, size) <= width) {
+        if (font.widthOfTextAtSize((line ? line + ' ' : '') + word, size) <= available()) {
           line += (line ? ' ' : '') + word;
         } else {
           if (line) result.push(line);
           line = '';
           for (const char of word) {
-            if (font.widthOfTextAtSize(line + char, size) > width && line) {
+            if (font.widthOfTextAtSize(line + char, size) > available() && line) {
               result.push(line); line = '';
             }
             line += char;
@@ -45,12 +46,16 @@
     const black = rgb(0,0,0), accent = monochrome ? black : rgb(.03,.25,.22);
     const text = [body.trim(), extra.trim()].filter(Boolean).join('\n\n');
     let size = 9.3;
-    let textLines = lines(text, font, size, 69*mm);
     const titleLines = lines(title, font, 11.5, 69*mm);
     const titleGap = titleLines.length ? 10 : 0;
     const top = 95*mm - titleLines.length*14 - titleGap;
+    // Keep the QR below the message and left of the postal zones. Only lines
+    // close to the code need a narrower measure.
+    const textWidth = i => (top-i*size*1.2 < 38*mm ? 46 : 69)*mm;
+    const wrapText = () => lines(text, font, size, textWidth);
+    let textLines = wrapText();
     while (top - textLines.length*size*1.2 < (dedication ? 28 : 23)*mm && size > 9) {
-      size = Math.max(9, size - .2); textLines = lines(text,font,size,69*mm);
+      size = Math.max(9, size - .2); textLines = wrapText();
     }
     if (top - textLines.length*size*1.2 < (dedication ? 28 : 23)*mm) throw new Error(t('Der Text ist zu lang für die Postkarte. Bitte kürze deinen Text oder die Überschrift, oder wähle einen kürzeren Ausgangstext.'));
     const addressLines = lines(address.trim(),font,9,55*mm);
@@ -61,14 +66,14 @@
     }
     function front(page,x,y) {page.drawImage(picture,{x,y,width:148*mm,height:105*mm});}
     function back(page,x,y) {
-      page.drawImage(qr,{x:x+86*mm,y:y+77*mm,width:20*mm,height:20*mm});
+      page.drawImage(qr,{x:x+55*mm,y:y+16*mm,width:20*mm,height:20*mm});
       let yText = y+95*mm;
       for (const line of titleLines) {drawText(page,line,x+6*mm,yText,11.5,accent); yText-=14;}
       yText -=titleGap;
       for (const line of textLines) {drawText(page,line,x+6*mm,yText,size); yText-=size*1.2;}
       if (dedication) {
-        const greeting=lines(t('Mama liebt dich, Mama liebt dich und kämpft um dich.'),font,7.5,69*mm);
-        for(const [i,line] of greeting.entries()) drawText(page,line,x+6*mm,y+24*mm-i*9.9,7.5,accent);
+        const greeting=lines(t('Mama liebt dich, Mama liebt dich und kämpft um dich.'),font,7.2,46*mm);
+        for(const [i,line] of greeting.entries()) drawText(page,line,x+6*mm,y+27*mm-i*10.2,7.2,accent);
       }
       page.drawLine({start:{x:x+80*mm,y:y+18*mm},end:{x:x+80*mm,y:y+98*mm},thickness:.5,color:accent});
       page.drawRectangle({x:x+124*mm,y:y+76*mm,width:18*mm,height:23*mm,borderColor:accent,borderWidth:.5});

@@ -39,7 +39,7 @@ def wrap(text,size,width):
   line=''
   for word in para.split():
    candidate=(line+' '+word).strip()
-   if pdfmetrics.stringWidth(candidate,'Card',size)>width and line:
+   if pdfmetrics.stringWidth(candidate,'Card',size)>(width(len(result)) if callable(width) else width) and line:
     result.append(line);line=word
    else:line=candidate
   result.append(line)
@@ -51,10 +51,11 @@ def back(c,x,y,idx,with_text,with_address):
   c.setFont('Card',size);c.drawString(x*mm,y*mm,value)
  if with_text:
   t=TEXTS[idx];title=wrap(t['title'],11.5,69*mm);size=9.3
-  body=wrap('\n\n'.join(t['paragraphs']),size,69*mm)
   top=95*mm-len(title)*14-10
+  body_width=lambda i: (46 if top-i*size*1.2<38*mm else 69)*mm
+  body=wrap('\n\n'.join(t['paragraphs']),size,body_width)
   while top-len(body)*size*1.2<28*mm and size>9:
-   size=max(9,size-.2);body=wrap('\n\n'.join(t['paragraphs']),size,69*mm)
+   size=max(9,size-.2);body=wrap('\n\n'.join(t['paragraphs']),size,body_width)
   pos=95*mm
   for line in title:
    c.setFont('Card',11.5);c.drawString(6*mm,pos,line);pos-=14
@@ -62,10 +63,10 @@ def back(c,x,y,idx,with_text,with_address):
   for line in body:
    c.setFont('Card',size);c.drawString(6*mm,pos,line);pos-=size*1.2
   assert pos>=28*mm,(idx,pos/mm)
- text('Mama liebt dich, Mama liebt dich',6,24,7.5)
- text('und kämpft um dich.',6,20.5,7.5)
+ text('Mama liebt dich, Mama liebt dich',6,25,7.5)
+ text('und kämpft um dich.',6,21.5,7.5)
  c.setLineWidth(.5);c.line(80*mm,18*mm,80*mm,98*mm)
- c.drawImage(QR,86*mm,77*mm,20*mm,20*mm)
+ c.drawImage(QR,55*mm,16*mm,20*mm,20*mm)
  c.rect(124*mm,76*mm,18*mm,23*mm);text('Briefmarke',126,87,6.4)
  text('An',86,67,9)
  if with_address:
